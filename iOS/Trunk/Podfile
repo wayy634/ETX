@@ -1,0 +1,2 @@
+pod 'UMengFeedback', '~> 2.2'
+pod 'UMengAnalytics'
