@@ -10,36 +10,31 @@
 	<string>XiaoMai</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>175cb7ce-f396-11e3-b192-f31c9dbecfd9++8597</key>
-		<string>svn://119.254.110.17/xiaomai/trunk/Mobile/Ios</string>
+		<key>C32F11CC474899EE73F6FA826D39F782B9EECAF7</key>
+		<string>https://github.com/chenzbjava/EPassAPP.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Trunk/XiaoMai.xcworkspace</string>
+	<string>iOS/Trunk/XiaoMai.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>175cb7ce-f396-11e3-b192-f31c9dbecfd9++8597</key>
-		<string>../..</string>
-	</dict>
-	<key>IDESourceControlProjectRepositoryRootDictionary</key>
-	<dict>
-		<key>175cb7ce-f396-11e3-b192-f31c9dbecfd9++8597</key>
-		<string>svn://119.254.110.17/xiaomai</string>
+		<key>C32F11CC474899EE73F6FA826D39F782B9EECAF7</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>svn://119.254.110.17/xiaomai/trunk/Mobile/Ios/Trunk/XiaoMai.xcworkspace</string>
+	<string>https://github.com/chenzbjava/EPassAPP.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>175cb7ce-f396-11e3-b192-f31c9dbecfd9++8597</string>
+	<string>C32F11CC474899EE73F6FA826D39F782B9EECAF7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
+			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>175cb7ce-f396-11e3-b192-f31c9dbecfd9++8597</string>
+			<string>C32F11CC474899EE73F6FA826D39F782B9EECAF7</string>
 			<key>IDESourceControlWCCName</key>
-			<string>XM_IOS</string>
+			<string>EPassAPP</string>
 		</dict>
 	</array>
 </dict>
