@@ -1,0 +1,70 @@
+/* 
+   Localizable.strings
+   iPhone_UBoxOnline
+
+   Created by dengfang on 11-8-9.
+   Copyright 2011 __MyCompanyName__. All rights reserved.
+ */
+
+
+
+// app ----------------------------------------------------
+"s_yes"                 =   "YES";
+"s_no"                  =   "NO";
+"s_appName"             =   "百度彩票";
+"s_alipay"              =   "支付宝";
+"s_plugin"              =   "银联在线充值";
+"s_rmb"                 =   "￥";
+"s_back"                =   "返回";
+"s_login"               =   "登录";
+"s_reg"                 =   "注册";
+"s_forgotPwd"           =   "忘记密码";
+"s_error"               =   "错误";
+"s_ok"                  =   "确定";
+"s_cancel"              =   "取消";
+"s_close"				=	"关闭";
+"s_findPasswd"			=	"找回密码";
+"s_prompt"              =   "提示";
+"s_LogoutSuccess"       =   "注销成功";
+"s_remberPasswd"        =   "记住密码";
+"s_remberPwdMeg"        =   "选择记住密码有一定的风险，请设置您的交易密码，保护账户安全。";
+"s_setUp"               =   "设置";
+"s_regSuccess"          =   "注册成功";
+"s_footballlottory"         =  "足彩";
+"s_boughtSuccess"       =   "投注成功！\n百度彩票祝你中大奖！";
+"s_check"               =   "查看账户";
+"s_goOn"                =   "确定";
+"s_regMessage"          =   "请完善身份信息，作为领奖和提款的重要凭证";
+"s_GoOnAfter"           =   "以后再说";
+"s_CompleteDatum"       =   "完善信息";
+"s_ChangeSuccess"       =   "修改成功";
+"s_ChooseNumber"        =   "选号:";
+"s_add_money"           =   "余额充值";
+"s_add_money_to_person" =   "充值到个人账户";
+"s_SetUpNotification"   =   "通知设置";
+"s_current_pay"         =   "立即投注";
+"s_more"                               =   "更多";
+"s_passwordSetting"             =   "密码设置";
+"s_loginPasswordSetting"     =	"登录密码设置";
+"s_tradePasswordSetting"     =	"交易安全码设置";
+
+// FeedBack ------------------------------------------------------
+
+"s_FeedBackPrompt" = "您确定放弃编辑吗?";
+
+
+// ShoppingCart ------------------------------------------------------
+
+"s_GetMaxLimit"         = "已超过可购买数量";
+"s_unSelectProperty"    = "请您先选择商品对应的规格";
+
+// waitPay ------------------------------------------------------
+
+"s_noConsignee"         = "请填写收货人姓名";
+"s_unSelectProperty"    = "请您先选择商品对应的规格";
+
+// HomeDelivery ------------------------------------------------------
+
+"s_unSelectAddress"     = "请填写收货地址";
+"s_unSelectTimes"       = "请选择收货时间";
+"s_unSelectRule"        = "请阅读并同意配送协议";

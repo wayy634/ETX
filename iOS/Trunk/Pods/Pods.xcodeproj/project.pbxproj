@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		114BD91718DEB6994A58433C /* UMOpus.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F729C78B756C3C93D4829F9 /* UMOpus.h */; };
+		3A69F5EC877A12BFEA80C1BD /* libUMOpus.a in Sources */ = {isa = PBXBuildFile; fileRef = BBE8A405AFE7390168A88FDB /* libUMOpus.a */; };
+		3F55B01BE35EAEDC53395E1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ACB19A34445BDDFD6E2653 /* Foundation.framework */; };
+		5B3DACB38513BAC6D7811040 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAA8FC4520831831F033F3A /* Pods-dummy.m */; };
+		5D8EBF2BF28B40E495803C4E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7317C787EC79E74C1B7791E /* AVFoundation.framework */; };
+		67CE5DDBB416452DC59DF662 /* UMFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = 1659DCF85B93BB190E500696 /* UMFeedback.h */; };
+		E1BAF309B4A10471512C2D6D /* Pods-UMengFeedback-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBBB084E0A1E5439416563A /* Pods-UMengFeedback-dummy.m */; };
+		E45D7A42E09291E55C9FC802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ACB19A34445BDDFD6E2653 /* Foundation.framework */; };
+		E4A07D7BDFA6B297A84FD544 /* UMRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = F3FCCD3204C467887C7F718A /* UMRecorder.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B499B56BAECFA012ACCE5478 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 465498A1DB72347B18B1622F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A78D9D1669F558D0EEDB59AC;
+			remoteInfo = "Pods-UMengFeedback";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		030996BBCE5DBEC4F698D503 /* ToolViewInputTextHL@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputTextHL@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/ToolViewInputTextHL@2x.png"; sourceTree = "<group>"; };
+		040BB57F5FD98FF84EEBBF7F /* umeng_fb_audio_play_01@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_01@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/umeng_fb_audio_play_01@2x.png"; sourceTree = "<group>"; };
+		0FFBCCE57CAC0EF943409454 /* umeng_fb_audio_play_02@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_02@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/umeng_fb_audio_play_02@2x.png"; sourceTree = "<group>"; };
+		13D0ACCF3AD8F0BEEEB1D184 /* umeng_fb_audio_dialog_content@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_dialog_content@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/umeng_fb_audio_dialog_content@2x.png"; sourceTree = "<group>"; };
+		1659DCF85B93BB190E500696 /* UMFeedback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMFeedback.h; path = UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/UMFeedback.h; sourceTree = "<group>"; };
+		1EBFD38CE1193191011D4218 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D96089D9E658E2D998FF82 /* umeng_fb_audio_play_03@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_03@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/umeng_fb_audio_play_03@2x.png"; sourceTree = "<group>"; };
+		2E5B9D782A211FEA630F77AE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		36ABBD15ABAAF51F6B52FFA6 /* umeng_add_photo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_add_photo@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/umeng_add_photo@2x.png"; sourceTree = "<group>"; };
+		3A071048351A45569C96EA03 /* UMFeedbackLocalizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = UMFeedbackLocalizable.strings; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/zh-Hans.lproj/UMFeedbackLocalizable.strings"; sourceTree = "<group>"; };
+		3EBBB084E0A1E5439416563A /* Pods-UMengFeedback-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UMengFeedback-dummy.m"; sourceTree = "<group>"; };
+		48FAC3B390A04B1A004F6DCA /* cancel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cancel@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/cancel@2x.png"; sourceTree = "<group>"; };
+		53899E4CF63E14FD092008A3 /* Pods-UMengFeedback-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UMengFeedback-prefix.pch"; sourceTree = "<group>"; };
+		5A207C5E4A4EE5990D12A62D /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		5F729C78B756C3C93D4829F9 /* UMOpus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMOpus.h; path = UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/UMOpus/UMOpus.h; sourceTree = "<group>"; };
+		6070D0DCFE99B1C587640DFA /* Pods.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.distribution.xcconfig; sourceTree = "<group>"; };
+		61235DB84A2D9D7D26288A04 /* Pods-UMengFeedback.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMengFeedback.xcconfig"; sourceTree = "<group>"; };
+		65E8A5A3C533D90415EAD79E /* microphone@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "microphone@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/microphone@2x.png"; sourceTree = "<group>"; };
+		74E7F2A2807160B069DDA8A9 /* Pods-UMengFeedback-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMengFeedback-Private.xcconfig"; sourceTree = "<group>"; };
+		845469D68FF9221104867A5A /* ToolViewInputVoiceHL@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputVoiceHL@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/ToolViewInputVoiceHL@2x.png"; sourceTree = "<group>"; };
+		89FD1B1440401F3996289226 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		967E63A9B5E165C0E23A97E3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		9EAA8FC4520831831F033F3A /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		9F5BAB4043469AF6D58DD3A0 /* umeng_fb_audio_play_default@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_play_default@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/umeng_fb_audio_play_default@2x.png"; sourceTree = "<group>"; };
+		A93CC2A6F88B01DCBBA5B198 /* umeng_fb_audio_dialog_cancel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "umeng_fb_audio_dialog_cancel@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/umeng_fb_audio_dialog_cancel@2x.png"; sourceTree = "<group>"; };
+		B29AD172C12ABBB0C7963BB1 /* libPods-UMengFeedback.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UMengFeedback.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7317C787EC79E74C1B7791E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		B8EF926F42D2388CCAB07327 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BA3C823FCFB4214598EE9713 /* ToolViewInputVoice@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputVoice@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/ToolViewInputVoice@2x.png"; sourceTree = "<group>"; };
+		BBE8A405AFE7390168A88FDB /* libUMOpus.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libUMOpus.a; path = UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/UMOpus/libUMOpus.a; sourceTree = "<group>"; };
+		BCE1644C7C1AD0CB6E022148 /* ToolViewInputText@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ToolViewInputText@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/ToolViewInputText@2x.png"; sourceTree = "<group>"; };
+		BEE68150257CCA0EE2A27BCC /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		E3FEF5DC92BD892632B59C12 /* bubble_min@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bubble_min@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/bubble_min@2x.png"; sourceTree = "<group>"; };
+		E65647BC0E2575B00C38A1F8 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F03432E4950AC7AF755E67B2 /* save@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "save@2x.png"; path = "UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/Resources/save@2x.png"; sourceTree = "<group>"; };
+		F0ACB19A34445BDDFD6E2653 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F2970E88151C3CDE0F081404 /* MobClick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MobClick.h; path = umsdk_IOS_analytics_idfa_v3.5.8/UMAnalytics_Sdk_3.5.8/MobClick.h; sourceTree = "<group>"; };
+		F3FCCD3204C467887C7F718A /* UMRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UMRecorder.h; path = UMFeedback_iOS_2.2/UMengFeedback_SDK_2.2/UMRecorder.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27D82761BFEEDC5F38956A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8EBF2BF28B40E495803C4E /* AVFoundation.framework in Frameworks */,
+				3F55B01BE35EAEDC53395E1D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F445624EB63775F837BB5F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45D7A42E09291E55C9FC802 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		175F07982C67C9AC8EA7BC8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E65647BC0E2575B00C38A1F8 /* Pods-acknowledgements.markdown */,
+				BEE68150257CCA0EE2A27BCC /* Pods-acknowledgements.plist */,
+				9EAA8FC4520831831F033F3A /* Pods-dummy.m */,
+				5A207C5E4A4EE5990D12A62D /* Pods-environment.h */,
+				89FD1B1440401F3996289226 /* Pods-resources.sh */,
+				967E63A9B5E165C0E23A97E3 /* Pods.debug.xcconfig */,
+				6070D0DCFE99B1C587640DFA /* Pods.distribution.xcconfig */,
+				2E5B9D782A211FEA630F77AE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		3EE088A28026022E8E375C96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCE1644C7C1AD0CB6E022148 /* ToolViewInputText@2x.png */,
+				030996BBCE5DBEC4F698D503 /* ToolViewInputTextHL@2x.png */,
+				BA3C823FCFB4214598EE9713 /* ToolViewInputVoice@2x.png */,
+				845469D68FF9221104867A5A /* ToolViewInputVoiceHL@2x.png */,
+				3A071048351A45569C96EA03 /* UMFeedbackLocalizable.strings */,
+				E3FEF5DC92BD892632B59C12 /* bubble_min@2x.png */,
+				48FAC3B390A04B1A004F6DCA /* cancel@2x.png */,
+				65E8A5A3C533D90415EAD79E /* microphone@2x.png */,
+				F03432E4950AC7AF755E67B2 /* save@2x.png */,
+				36ABBD15ABAAF51F6B52FFA6 /* umeng_add_photo@2x.png */,
+				A93CC2A6F88B01DCBBA5B198 /* umeng_fb_audio_dialog_cancel@2x.png */,
+				13D0ACCF3AD8F0BEEEB1D184 /* umeng_fb_audio_dialog_content@2x.png */,
+				040BB57F5FD98FF84EEBBF7F /* umeng_fb_audio_play_01@2x.png */,
+				0FFBCCE57CAC0EF943409454 /* umeng_fb_audio_play_02@2x.png */,
+				23D96089D9E658E2D998FF82 /* umeng_fb_audio_play_03@2x.png */,
+				9F5BAB4043469AF6D58DD3A0 /* umeng_fb_audio_play_default@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5141892BE858A5807974578E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				61235DB84A2D9D7D26288A04 /* Pods-UMengFeedback.xcconfig */,
+				74E7F2A2807160B069DDA8A9 /* Pods-UMengFeedback-Private.xcconfig */,
+				3EBBB084E0A1E5439416563A /* Pods-UMengFeedback-dummy.m */,
+				53899E4CF63E14FD092008A3 /* Pods-UMengFeedback-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-UMengFeedback";
+			sourceTree = "<group>";
+		};
+		772C3FEA9393A64C6D088AF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EBFD38CE1193191011D4218 /* libPods.a */,
+				B29AD172C12ABBB0C7963BB1 /* libPods-UMengFeedback.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DC294748BC2228452B2DFEA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B7317C787EC79E74C1B7791E /* AVFoundation.framework */,
+				F0ACB19A34445BDDFD6E2653 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A82311BC7F5729B5B765D972 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DED676CFEC592E2667EA41C4 /* UMengAnalytics */,
+				EB1F43E38DF04E0255D4ED41 /* UMengFeedback */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA45D6AC8457979FC971D8F0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				175F07982C67C9AC8EA7BC8C /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AD83B794A731EF84FEBB6002 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DC294748BC2228452B2DFEA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3622CB758085B91C321D5B2 = {
+			isa = PBXGroup;
+			children = (
+				B8EF926F42D2388CCAB07327 /* Podfile */,
+				AD83B794A731EF84FEBB6002 /* Frameworks */,
+				A82311BC7F5729B5B765D972 /* Pods */,
+				772C3FEA9393A64C6D088AF2 /* Products */,
+				AA45D6AC8457979FC971D8F0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DED676CFEC592E2667EA41C4 /* UMengAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				F2970E88151C3CDE0F081404 /* MobClick.h */,
+			);
+			path = UMengAnalytics;
+			sourceTree = "<group>";
+		};
+		EB1F43E38DF04E0255D4ED41 /* UMengFeedback */ = {
+			isa = PBXGroup;
+			children = (
+				1659DCF85B93BB190E500696 /* UMFeedback.h */,
+				5F729C78B756C3C93D4829F9 /* UMOpus.h */,
+				F3FCCD3204C467887C7F718A /* UMRecorder.h */,
+				BBE8A405AFE7390168A88FDB /* libUMOpus.a */,
+				3EE088A28026022E8E375C96 /* Resources */,
+				5141892BE858A5807974578E /* Support Files */,
+			);
+			path = UMengFeedback;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4C8B66816E83F4583529F744 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67CE5DDBB416452DC59DF662 /* UMFeedback.h in Headers */,
+				114BD91718DEB6994A58433C /* UMOpus.h in Headers */,
+				E4A07D7BDFA6B297A84FD544 /* UMRecorder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A78D9D1669F558D0EEDB59AC /* Pods-UMengFeedback */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F2FE4419EF59EE5A7034A8D /* Build configuration list for PBXNativeTarget "Pods-UMengFeedback" */;
+			buildPhases = (
+				E8D7918D3C199E9FE501790A /* Sources */,
+				27D82761BFEEDC5F38956A6B /* Frameworks */,
+				4C8B66816E83F4583529F744 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-UMengFeedback";
+			productName = "Pods-UMengFeedback";
+			productReference = B29AD172C12ABBB0C7963BB1 /* libPods-UMengFeedback.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DD7AC218DAD35EFA7CE3BBC4 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 436633C7E3236FDF06405F35 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				1F116D1F6FE22A2B2B39E031 /* Sources */,
+				7F445624EB63775F837BB5F8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93B1F3E654619360EB389094 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 1EBFD38CE1193191011D4218 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		465498A1DB72347B18B1622F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 8663F127F10DDBCB70BA4E02 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B3622CB758085B91C321D5B2;
+			productRefGroup = 772C3FEA9393A64C6D088AF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD7AC218DAD35EFA7CE3BBC4 /* Pods */,
+				A78D9D1669F558D0EEDB59AC /* Pods-UMengFeedback */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F116D1F6FE22A2B2B39E031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B3DACB38513BAC6D7811040 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8D7918D3C199E9FE501790A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1BAF309B4A10471512C2D6D /* Pods-UMengFeedback-dummy.m in Sources */,
+				3A69F5EC877A12BFEA80C1BD /* libUMOpus.a in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93B1F3E654619360EB389094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-UMengFeedback";
+			target = A78D9D1669F558D0EEDB59AC /* Pods-UMengFeedback */;
+			targetProxy = B499B56BAECFA012ACCE5478 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B9D197111A44C27BFB20DEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74E7F2A2807160B069DDA8A9 /* Pods-UMengFeedback-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-UMengFeedback/Pods-UMengFeedback-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6ECB7D4322466D852EE49A94 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74E7F2A2807160B069DDA8A9 /* Pods-UMengFeedback-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-UMengFeedback/Pods-UMengFeedback-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Distribution;
+		};
+		7A9E006192E5B59E2D3292AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A04B46216C8C2CA3AD76AA40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74E7F2A2807160B069DDA8A9 /* Pods-UMengFeedback-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-UMengFeedback/Pods-UMengFeedback-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BE7FAFCA12B4FD1E5C05AF89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 967E63A9B5E165C0E23A97E3 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CD01BEEEF1E3DE06E90AA96C /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "DISTRIBUTION=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		DA6676EBBCC301D0580A39F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E5B9D782A211FEA630F77AE /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EBA933C2B42C56E0D051D1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F2C67B5D11512E5FF6297D00 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6070D0DCFE99B1C587640DFA /* Pods.distribution.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		436633C7E3236FDF06405F35 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE7FAFCA12B4FD1E5C05AF89 /* Debug */,
+				F2C67B5D11512E5FF6297D00 /* Distribution */,
+				DA6676EBBCC301D0580A39F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8663F127F10DDBCB70BA4E02 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBA933C2B42C56E0D051D1D1 /* Debug */,
+				CD01BEEEF1E3DE06E90AA96C /* Distribution */,
+				7A9E006192E5B59E2D3292AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F2FE4419EF59EE5A7034A8D /* Build configuration list for PBXNativeTarget "Pods-UMengFeedback" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B9D197111A44C27BFB20DEA /* Debug */,
+				6ECB7D4322466D852EE49A94 /* Distribution */,
+				A04B46216C8C2CA3AD76AA40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 465498A1DB72347B18B1622F /* Project object */;
+}

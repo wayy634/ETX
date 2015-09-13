@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2A1A88FD-0179-4644-AA92-7267416B4BFB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>XiaoMai</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>175cb7ce-f396-11e3-b192-f31c9dbecfd9++8597</key>
+		<string>svn://119.254.110.17/xiaomai/trunk/Mobile/Ios</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Trunk/XiaoMai.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>175cb7ce-f396-11e3-b192-f31c9dbecfd9++8597</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>175cb7ce-f396-11e3-b192-f31c9dbecfd9++8597</key>
+		<string>svn://119.254.110.17/xiaomai</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://119.254.110.17/xiaomai/trunk/Mobile/Ios/Trunk/XiaoMai.xcworkspace</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>175cb7ce-f396-11e3-b192-f31c9dbecfd9++8597</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>175cb7ce-f396-11e3-b192-f31c9dbecfd9++8597</string>
+			<key>IDESourceControlWCCName</key>
+			<string>XM_IOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

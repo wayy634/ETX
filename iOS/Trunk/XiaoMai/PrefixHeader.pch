@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  XiaoMai
+//
+//  Created by Jeanne on 15/5/4.
+//  Copyright (c) 2015年 Jeanne. All rights reserved.
+//
+
+#ifndef XiaoMai_PrefixHeader_pch
+#define XiaoMai_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "AppDelegate.h"
+#import "XMCacheManager.h"
+#import "LCImportModel.h"
+#import "LTools.h"
+#import "KCommon.h"
+#import "LAppConfig.h"
+#import "LCBaseViewController.h"
+#import "UIViewExt.h"
+#import "Toast+UIView.h"
+#import "LCCustomBaseVC.h"
+#import "LCUITools.h"
+#import "RKMappingResult.h"
+#import "XMThreadCountDownManager.h"
+#import "MobClick.h"
+#import "Toast+UIView.h"
+#import "XMThemeManager.h"
+#import "XMMainColor.h"
+#import "LCAnalysisManager.h"
+
+//application Tools
+#endif
