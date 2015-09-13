@@ -338,10 +338,6 @@
 		36DDF9B01B70939E00C4F866 /* XMCustomAlertV.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDF9AF1B70939E00C4F866 /* XMCustomAlertV.m */; };
 		36DEBF931B7B2DF4003B005E /* icon_addItems@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36DEBF921B7B2DF4003B005E /* icon_addItems@2x.png */; };
 		6A3ACE7660F59297239846EA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D2CBD95EF644A864FF0673 /* libPods.a */; };
-		93CA00781BA5BBFE007B85C8 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CA00711BA5BBFE007B85C8 /* MMDrawerBarButtonItem.m */; };
-		93CA00791BA5BBFE007B85C8 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CA00731BA5BBFE007B85C8 /* MMDrawerController.m */; };
-		93CA007A1BA5BBFE007B85C8 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CA00751BA5BBFE007B85C8 /* MMDrawerVisualState.m */; };
-		93CA007B1BA5BBFE007B85C8 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CA00771BA5BBFE007B85C8 /* UIViewController+MMDrawerController.m */; };
 		E7020A841B3A9A89007A97E8 /* XMSocialInfoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E7020A831B3A9A89007A97E8 /* XMSocialInfoConfiguration.m */; };
 		E72477151B4A329A0035E8C1 /* Icon_dashedLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E72477141B4A329A0035E8C1 /* Icon_dashedLine@2x.png */; };
 		E747B3341B8DC4E000BC5F8E /* icon_MyTicket_usred@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E747B3331B8DC4E000BC5F8E /* icon_MyTicket_usred@3x.png */; };
@@ -1005,14 +1001,6 @@
 		36DDF9AF1B70939E00C4F866 /* XMCustomAlertV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCustomAlertV.m; sourceTree = "<group>"; };
 		36DEBF921B7B2DF4003B005E /* icon_addItems@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_addItems@2x.png"; sourceTree = "<group>"; };
 		8DF3614EE756761F29253E3B /* Pods.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.distribution.xcconfig; path = "Pods/Target Support Files/Pods/Pods.distribution.xcconfig"; sourceTree = "<group>"; };
-		93CA00701BA5BBFE007B85C8 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
-		93CA00711BA5BBFE007B85C8 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
-		93CA00721BA5BBFE007B85C8 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
-		93CA00731BA5BBFE007B85C8 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
-		93CA00741BA5BBFE007B85C8 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
-		93CA00751BA5BBFE007B85C8 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
-		93CA00761BA5BBFE007B85C8 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
-		93CA00771BA5BBFE007B85C8 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		B1D2CBD95EF644A864FF0673 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4366E0CB817429582C824B3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E7020A821B3A9A89007A97E8 /* XMSocialInfoConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSocialInfoConfiguration.h; sourceTree = "<group>"; };
@@ -1492,7 +1480,6 @@
 		3654B9521AF74C9D000FEB61 /* XM_ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				93CA006F1BA5BBFE007B85C8 /* MMDrawerController */,
 				E7C7C55B1B68C4FA00461DAF /* MBProgressHUD */,
 				363047001B660DD4001049BB /* AliSDK */,
 				363047551B660DD4001049BB /* WeChatSDK */,
@@ -2335,21 +2322,6 @@
 			path = service;
 			sourceTree = "<group>";
 		};
-		93CA006F1BA5BBFE007B85C8 /* MMDrawerController */ = {
-			isa = PBXGroup;
-			children = (
-				93CA00701BA5BBFE007B85C8 /* MMDrawerBarButtonItem.h */,
-				93CA00711BA5BBFE007B85C8 /* MMDrawerBarButtonItem.m */,
-				93CA00721BA5BBFE007B85C8 /* MMDrawerController.h */,
-				93CA00731BA5BBFE007B85C8 /* MMDrawerController.m */,
-				93CA00741BA5BBFE007B85C8 /* MMDrawerVisualState.h */,
-				93CA00751BA5BBFE007B85C8 /* MMDrawerVisualState.m */,
-				93CA00761BA5BBFE007B85C8 /* UIViewController+MMDrawerController.h */,
-				93CA00771BA5BBFE007B85C8 /* UIViewController+MMDrawerController.m */,
-			);
-			path = MMDrawerController;
-			sourceTree = "<group>";
-		};
 		D1B4D59F8FDE0127FBACA284 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -2901,7 +2873,6 @@
 				E7B5A0271B953FEB00627708 /* XMPushManager.m in Sources */,
 				367BDB931AFB4BF20026EAB1 /* TKCalendarMonthView.m in Sources */,
 				367BDBE31AFCC9C60026EAB1 /* SDWebImageDownloaderOperation.m in Sources */,
-				93CA007B1BA5BBFE007B85C8 /* UIViewController+MMDrawerController.m in Sources */,
 				36B5F2251B00BB4400306804 /* XMBottomMenuV.m in Sources */,
 				3654BDF41AF7523F000FEB61 /* UIViewExt.m in Sources */,
 				367BDBA71AFB4BF20026EAB1 /* NSAttributedString+Attributes.m in Sources */,
@@ -2942,7 +2913,6 @@
 				E7B5583D1B7DF1C600B5F50E /* DataSigner.m in Sources */,
 				3654BDDE1AF74F83000FEB61 /* ASIHTTPRequest.m in Sources */,
 				365207781B0EDDBE00287003 /* PickerAnimationVC.m in Sources */,
-				93CA00781BA5BBFE007B85C8 /* MMDrawerBarButtonItem.m in Sources */,
 				367BDBA51AFB4BF20026EAB1 /* LCSwitch.m in Sources */,
 				367BDB9F1AFB4BF20026EAB1 /* LCCustomBaseVC.m in Sources */,
 				E7B558431B7DF1C600B5F50E /* RSADataVerifier.m in Sources */,
@@ -3019,9 +2989,7 @@
 				367BDB921AFB4BF20026EAB1 /* TKCalendarMonthTableViewController.m in Sources */,
 				3654B9351AF74BD5000FEB61 /* UIView+CSAddition.m in Sources */,
 				3654B9AD1AF74C9D000FEB61 /* Toast+UIView.m in Sources */,
-				93CA00791BA5BBFE007B85C8 /* MMDrawerController.m in Sources */,
 				E7A027B01B411586001C0156 /* XMCacheManager.m in Sources */,
-				93CA007A1BA5BBFE007B85C8 /* MMDrawerVisualState.m in Sources */,
 				E7B558421B7DF1C600B5F50E /* RSADataSigner.m in Sources */,
 				3601DAAC1B4A672600A92622 /* MMProgressHUDViewController.m in Sources */,
 				3654B8BF1AF73CC5000FEB61 /* main.m in Sources */,
