@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="gary_line">#ffcccccc</color>
+    <color name="tabBackground">#ff333333</color>
+    <color name="tabTitleDefault">#ff848484</color>
+    <color name="tabTitlePressed">#ffad5ca0</color>
+    <color name="dynamicTextPressed">#ffff0000</color>
+    <color name="dynamicTextNormal">#ff666666</color>
+    <color name="dynamicLineColor">#ffcccccc</color>
+    <color name="dynamicScoreClolor">#fffa6b5b</color>
+    <color name="dynamicDateColor">#ff9b9b9b</color>
+    <color name="dynamicHLineColor">#ffe5e5e5</color>
+    <color name="B3B3B3">#ffb3b3b3</color>
+    <color name="EEEEEE">#ffeeeeee</color>
+    <color name="F0F0F0">#F0F0F0</color>
+    <color name="alpha">#EEFFFFFF</color>
+    <color name="E0DEDA">#E0DEDA</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+
+</resources>

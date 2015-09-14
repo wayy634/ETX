@@ -2,6 +2,5 @@
 <resources>
 
     <string name="app_name">EpassAndroid</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="ExitHint">再按一次退出应用</string>
 </resources>
