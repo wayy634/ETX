@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "XMBottomMenuV.h"
-#import "UMFeedback.h"
 #import "XMSocialInfoConfiguration.h"
 #import "XMPayManager.h"
 #import "UIAlertView+Block.h"
@@ -54,15 +53,15 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     self.mWindow.rootViewController = self.mNavigationController;
     [self.mWindow makeKeyAndVisible];
-    DDMenuController *mainVC = [[DDMenuController alloc] init];
+    self.mDDMenu = [[DDMenuController alloc] init];
     EPLeftVC *leftVC = [[EPLeftVC alloc]init];
     EPCenterVC *centerVC = [[EPCenterVC alloc]init];
     self.mNavigationController = [[UINavigationController alloc] initWithRootViewController:centerVC];
     [self.mNavigationController setNavigationBarHidden:YES];
     [self.mNavigationController.view setBackgroundColor:[UIColor whiteColor]];
-    mainVC.leftViewController = leftVC;
-    mainVC.rootViewController = self.mNavigationController;
-    self.mWindow.rootViewController = mainVC;
+    self.mDDMenu.leftViewController = leftVC;
+    self.mDDMenu.rootViewController = self.mNavigationController;
+    self.mWindow.rootViewController = self.mDDMenu;
     // push--------------------------
 //    if ([[UIApplication sharedApplication] respondsToSelector:@selector(registerUserNotificationSettings:)]) {
 //        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert categories:nil];
@@ -139,23 +138,6 @@
     }
     return YES;
 }
-
-- (void)initData {
-    [UMFeedback setAppkey:K_UMENG_IOS_KEY];
-    [UMSocialData setAppKey:K_UMENG_IOS_KEY];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"sourceid" ofType:@"txt"];
-    NSParameterAssert(path != nil);
-    NSString *temp = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:NULL];
-    [[LTools getAppData] removeAllObjects];
-    [[LTools getAppData] addObjectsFromArray:[temp componentsSeparatedByString:@"_"]];
-    [self setupUMengConfiguration];
-}
-
-- (void)setupUMengConfiguration {
-    [MobClick setAppVersion:K_CLIENT_VERSION];
-    [MobClick startWithAppkey:K_UMENG_IOS_KEY reportPolicy:REALTIME channelId:K_NAME_CHNANEL];
-}
-
 
 
 
