@@ -103,6 +103,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     id object = [self getRootVCbyType:indexPath.row+1];
+    [APP_DELEGATE.mNavigationController setViewControllers:nil];
     [APP_DELEGATE.mNavigationController initWithRootViewController:object];
     [APP_DELEGATE.mDDMenu showRootController:YES];
     object = nil;
