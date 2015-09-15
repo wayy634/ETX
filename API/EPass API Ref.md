@@ -46,7 +46,7 @@ code;
 
 名称：忘记密码 （POST）
 URL：userForgetPwd?token=(var/null)&deviceid=(var)&mobile=(int)&code(int)&newpwd=(var)
-[DEMO URL](http://123.56.91.111:8080/epass/userForgetPwd?mobile=17710171716&token=&checkcode=5182&password=99999)
+[DEMO URL](http://123.56.91.111:8080/epass/userUpdateProfile?token=id-1@n-150910092610@u-49e0469d3cdf40899a4051bfda905dd0&nickname=hz&realname=%E4%BA%8C%E9%A5%BC&deviceid=)
 参数：
 token:(var/null)
 deviceid:(var)
