@@ -18,7 +18,7 @@
     [url appendFormat:@"%@/epass/userLogin", K_URL_HOST];
     
     NSMutableDictionary *params = [[[NSMutableDictionary alloc] init] autorelease];
-    [params setObject:phone_ forKey:@"phone"];
+    [params setObject:[NSNumber numberWithInt:[phone_ intValue]] forKey:@"mobile"];
     [params setObject:password_ forKey:@"password"];
     
     [params setObject:@"" forKey:@"token"];

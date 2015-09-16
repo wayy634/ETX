@@ -7,7 +7,6 @@
 //
 
 #import "EPDeviceVC.h"
-#import "UserEPConnectionFuction.h"
 
 @interface EPDeviceVC ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -85,30 +84,9 @@
         NSLog(@"rule");
     }else if (button_.tag == 1) {
         NSLog(@"add");
-        [UserEPConnectionFuction userLogin_Phone:@"18500212113" password:@"12345678" delegate:self allowCancel:YES finishSelector:@selector(requestInfoFinsh:) failSelector:@selector(requestFailed:) timeOutSelector:@selector(requestTimeOut:)];
     }
     
 }
 
-
-//获取用户信息成功
-- (void)requestInfoFinsh:(RKMappingResult *)data_ {
-    [LTools hideLoadingVOnTargetView:APP_DELEGATE.mWindow animation:YES];
-    LCAPIResult *result = data_.firstObject;
-    if ([LTools isAPIJsonError:result]) {
-        [APP_DELEGATE.mWindow makeToast:result.msg duration:2.0 position:@"custom"];
-        return;
-    }
-    
-}
-- (void)requestFailed:(NSError *)error_ {
-    [LTools hideLoadingVOnTargetView:APP_DELEGATE.mWindow animation:YES];
-    [APP_DELEGATE.mWindow makeToast:@"网络连接失败" duration:2.0 position:@"custom"];
-}
-
-- (void)requestTimeOut:(NSError *)error_ {
-    [LTools hideLoadingVOnTargetView:APP_DELEGATE.mWindow animation:YES];
-    [APP_DELEGATE.mWindow makeToast:@"网络连接超时" duration:2.0 position:@"custom"];
-}
 
 @end

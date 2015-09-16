@@ -34,6 +34,13 @@
 
 @implementation EPLeftVC
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+#warning 判断登陆状态------
+    
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     //创建用户信息
@@ -77,7 +84,11 @@
 #pragma mark-----buttonActoin---------
 
 - (void)buttonPress:(UIButton *)button_ {
-    NSLog(@"into  accountcenter");
+    id object = [self getRootVCbyType:0];
+    [APP_DELEGATE.mNavigationController setViewControllers:nil];
+    [APP_DELEGATE.mNavigationController initWithRootViewController:object];
+    [APP_DELEGATE.mDDMenu showRootController:YES];
+    object = nil;
 }
 #pragma mark --
 #pragma mark - UITableViewDataSource & UITableViewDelegate
