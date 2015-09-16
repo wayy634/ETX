@@ -53,6 +53,7 @@
 		E72C1CB71BA93EC900B51F9B /* EPSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E72C1CAE1BA93EC900B51F9B /* EPSettingVC.m */; };
 		E72C1CB81BA93EC900B51F9B /* EPTodayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E72C1CB11BA93EC900B51F9B /* EPTodayVC.m */; };
 		E72C1CBB1BA9425A00B51F9B /* icon_device_add.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */; };
+		E72C1CBE1BA9481800B51F9B /* btn_nav_back.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */; };
 		E75B0F431BA5AF52009BDDF0 /* LCUIView+ClickOnTheState.m in Sources */ = {isa = PBXBuildFile; fileRef = E75B0D091BA5AF51009BDDF0 /* LCUIView+ClickOnTheState.m */; };
 		E75B0F441BA5AF52009BDDF0 /* NSArray+LCAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E75B0D0B1BA5AF51009BDDF0 /* NSArray+LCAddition.m */; };
 		E75B0F451BA5AF52009BDDF0 /* NSDictionary+LCAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E75B0D0D1BA5AF51009BDDF0 /* NSDictionary+LCAddition.m */; };
@@ -358,6 +359,7 @@
 		E72C1CB01BA93EC900B51F9B /* EPTodayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPTodayVC.h; sourceTree = "<group>"; };
 		E72C1CB11BA93EC900B51F9B /* EPTodayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPTodayVC.m; sourceTree = "<group>"; };
 		E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_device_add.pdf; sourceTree = "<group>"; };
+		E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = btn_nav_back.pdf; sourceTree = "<group>"; };
 		E75B0D081BA5AF51009BDDF0 /* LCUIView+ClickOnTheState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LCUIView+ClickOnTheState.h"; sourceTree = "<group>"; };
 		E75B0D091BA5AF51009BDDF0 /* LCUIView+ClickOnTheState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LCUIView+ClickOnTheState.m"; sourceTree = "<group>"; };
 		E75B0D0A1BA5AF51009BDDF0 /* NSArray+LCAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LCAddition.h"; sourceTree = "<group>"; };
@@ -1107,6 +1109,14 @@
 				E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */,
 			);
 			path = EP_Device;
+			sourceTree = "<group>";
+		};
+		E72C1CBC1BA9481800B51F9B /* EP_Common */ = {
+			isa = PBXGroup;
+			children = (
+				E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */,
+			);
+			path = EP_Common;
 			sourceTree = "<group>";
 		};
 		E75B0CFE1BA5AF51009BDDF0 /* EPClass */ = {
@@ -2159,6 +2169,7 @@
 		E77221D61BA6D0BF006E480E /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				E72C1CBC1BA9481800B51F9B /* EP_Common */,
 				E72C1CB91BA9425A00B51F9B /* EP_Device */,
 				E77221D71BA6D228006E480E /* EPLeft_menu */,
 			);
@@ -2381,6 +2392,7 @@
 				E75B0FAF1BA5AF52009BDDF0 /* UMSocialDoubanData.html in Resources */,
 				E75B0FB41BA5AF52009BDDF0 /* UMSocialInstagramData.html in Resources */,
 				E75B0F9D1BA5AF52009BDDF0 /* UMSCommentInputController.xib in Resources */,
+				E72C1CBE1BA9481800B51F9B /* btn_nav_back.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

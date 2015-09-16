@@ -52,9 +52,6 @@ typedef NS_ENUM(NSInteger, BottomAnimationType) {
 //重设title控件 父类默认把传进来的view对象添加在title位置
 - (void)reSetCustomTitle:(UIView *)_customView;
 
-//底部bottom动画
-- (void)animationBottomAnimation:(BottomAnimationType)_type completion:(void (^)(BOOL finished))completion;
-
 //后退
 - (void)backButtonPressed;
 
