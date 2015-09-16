@@ -44,6 +44,9 @@
 		3654BE3B1AF75F52000FEB61 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3654BE3A1AF75F52000FEB61 /* libz.1.dylib */; };
 		36698F9B1B1C683C0050771E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36698F9A1B1C683C0050771E /* Localizable.strings */; };
 		36DD26261B8AC7BE00469CDC /* sourceid.txt in Resources */ = {isa = PBXBuildFile; fileRef = 36DD26251B8AC7BE00469CDC /* sourceid.txt */; };
+		CB0054871BA9C189002A43B5 /* view_today_top_background.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0054841BA9C189002A43B5 /* view_today_top_background.png */; };
+		CB0054881BA9C189002A43B5 /* icon_charge_alipay.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB0054851BA9C189002A43B5 /* icon_charge_alipay.pdf */; };
+		CB0054891BA9C189002A43B5 /* icon_charge_upcash.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB0054861BA9C189002A43B5 /* icon_charge_upcash.pdf */; };
 		E72C1C9B1BA90A6300B51F9B /* EPLeftMnuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E72C1C9A1BA90A6300B51F9B /* EPLeftMnuCell.m */; };
 		E72C1CB21BA93EC900B51F9B /* EPAccountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E72C1C9F1BA93EC900B51F9B /* EPAccountVC.m */; };
 		E72C1CB31BA93EC900B51F9B /* EPBindingDeviceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E72C1CA21BA93EC900B51F9B /* EPBindingDeviceVC.m */; };
@@ -345,6 +348,9 @@
 		3654BE3A1AF75F52000FEB61 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = usr/lib/libz.1.dylib; sourceTree = SDKROOT; };
 		36698F9A1B1C683C0050771E /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		36DD26251B8AC7BE00469CDC /* sourceid.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sourceid.txt; sourceTree = "<group>"; };
+		CB0054841BA9C189002A43B5 /* view_today_top_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = view_today_top_background.png; path = EP_Charge/view_today_top_background.png; sourceTree = "<group>"; };
+		CB0054851BA9C189002A43B5 /* icon_charge_alipay.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = icon_charge_alipay.pdf; path = EP_Charge/icon_charge_alipay.pdf; sourceTree = "<group>"; };
+		CB0054861BA9C189002A43B5 /* icon_charge_upcash.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = icon_charge_upcash.pdf; path = EP_Charge/icon_charge_upcash.pdf; sourceTree = "<group>"; };
 		E72C1C991BA90A6300B51F9B /* EPLeftMnuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPLeftMnuCell.h; sourceTree = "<group>"; };
 		E72C1C9A1BA90A6300B51F9B /* EPLeftMnuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPLeftMnuCell.m; sourceTree = "<group>"; };
 		E72C1C9E1BA93EC900B51F9B /* EPAccountVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPAccountVC.h; sourceTree = "<group>"; };
@@ -1038,6 +1044,16 @@
 				36698F9A1B1C683C0050771E /* Localizable.strings */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		CB0054831BA9C112002A43B5 /* EP_Charge */ = {
+			isa = PBXGroup;
+			children = (
+				CB0054841BA9C189002A43B5 /* view_today_top_background.png */,
+				CB0054851BA9C189002A43B5 /* icon_charge_alipay.pdf */,
+				CB0054861BA9C189002A43B5 /* icon_charge_upcash.pdf */,
+			);
+			name = EP_Charge;
 			sourceTree = "<group>";
 		};
 		E72C1C9C1BA90A6800B51F9B /* views */ = {
@@ -2190,6 +2206,7 @@
 		E77221D61BA6D0BF006E480E /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				CB0054831BA9C112002A43B5 /* EP_Charge */,
 				E72C1CBC1BA9481800B51F9B /* EP_Common */,
 				E72C1CB91BA9425A00B51F9B /* EP_Device */,
 				E77221D71BA6D228006E480E /* EPLeft_menu */,
@@ -2292,7 +2309,7 @@
 				TargetAttributes = {
 					3654B8B81AF73CC5000FEB61 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 7Y63VHFW52;
+						DevelopmentTeam = V4CW6R2GE8;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 0;
@@ -2361,6 +2378,7 @@
 				E77221DF1BA6D228006E480E /* bg_leftmenu@2x.png in Resources */,
 				E75B0FD01BA5AF52009BDDF0 /* title_background.png in Resources */,
 				E75B0FA41BA5AF52009BDDF0 /* UMSocialSDKResourcesNew.bundle in Resources */,
+				CB0054871BA9C189002A43B5 /* view_today_top_background.png in Resources */,
 				E75B10181BA5AF52009BDDF0 /* LCNumKeyboard_Del@2x.png in Resources */,
 				E75B0FA71BA5AF52009BDDF0 /* UMSocialBar.html in Resources */,
 				E75B0FCC1BA5AF52009BDDF0 /* class_grath.png in Resources */,
@@ -2387,6 +2405,7 @@
 				36DD26261B8AC7BE00469CDC /* sourceid.txt in Resources */,
 				E75B0FDC1BA5AF52009BDDF0 /* ios-social-sdk-comment-quick.html in Resources */,
 				E75B0FB61BA5AF52009BDDF0 /* UMSocialLWTimelineData.html in Resources */,
+				CB0054891BA9C189002A43B5 /* icon_charge_upcash.pdf in Resources */,
 				E75B0F9E1BA5AF52009BDDF0 /* UMSCommentInputControlleriPad.xib in Resources */,
 				E75B0FB21BA5AF52009BDDF0 /* UMSocialFacebookData.html in Resources */,
 				E75B101B1BA5AF52009BDDF0 /* LCNumKeyboard_White.png in Resources */,
@@ -2406,6 +2425,7 @@
 				E75B101A1BA5AF52009BDDF0 /* LCNumKeyboard_Gray@2x.png in Resources */,
 				E75B0FA11BA5AF52009BDDF0 /* UMSLoginViewController.xib in Resources */,
 				E75B0FDB1BA5AF52009BDDF0 /* ios-social-sdk-comment-detail.html in Resources */,
+				CB0054881BA9C189002A43B5 /* icon_charge_alipay.pdf in Resources */,
 				E75B0FA81BA5AF52009BDDF0 /* UMSocialButton.html in Resources */,
 				E77221E31BA6D228006E480E /* icon_sidemenu_mydevice.pdf in Resources */,
 				E75B0FAB1BA5AF52009BDDF0 /* UMSocialControllerServiceComment.html in Resources */,
@@ -2688,8 +2708,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Qingchi Xie (56SWX85A56)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Qingchi Xie (56SWX85A56)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lei Kong (M2TC65GZQD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EPClass/XM_ThirdParty/umeng_ios_social_sdk_4.2.2_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -2722,8 +2742,9 @@
 					"$(PROJECT_DIR)/EPASS-APP-iOS/EPClass/XM_ThirdParty/umeng_ios_social_sdk_4.2.2_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 					"$(PROJECT_DIR)/EPASS-APP-iOS/EPClass/XM_ThirdParty/WeChatSDK",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "JESSIERAY.CN.EPASS-APP-iOS";
 				PRODUCT_NAME = "EPASS-APP-iOS";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "3021b67e-f016-4045-9b92-88c04f7e5195";
 			};
 			name = Debug;
 		};
@@ -2733,8 +2754,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Qingchi Xie (56SWX85A56)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Qingchi Xie (56SWX85A56)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EPClass/XM_ThirdParty/umeng_ios_social_sdk_4.2.2_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -2767,6 +2788,7 @@
 					"$(PROJECT_DIR)/EPASS-APP-iOS/EPClass/XM_ThirdParty/umeng_ios_social_sdk_4.2.2_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 					"$(PROJECT_DIR)/EPASS-APP-iOS/EPClass/XM_ThirdParty/WeChatSDK",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "JESSIERAY.CN.EPASS-APP-iOS";
 				PRODUCT_NAME = "EPASS-APP-iOS";
 				PROVISIONING_PROFILE = "";
 			};
@@ -2815,8 +2837,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: MaxCan Culture Media (Beijing) Co.,Ltd. (LX6ZJWW6PV)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MaxCan Culture Media (Beijing) Co.,Ltd. (LX6ZJWW6PV)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: RayShon Co., Ltd.";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EPClass/XM_ThirdParty/umeng_ios_social_sdk_4.2.2_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -2849,8 +2871,9 @@
 					"$(PROJECT_DIR)/EPASS-APP-iOS/EPClass/XM_ThirdParty/umeng_ios_social_sdk_4.2.2_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
 					"$(PROJECT_DIR)/EPASS-APP-iOS/EPClass/XM_ThirdParty/WeChatSDK",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "JESSIERAY.CN.EPASS-APP-iOS";
 				PRODUCT_NAME = "EPASS-APP-iOS";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "2a69cac4-5792-46f9-b9eb-136aba0b3689";
 			};
 			name = Distribution;
 		};

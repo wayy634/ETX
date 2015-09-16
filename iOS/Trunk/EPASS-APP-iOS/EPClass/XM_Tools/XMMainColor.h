@@ -17,3 +17,10 @@
 //LDC/RDC
 #define  K_COLOR_LDC                [LTools colorWithHexString:@"0090ff"]
 #define  K_COLOR_RDC                [LTools colorWithHexString:@"4da505"]
+
+
+//Global Color
+#define  K_COLOR_DARK_TEXT          [LTools colorWithHexString:@"231f20"]
+#define  K_COLOR_LIGHT_TEXT         [LTools colorWithHexString:@"a1a3a6"]
+#define  K_COLOR_ORANGE_TEXT        [LTools colorWithHexString:@"ff5621"]
+#define  K_COLOR_WHITE_TEXT         [LTools colorWithHexString:@"ffffff"]
