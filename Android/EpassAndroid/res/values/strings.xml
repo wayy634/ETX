@@ -3,4 +3,14 @@
 
     <string name="app_name">EpassAndroid</string>
     <string name="ExitHint">再按一次退出应用</string>
+    <string name="launchScreen_copyright">COPYRIGHT @2015 JESSIERAY.CN</string>
+    <string name="phone_number">手机号</string>
+    <string name="auth_code">验证码</string>
+    <string name="send_auth_code">发送验证码</string>
+    <string name="password">密　码</string>
+    <string name="tos">EPASS APP服务协议</string>
+    <string name="regist">注册</string>
+    <string name="login">登录</string>
+    <string name="already_have_account">已有账户? 登录</string>
+    <string name="enter_regist">没有账户？前往注册</string>
 </resources>

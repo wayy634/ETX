@@ -35,27 +35,23 @@ public class BaseFragment extends Fragment implements HeadViewBtnOnClickListener
 	public void onActivityCreated(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
-		Tools.Log("=========onActivityCreated============"+this.getClass().getName());
 	}
 
 	@Override
 	public void onAttach(Activity activity) {
 		// TODO Auto-generated method stub
 		super.onAttach(activity);
-		Tools.Log("=========onAttach============"+this.getClass().getName());
 	}
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		Tools.Log("=========onCreate============"+this.getClass().getName());
 	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		Tools.Log("=========onCreateView============"+this.getClass().getName());
 		if(rootView == null) {
 			rootView = InjectProcessor.injectFragmentLayout(this,inflater, container);
 			InjectProcessor.injectFragment(this, rootView);
@@ -89,49 +85,42 @@ public class BaseFragment extends Fragment implements HeadViewBtnOnClickListener
 	public void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-		Tools.Log("=========onDestroy============"+this.getClass().getName());
 	}
 
 	@Override
 	public void onDestroyView() {
 		// TODO Auto-generated method stub
 		super.onDestroyView();
-		Tools.Log("=========onDestroyView============"+this.getClass().getName());
 	}
 
 	@Override
 	public void onDetach() {
 		// TODO Auto-generated method stub
 		super.onDetach();
-		Tools.Log("=========onDetach============"+this.getClass().getName());
 	}
 
 	@Override
 	public void onPause() {
 		// TODO Auto-generated method stub
 		super.onPause();
-		Tools.Log("=========onPause============"+this.getClass().getName());
 	}
 
 	@Override
 	public void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
-		Tools.Log("=========onResume============"+this.getClass().getName());
 	}
 
 	@Override
 	public void onStart() {
 		// TODO Auto-generated method stub
 		super.onStart();
-		Tools.Log("=========onStart============"+this.getClass().getName());
 	}
 
 	@Override
 	public void onStop() {
 		// TODO Auto-generated method stub
 		super.onStop();
-		Tools.Log("=========onStop============"+this.getClass().getName());
 	}
 
 	@Override

@@ -18,6 +18,12 @@ import com.jessieray.epass.R;
 import com.jessieray.epass.config.AppConfig;
 import com.jessieray.epass.core.BaseFragment;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.AlertDialog.Builder;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnCancelListener;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -33,6 +39,15 @@ import android.view.animation.TranslateAnimation;
 import android.widget.Toast;
 
 public class Tools {
+	
+	/**
+	 * 创建Alert框
+	 */
+	private static AlertDialog.Builder builder;
+	/**
+	 * 提示框
+	 */
+	public static Dialog dialog;
 	
 	/**
 	 * toast提示信息
@@ -63,7 +78,6 @@ public class Tools {
 			FragmentTransaction transaction = AppConfig.fragmentManager.beginTransaction();
 			transaction.add(R.id.viewContainer, curScreen);
 			transaction.addToBackStack(baseFragment.getName());
-			Tools.toastShow(baseFragment.getName());
 			transaction.commit();
 			if(AppConfig.fragmentManager.getBackStackEntryCount() == 0) {
 				AppConfig.CurrentRootScreenName = baseFragment.getName();
@@ -396,4 +410,170 @@ public class Tools {
         final float scale = resources.getDisplayMetrics().scaledDensity;
         return sp * scale;
     }
+    
+    /**
+     * 获取资源字符串
+     * @param id
+     * @return
+     */
+    public static String getResourceString(int id) {
+    	if(AppConfig.mainActivity != null) {
+    		return AppConfig.mainActivity.getResources().getString(id);
+    	}
+    	return null;
+    }
+    
+    /**
+     * 获取资源颜色
+     * @param id
+     * @return
+     */
+    public static int getResourceColor(int id) {
+    	if(AppConfig.mainActivity != null) {
+    		return AppConfig.mainActivity.getResources().getColor(id);
+    	}
+    	return -1;
+    }
+    
+    /**
+     * 获取资源尺寸
+     * @param id
+     * @return
+     */
+    public static float getResourceDime(int id) {
+    	if(AppConfig.mainActivity != null) {
+    		return AppConfig.mainActivity.getResources().getDimension(id);
+    	}
+    	return 0f;
+    }
+    
+	/**
+	 * 显示带2个button的对话框
+	 * @param title 标题
+	 * @param msg 内容
+	 * @param leftName 左按钮名称
+	 * @param rightName 右按钮名称
+	 * @param leftListener 左按钮事件
+	 * @param rightListener 右按钮事件
+	 */
+	public static void showAlertDialog(String title,String msg,
+			String leftName,String rightName,DialogInterface.OnClickListener leftListener,
+			DialogInterface.OnClickListener rightListener){
+		builder = null;
+		builder = new Builder(AppConfig.context);
+		builder.setMessage(msg);
+		builder.setTitle(title);
+		builder.setPositiveButton(leftName, leftListener);
+		builder.setNegativeButton(rightName, rightListener);
+		final DialogInterface.OnClickListener cancelListener = leftListener;
+		if(cancelListener != null) {
+			builder.setOnCancelListener(new OnCancelListener() {
+					
+				@SuppressWarnings("static-access")
+				public void onCancel(DialogInterface dialog) {
+					cancelListener.onClick(dialog, dialog.BUTTON_NEGATIVE);
+				}
+			});
+		}
+		if (dialog != null){
+			try{
+				dialog.dismiss();
+			}catch(Exception e){}
+		}
+
+		dialog = builder.create();
+		dialog.show();
+		dialog.setCanceledOnTouchOutside(false);
+	}
+	
+	/**
+	 * 显示带2个button的对话框
+	 * @param title 标题
+	 * @param msg 内容
+	 * @param leftName 左按钮名称
+	 * @param rightName 右按钮名称
+	 * @param leftListener 左按钮事件
+	 * @param rightListener 右按钮事件
+	 */
+	public static void showAlertDialogRightCancel(String title,String msg,
+			String leftName,String rightName,DialogInterface.OnClickListener leftListener,
+			DialogInterface.OnClickListener rightListener){
+		builder = null;
+		builder = new Builder(AppConfig.context);
+		builder.setMessage(msg);
+		builder.setTitle(title);
+		builder.setPositiveButton(leftName, leftListener);
+		builder.setNegativeButton(rightName, rightListener);
+		final DialogInterface.OnClickListener cancelListener = rightListener;
+		if(cancelListener != null) {
+			builder.setOnCancelListener(new OnCancelListener() {
+					
+				@SuppressWarnings("static-access")
+				public void onCancel(DialogInterface dialog) {
+					cancelListener.onClick(dialog, dialog.BUTTON_NEGATIVE);
+				}
+			});
+		}
+		if (dialog != null){
+			try{
+				dialog.dismiss();
+			}catch(Exception e){}
+		}
+
+		dialog = builder.create();
+		dialog.show();
+		dialog.setCanceledOnTouchOutside(false);
+	}
+	
+	/**
+	 * 只设定提示内容的对话框
+	 * @param msg
+	 */
+	public static void showAlertDialog(String msg){
+		showAlertDialog("提示",msg,"确定",null,null);
+	}
+	
+	/**
+	 * 可以设定标题和内容的对话框
+	 * @param title
+	 * @param msg
+	 */
+	public static void showAlertDialog(String title,String msg){
+		showAlertDialog(title,msg,"确定",null,null);
+	}
+	
+	/**
+	 * 可以设定一个按钮事件的对话框
+	 * @param msg 显示的内容
+	 * @param btnName 按钮名称
+	 * @param callback
+	 */
+	public static void showAlertDialog(String msg,String btnName,DialogInterface.OnClickListener btnOnclickListener){
+		showAlertDialog("提示",msg,null,btnName,null,btnOnclickListener);
+	}
+	
+	/**
+	 * 显示带一个按钮并且可以设定cancel事件的对话框
+	 * @param title 标题
+	 * @param msg 内容
+	 * @param leftName 按钮名称
+	 * @param leftListener 按钮事件
+	 * @param cancelListener 取消事件
+	 */
+	public static void showAlertDialog(String title,String msg,
+			String leftName,DialogInterface.OnClickListener leftListener,
+			DialogInterface.OnCancelListener cancelListener){
+		builder = null;
+		builder = new Builder(AppConfig.context);
+		builder.setMessage(msg);
+		builder.setTitle(title);
+		builder.setPositiveButton(leftName, leftListener);
+		builder.setNegativeButton(null, null);
+		builder.setOnCancelListener(cancelListener);
+		
+		if (dialog != null)
+			dialog.dismiss();
+		dialog = builder.show();
+		dialog.setCanceledOnTouchOutside(false);
+	}
 }
