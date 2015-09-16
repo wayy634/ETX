@@ -9,7 +9,7 @@
 #import "LCCustomBaseVC.h"
 
 
-#define EPLEFTTABLEVIEWCELL_HEIGHT   40
+#define EPLEFTTABLEVIEWCELL_HEIGHT   50
 
 typedef NS_ENUM(NSInteger, EPLeftMenuType) {
     EPLeftMenuType_Account        = 0,

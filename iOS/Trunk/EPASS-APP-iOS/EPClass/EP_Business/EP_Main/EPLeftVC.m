@@ -16,6 +16,8 @@
 #import "EPDeviceVC.h"
 #import "EPSettingVC.h"
 
+#import "EPLeftMnuCell.h"
+
 
 @interface EPLeftVC ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -53,16 +55,16 @@
     
     self.mIconButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.mIconButton addTarget:self action:@selector(buttonPress:) forControlEvents:UIControlEventTouchUpInside];
-    [self.mIconButton setBackgroundColor:K_COLOR_MAIN_ORANGER];
-    self.mIconButton.frame = CGRectMake(20, 50, 80, 80);
+    [self.mIconButton setBackgroundColor:K_COLOR_MAIN_BACKGROUND];
+    self.mIconButton.frame = CGRectMake(45, 60, 75, 75);
     [self.view addSubview:self.mIconButton];
     
-    UITableView *tabelView = [[UITableView alloc] initWithFrame:CGRectMake(20, 200, K_SCREEN_WIDTH, self.mContentView.height)];
+    UITableView *tabelView = [[UITableView alloc] initWithFrame:CGRectMake(40, 150, K_SCREEN_WIDTH, self.mContentView.height)];
     [tabelView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    [tabelView setBackgroundColor:K_COLOR_MAIN_BACKGROUND];
+    [tabelView setBackgroundColor:[UIColor clearColor]];
     tabelView.delegate = self;
     tabelView.dataSource = self;
-    tabelView.backgroundColor = [UIColor clearColor];
+    tabelView.bounces = NO;
     self.mTableView = tabelView;
     [self.view addSubview:tabelView];
     [tabelView release];
@@ -86,19 +88,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *reuseId = @"EPLeftVCCell";
-    UITableViewCell *aCell = [tableView dequeueReusableCellWithIdentifier:reuseId];
+    EPLeftMnuCell *aCell = [tableView dequeueReusableCellWithIdentifier:reuseId];
     if (!aCell) {
-        aCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseId];
-        aCell.backgroundColor = [UIColor clearColor];
-        aCell.selectionStyle = UITableViewCellSelectionStyleNone;
-        aCell.textLabel.font = K_FONT_SIZE(14);
-        aCell.textLabel.textColor = [UIColor whiteColor];
+        aCell = [[EPLeftMnuCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseId];
+        [aCell initUI];
     }
-    aCell.imageView.image = [UIImage imageOrPDFNamed:[[self.mDataArray objectAtIndex:indexPath.row] objectAtIndex:0]];
-    
-    aCell.textLabel.text = [[self.mDataArray objectAtIndex:indexPath.row] objectAtIndex:1];
+    [aCell setIcon:[[self.mDataArray objectAtIndex:indexPath.row] objectAtIndex:0] title:[[self.mDataArray objectAtIndex:indexPath.row] objectAtIndex:1]];
     return aCell;
-    
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -171,65 +167,6 @@
         }
     }
     return object;
-    
-    
-    
-//    if (type_ == EPLeftMenuType_Today) {
-//        EPTodayVC *todayVC = (EPTodayVC *)[self.mRootVCDic objectForKey:[NSString stringWithFormat:@"%i",(int)type_]];
-//        if (todayVC) {
-//            return todayVC;
-//        }else{
-//            EPTodayVC *todayVC = [[EPTodayVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-//            [self.mRootVCDic setObject:todayVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
-//            return todayVC;
-//        }
-//    }else if (type_ == EPLeftMenuType_Recharge ) {
-//        EPRechargeVC *rechargeVC = (EPRechargeVC *)[self.mRootVCDic objectForKey:[NSString stringWithFormat:@"%i",(int)type_]];
-//        if (rechargeVC) {
-//            return rechargeVC;
-//        }else{
-//            EPRechargeVC *rechargeVC = [[EPRechargeVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-//            [self.mRootVCDic setObject:rechargeVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
-//            return rechargeVC;
-//        }
-//    }else if (type_ == EPLeftMenuType_BindingDevice ) {
-//        EPBindingDeviceVC *bindingDeviceVC = (EPBindingDeviceVC *)[self.mRootVCDic objectForKey:[NSString stringWithFormat:@"%i",(int)type_]];
-//        if (bindingDeviceVC) {
-//            return bindingDeviceVC;
-//        }else{
-//            EPBindingDeviceVC *bindingDeviceVC = [[EPBindingDeviceVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-//            [self.mRootVCDic setObject:bindingDeviceVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
-//            return bindingDeviceVC;
-//        }
-//    }else if (type_ == EPLeftMenuType_Order ) {
-//        EPOrderVC *orderVC = (EPOrderVC *)[self.mRootVCDic objectForKey:[NSString stringWithFormat:@"%i",(int)type_]];
-//        if (orderVC) {
-//            return orderVC;
-//        }else{
-//            EPOrderVC *orderVC = [[EPOrderVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-//            [self.mRootVCDic setObject:orderVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
-//            return orderVC;
-//        }
-//    }else if (type_ == EPLeftMenuType_MyDevice) {
-//        EPDeviceVC *deviceVC = (EPDeviceVC *)[self.mRootVCDic objectForKey:[NSString stringWithFormat:@"%i",(int)type_]];
-//        if (deviceVC) {
-//            return deviceVC;
-//        }else{
-//            EPDeviceVC *deviceVC = [[EPDeviceVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-//            [self.mRootVCDic setObject:deviceVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
-//            return deviceVC;
-//        }
-//    }else if (type_ == EPLeftMenuType_Set ) {
-//        EPSettingVC *settingVC = (EPSettingVC *)[self.mRootVCDic objectForKey:[NSString stringWithFormat:@"%i",(int)type_]];
-//        if (settingVC) {
-//            return settingVC;
-//        }else{
-//            EPSettingVC *settingVC = [[EPSettingVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-//            [self.mRootVCDic setObject:settingVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
-//            return settingVC;
-//        }
-//    }
-//    return nil;
 }
 
 

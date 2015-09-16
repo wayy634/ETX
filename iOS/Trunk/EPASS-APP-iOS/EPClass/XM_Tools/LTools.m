@@ -24,7 +24,6 @@
 #import "LAppConfig.h"
 #import "UIAlertView+Block.h"
 #import "LCRKAPITask.h"
-#import "XMCustomAlertV.h"
 
 #import "LCAPIResult.h"
 #import "LCRKMappingData.h"
@@ -632,10 +631,6 @@ BOOL                        kUpdataShow = NO;
     });
 }
 
-+ (void)XMShowAlertWithTitle:(NSString *)title_ msg:(NSString *)msg_ specialDataArray:(NSArray *)dataArray_ cancelButtonTitle:(NSString *)cancelButtonTitle_ confirmButtonTitle:(NSString *)confirmButtonTitle_ cancelButtonBlock:(void (^)(void))cancelBlock_ confirmButtonTitle:(void (^)(void))confirmBlock_ {
-    [[XMCustomAlertV shareXMCustomAlertV] setWithTitle:title_ msg:msg_ specialDataArray:dataArray_ cancelButtonTitle:cancelButtonTitle_ confirmButtonTitle:confirmButtonTitle_ cancelButtonBlock:cancelBlock_ confirmButtonTitle:confirmBlock_];
-}
-
 
 + (void)setButton:(UIButton *)button
 	  normalColor:(UIColor *)normalColor
@@ -1164,19 +1159,6 @@ setCancelAllOnFail:(BOOL)isUse {
     }
     [self pushController:controller animated:animated];
 }
-
-
-+ (XMBottomMenuV *)getBottomMenuV {
-    if (!kBottomMenuV) {
-        kBottomMenuV = [[XMBottomMenuV alloc] initBottomMenuV];
-    }
-    return kBottomMenuV;
-}
-
-+ (void)bottomMenuVSelected:(XMBottomMenuVRootType)_type animation:(BOOL)animation_ {
-    [[LTools getBottomMenuV] bottomVSelected:_type animation:animation_];
-}
-
 + (CGSize)sizeForText:(UILabel *)label_ isLabelWidth:(BOOL)_isLabelWidth {
 //    if ([NSString instancesRespondToSelector:@selector(sizeWithAttributes:)]) {
 //        CGRect textRect = CGRectZero;

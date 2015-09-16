@@ -12,7 +12,6 @@
 #import "URequest.h"
 #import "KCommon.h"
 #import "LCAPIResult.h"
-#import "XMBottomMenuV.h"
 #import "MBProgressHUD.h"
 
 
@@ -153,7 +152,6 @@
 
 + (void)showAlertWithMessage:(NSString *)message completionBlock:(void(^)(NSInteger btnIndex))block;
 
-+ (void)XMShowAlertWithTitle:(NSString *)title_ msg:(NSString *)msg_ specialDataArray:(NSArray *)dataArray_ cancelButtonTitle:(NSString *)cancelButtonTitle_ confirmButtonTitle:(NSString *)confirmButtonTitle_ cancelButtonBlock:(void (^)(void))cancelBlock_ confirmButtonTitle:(void (^)(void))confirmBlock_;
 
 // view animation
 + (void)animationView:(UIView *)aView
@@ -269,12 +267,6 @@ setCancelAllOnFail:(BOOL)isUse;
 //获取当前使用的navigation
 + (void)pushController:(UIViewController *)controller animated:(BOOL)animated;
 + (void)pushControllerFromURLScheme:(UIViewController *)controller animated:(BOOL)animated;
-
-//底部bottomMenuV
-+ (XMBottomMenuV *)getBottomMenuV;
-
-//底部bottom rootViewController selecte
-+ (void)bottomMenuVSelected:(XMBottomMenuVRootType)_type animation:(BOOL)animation_;
 
 //计算label 的size
 + (CGSize)sizeForText:(UILabel *)label_ isLabelWidth:(BOOL)_isLabelWidth;

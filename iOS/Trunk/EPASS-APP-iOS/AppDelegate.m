@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "XMBottomMenuV.h"
 #import "XMSocialInfoConfiguration.h"
 #import "XMPayManager.h"
 #import "UIAlertView+Block.h"

@@ -43,7 +43,7 @@
     [self.view bringSubviewToFront:self.mTopView];
     
     if (self.mCustomBaseType == LCCustomBaseVCTypeRoot) {
-        [mContentView setFrame:CGRectMake(0, self.mTopView.bottom, K_SCREEN_WIDTH, self.view.height - self.mTopView.bottom - mBottomMenuV.height)];
+        [mContentView setFrame:CGRectMake(0, self.mTopView.bottom, K_SCREEN_WIDTH, self.view.height - self.mTopView.bottom)];
     } else if (self.mCustomBaseType == LCCustomBaseVCTypeNormal) {
         mBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [mBackButton setTag:LCBOTTOMMENUV_BACKBUTTON];
@@ -195,13 +195,6 @@
 }
 
 #pragma mark --
-#pragma mark LCBottomMenuVDelegate
-- (void)bottomVDelegateButtonPressed:(XMBottomMenuVRootType)_type controller:(id)_controller {
-    mBottomMenuV = [LTools getBottomMenuV];
-    [((LCCustomBaseVC *)_controller).view addSubview:mBottomMenuV];
-    [APP_DELEGATE.mNavigationController setViewControllers:nil];
-    [APP_DELEGATE.mNavigationController initWithRootViewController:_controller];
-}
 
 - (void)dealloc {
     [self.mTopView release] , self.mTopView = nil;
