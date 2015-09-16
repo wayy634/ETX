@@ -15,6 +15,7 @@
 #import "EPOrderVC.h"
 #import "EPDeviceVC.h"
 #import "EPSettingVC.h"
+#import "EPAccountManager.h"
 
 #import "EPLeftMnuCell.h"
 
@@ -35,6 +36,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //创建用户信息
+    [EPAccountManager saveAccountData:[EPAccountManager getAccountData]];
     self.mRootVCDic = [[NSMutableDictionary alloc] init];
     self.view.backgroundColor = [UIColor blueColor];
     

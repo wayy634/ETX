@@ -165,11 +165,8 @@ NSString * const LCRKAPITaskException = @"LCRKAPITaskException";
         if (!deviceToken) {
             deviceToken = @"";
         }
-    [aDictionary setObject:deviceToken forKey:@"deviceId"];
+    [aDictionary setObject:deviceToken forKey:@"devicetoken"];
     [aDictionary setObject:@"ios" forKey:@"deviceType"];
-    [aDictionary setObject:K_CLIENT_VERSION forKey:@"version"];
-    
-    [aDictionary setObject:XM_KEY_PRODUCT_ID forKey:@"productId"];
     
     return [aDictionary autorelease];
 }
@@ -342,16 +339,14 @@ NSString * const LCRKAPITaskException = @"LCRKAPITaskException";
     id jsonObject = [NSJSONSerialization JSONObjectWithData:[request responseData] options:NSJSONReadingMutableContainers error:&aError];
     NSLog(@"****** response: %@", jsonObject);
     
-    
-    
-//    LCAPIResult *apiResult = [LCAPIResult lcrkMappedObjectWithDictionary:[self.apiRequestURI rangeOfString:K_URL_TEN_HOST].location != NSNotFound ? [self allNestedFuciton:jsonObject] : [self nestedFuciton:jsonObject] extendMappingConfiguration:LCRKModuleListMappingConfigurationForKey(self.resultMappingName)];
-//    
-//    RKMappingResult *mappingResult = [RKMappingResult resultWithFirstObject:apiResult];
+    LCAPIResult *apiResult = [LCAPIResult lcrkMappedObjectWithDictionary:[self nestedFuciton:jsonObject] extendMappingConfiguration:LCRKModuleListMappingConfigurationForKey(self.resultMappingName)];
+//
+    RKMappingResult *mappingResult = [RKMappingResult resultWithFirstObject:apiResult];
     
 //    [[LCRKAPITaskManager sharedAPITaskManager] removeTask:self];
 //    
 //    [self autorelease];
-//    [self finishedWithResult:mappingResult];
+    [self finishedWithResult:mappingResult];
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request

@@ -9,16 +9,14 @@
 #import "LCAPIResult.h"
 
 @implementation LCAPIResult
-//@synthesize whiteList,blackList,serverTime,serverTimeMillis,message,data,code,updateInfo;
-@synthesize serverTime,msg,code,data;
+
+@synthesize serverTime,msg,code,data,success,token;
 - (void)dealloc {
-//    [whiteList release] , whiteList = nil;
-//    [blackList release] , blackList = nil;
+    
     [serverTime release] , serverTime = nil;
-//    [message release] , message = nil;
     [data release] , data = nil;
-//    [updateInfo release] , updateInfo = nil;
     [msg release] , msg = nil;
+    [token release] , token = nil;
     [super dealloc];
 }
 
@@ -33,16 +31,18 @@
     return nil;
 }
 
-//- (double)serverTimeMillis {
-//    if (serverTimeMillis == 0) {
-//        NSDate *localTime = [NSDate date];
-//        return (double)[localTime timeIntervalSince1970]*1000;
-//    } else {
-//        return serverTimeMillis;
-//    }
-//}
+- (NSMutableString *)token {
+    if (token == nil) {
+        token = [[NSMutableString alloc] initWithString:@""];
+    } else if ([token isEqualToString:@"null"]) {
+        [token setString:@""];
+    } else {
+        return token;
+    }
+    return nil;
+}
 
-- (NSMutableString *)message {
+- (NSMutableString *)msg {
     if (msg == nil) {
         msg = [[NSMutableString alloc] initWithString:@""];
     } else if ([msg isEqualToString:@"null"]) {
@@ -59,27 +59,23 @@
         return nil;
     }
     
-//    self.whiteList = [decoder decodeObjectForKey:@"whiteList"];
-//    self.blackList = [decoder decodeObjectForKey:@"blackList"];
     self.code = (long)[decoder decodeInt64ForKey:@"code"];
     self.serverTime = [decoder decodeObjectForKey:@"serverTime"];
-//    self.serverTimeMillis = [decoder decodeDoubleForKey:@"serverTimeMillis"];
-//    self.message = [decoder decodeObjectForKey:@"message"];
     self.data = [decoder decodeObjectForKey:@"data"];
-//    self.updateInfo = [decoder decodeObjectForKey:@"updateInfo"];
     self.msg = [decoder decodeObjectForKey:@"msg"];
+    self.success = [decoder decodeBoolForKey:@"success"];
+    self.token = [decoder decodeObjectForKey:@"token"];
     
     return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)encoder {
-//    [encoder encodeObject:self.whiteList forKey:@"whiteList"];
-//    [encoder encodeObject:self.blackList forKey:@"blackList"];
+
     [encoder encodeInt64:self.code forKey:@"code"];
     [encoder encodeObject:self.serverTime forKey:@"serverTime"];
-//    [encoder encodeDouble:self.serverTimeMillis forKey:@"serverTimeMillis"];
     [encoder encodeObject:self.msg forKey:@"msg"];
     [encoder encodeObject:self.data forKey:@"data"];
-//    [encoder encodeObject:self.updateInfo forKey:@"updateInfo"];
+    [encoder encodeBool:self.success forKey:@"success"];
+    [encoder encodeObject:self.token forKey:@"token"];
 }
 @end

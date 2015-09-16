@@ -98,7 +98,7 @@
 -(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
     NSString *deviceTokenStr = [[[deviceToken description] stringByReplacingOccurrencesOfString:@"<" withString:@""] stringByReplacingOccurrencesOfString:@">" withString:@""];
     NSLog(@"token-----%@",deviceToken);
-    [LTools setObjectFromSystem:[LTools trimManual:deviceTokenStr] key:K_KEY_DEVICE_TOKEN];
+    [[XMCacheManager shareCacheManager]saveObjectCache:[LTools trimManual:deviceTokenStr] key:K_KEY_DEVICE_TOKEN];
 }
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
     NSLog(@"error = %@",error);

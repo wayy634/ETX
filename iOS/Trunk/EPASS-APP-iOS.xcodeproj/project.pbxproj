@@ -54,6 +54,9 @@
 		E72C1CB81BA93EC900B51F9B /* EPTodayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E72C1CB11BA93EC900B51F9B /* EPTodayVC.m */; };
 		E72C1CBB1BA9425A00B51F9B /* icon_device_add.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */; };
 		E72C1CBE1BA9481800B51F9B /* btn_nav_back.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */; };
+		E72C1CC11BA9673B00B51F9B /* UserEPConnectionFuction.m in Sources */ = {isa = PBXBuildFile; fileRef = E72C1CC01BA9673B00B51F9B /* UserEPConnectionFuction.m */; };
+		E72C1CC51BA975E800B51F9B /* EPAccountData.m in Sources */ = {isa = PBXBuildFile; fileRef = E72C1CC41BA975E800B51F9B /* EPAccountData.m */; };
+		E72C1CC81BA976E300B51F9B /* EPAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E72C1CC71BA976E300B51F9B /* EPAccountManager.m */; };
 		E75B0F431BA5AF52009BDDF0 /* LCUIView+ClickOnTheState.m in Sources */ = {isa = PBXBuildFile; fileRef = E75B0D091BA5AF51009BDDF0 /* LCUIView+ClickOnTheState.m */; };
 		E75B0F441BA5AF52009BDDF0 /* NSArray+LCAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E75B0D0B1BA5AF51009BDDF0 /* NSArray+LCAddition.m */; };
 		E75B0F451BA5AF52009BDDF0 /* NSDictionary+LCAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E75B0D0D1BA5AF51009BDDF0 /* NSDictionary+LCAddition.m */; };
@@ -360,6 +363,12 @@
 		E72C1CB11BA93EC900B51F9B /* EPTodayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPTodayVC.m; sourceTree = "<group>"; };
 		E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_device_add.pdf; sourceTree = "<group>"; };
 		E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = btn_nav_back.pdf; sourceTree = "<group>"; };
+		E72C1CBF1BA9673B00B51F9B /* UserEPConnectionFuction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserEPConnectionFuction.h; sourceTree = "<group>"; };
+		E72C1CC01BA9673B00B51F9B /* UserEPConnectionFuction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserEPConnectionFuction.m; sourceTree = "<group>"; };
+		E72C1CC31BA975E800B51F9B /* EPAccountData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPAccountData.h; sourceTree = "<group>"; };
+		E72C1CC41BA975E800B51F9B /* EPAccountData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPAccountData.m; sourceTree = "<group>"; };
+		E72C1CC61BA976E300B51F9B /* EPAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPAccountManager.h; sourceTree = "<group>"; };
+		E72C1CC71BA976E300B51F9B /* EPAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPAccountManager.m; sourceTree = "<group>"; };
 		E75B0D081BA5AF51009BDDF0 /* LCUIView+ClickOnTheState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LCUIView+ClickOnTheState.h"; sourceTree = "<group>"; };
 		E75B0D091BA5AF51009BDDF0 /* LCUIView+ClickOnTheState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LCUIView+ClickOnTheState.m"; sourceTree = "<group>"; };
 		E75B0D0A1BA5AF51009BDDF0 /* NSArray+LCAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LCAddition.h"; sourceTree = "<group>"; };
@@ -1043,6 +1052,7 @@
 		E72C1C9D1BA93EC900B51F9B /* EP_Account */ = {
 			isa = PBXGroup;
 			children = (
+				E72C1CC21BA975C000B51F9B /* EP_Account_Data */,
 				E72C1C9E1BA93EC900B51F9B /* EPAccountVC.h */,
 				E72C1C9F1BA93EC900B51F9B /* EPAccountVC.m */,
 			);
@@ -1117,6 +1127,17 @@
 				E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */,
 			);
 			path = EP_Common;
+			sourceTree = "<group>";
+		};
+		E72C1CC21BA975C000B51F9B /* EP_Account_Data */ = {
+			isa = PBXGroup;
+			children = (
+				E72C1CC31BA975E800B51F9B /* EPAccountData.h */,
+				E72C1CC41BA975E800B51F9B /* EPAccountData.m */,
+				E72C1CC61BA976E300B51F9B /* EPAccountManager.h */,
+				E72C1CC71BA976E300B51F9B /* EPAccountManager.m */,
+			);
+			name = EP_Account_Data;
 			sourceTree = "<group>";
 		};
 		E75B0CFE1BA5AF51009BDDF0 /* EPClass */ = {
@@ -2202,6 +2223,8 @@
 		E7966C031BA7BB73002D83B4 /* account */ = {
 			isa = PBXGroup;
 			children = (
+				E72C1CBF1BA9673B00B51F9B /* UserEPConnectionFuction.h */,
+				E72C1CC01BA9673B00B51F9B /* UserEPConnectionFuction.m */,
 			);
 			path = account;
 			sourceTree = "<group>";
@@ -2403,6 +2426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72C1CC11BA9673B00B51F9B /* UserEPConnectionFuction.m in Sources */,
 				E75B0FF31BA5AF52009BDDF0 /* XMThreadCountDownManager.m in Sources */,
 				E75B0F981BA5AF52009BDDF0 /* Toast+UIView.m in Sources */,
 				E75B0F971BA5AF52009BDDF0 /* UIScrollView+SVPullToRefresh.m in Sources */,
@@ -2504,6 +2528,7 @@
 				E75B100C1BA5AF52009BDDF0 /* LCArrowButton.m in Sources */,
 				E75B0F611BA5AF52009BDDF0 /* LCRKAPITaskManager.m in Sources */,
 				E75B0FFF1BA5AF52009BDDF0 /* openssl_wrapper.m in Sources */,
+				E72C1CC51BA975E800B51F9B /* EPAccountData.m in Sources */,
 				E75B0F6C1BA5AF52009BDDF0 /* AlipayOrder.m in Sources */,
 				E75B0FF81BA5AF52009BDDF0 /* XMNavigationProcessC.m in Sources */,
 				E75B0FFB1BA5AF52009BDDF0 /* DataSigner.m in Sources */,
@@ -2523,6 +2548,7 @@
 				E75B0FE51BA5AF52009BDDF0 /* ApiXml.mm in Sources */,
 				E75B0FEF1BA5AF52009BDDF0 /* XMPayManager.m in Sources */,
 				E75B0FF71BA5AF52009BDDF0 /* XMFuctionTypeV.m in Sources */,
+				E72C1CC81BA976E300B51F9B /* EPAccountManager.m in Sources */,
 				E75B10101BA5AF52009BDDF0 /* LCCustomBaseVC.m in Sources */,
 				E75B10251BA5AF52009BDDF0 /* XMAttributedLabel.m in Sources */,
 				E75B0FED1BA5AF52009BDDF0 /* XMAccountTools.m in Sources */,
