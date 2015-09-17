@@ -134,7 +134,7 @@
 
 +(void)renderIntoContext:(CGContextRef)ctx url:(NSURL *)resourceURL data:(NSData *)resourceData size:(CGSize)size page:(int)page
 {
-    if ( resourceURL || resourceData )
+    if (( resourceURL || resourceData ) && ctx)
     {
         /*
 		 * Reference: http://www.cocoanetics.com/2010/06/rendering-pdf-is-easier-than-you-thought/
