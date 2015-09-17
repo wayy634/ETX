@@ -19,11 +19,25 @@
     [super viewDidLoad];
     self.title = @"userCenter";
     [self loadData];
+    
+    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
+    view.backgroundColor = [UIColor yellowColor];
+    [self.mContentView addSubview:view];
+    
+    UIImageView * backgroundImageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.mContentView.width, self.mContentView.height)];
+    backgroundImageV.image = [UIImage imageOrPDFNamed:@"view_login_background"];
+    [self.mContentView addSubview:backgroundImageV];
+    [backgroundImageV release];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    
+    
 }
 
 
@@ -40,7 +54,6 @@
         [APP_DELEGATE.mWindow makeToast:result.msg duration:2.0 position:@"custom"];
         return;
     }
-    
 }
 - (void)requestFailed:(NSError *)error_ {
     [LTools hideLoadingVOnTargetView:APP_DELEGATE.mWindow animation:YES];
