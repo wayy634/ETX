@@ -84,7 +84,7 @@
 #pragma mark-----buttonActoin---------
 
 - (void)buttonPress:(UIButton *)button_ {
-    id object = [self getRootVCbyType:0];
+    id object = [self getRootVCbyType:EPLeftMenuType_Account];
     [APP_DELEGATE.mNavigationController setViewControllers:nil];
     [APP_DELEGATE.mNavigationController initWithRootViewController:object];
     [APP_DELEGATE.mDDMenu showRootController:YES];
@@ -112,7 +112,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    id object = [self getRootVCbyType:indexPath.row+1];
+    id object = [self getRootVCbyType:indexPath.row];
     [APP_DELEGATE.mNavigationController setViewControllers:nil];
     [APP_DELEGATE.mNavigationController initWithRootViewController:object];
     [APP_DELEGATE.mDDMenu showRootController:YES];
@@ -172,13 +172,13 @@
             [deviceVC release];
             break;
         }
-        case EPLeftMenuType_Set:{
-            EPSettingVC *settingVC = [[EPSettingVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-            [self.mRootVCDic setObject:settingVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
-            object = settingVC;
-            [settingVC release];
-            break;
-        }
+//        case EPLeftMenuType_Set:{
+//            EPSettingVC *settingVC = [[EPSettingVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+//            [self.mRootVCDic setObject:settingVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
+//            object = settingVC;
+//            [settingVC release];
+//            break;
+//        }
     }
     return object;
 }

@@ -12,13 +12,12 @@
 #define EPLEFTTABLEVIEWCELL_HEIGHT   50
 
 typedef NS_ENUM(NSInteger, EPLeftMenuType) {
-    EPLeftMenuType_Account        = 0,
-    EPLeftMenuType_Today          = 1,
-    EPLeftMenuType_Recharge       = 2,
-    EPLeftMenuType_BindingDevice  = 3,
-    EPLeftMenuType_Order          = 4,
-    EPLeftMenuType_MyDevice       = 5,
-    EPLeftMenuType_Set            = 6
+    EPLeftMenuType_Today          = 0,
+    EPLeftMenuType_Recharge       = 1,
+    EPLeftMenuType_BindingDevice  = 2,
+    EPLeftMenuType_Order          = 3,
+    EPLeftMenuType_MyDevice       = 4,
+    EPLeftMenuType_Account        = 5
 };
 
 

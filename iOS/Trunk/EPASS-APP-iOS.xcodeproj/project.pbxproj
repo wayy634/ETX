@@ -57,7 +57,6 @@
 		E72C1CB81BA93EC900B51F9B /* EPTodayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E72C1CB11BA93EC900B51F9B /* EPTodayVC.m */; };
 		E72C1CBB1BA9425A00B51F9B /* icon_device_add.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */; };
 		E72C1CBE1BA9481800B51F9B /* btn_nav_back.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */; };
-		E72C1CC11BA9673B00B51F9B /* UserEPConnectionFuction.m in Sources */ = {isa = PBXBuildFile; fileRef = E72C1CC01BA9673B00B51F9B /* UserEPConnectionFuction.m */; };
 		E72C1CC51BA975E800B51F9B /* EPAccountData.m in Sources */ = {isa = PBXBuildFile; fileRef = E72C1CC41BA975E800B51F9B /* EPAccountData.m */; };
 		E72C1CC81BA976E300B51F9B /* EPAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E72C1CC71BA976E300B51F9B /* EPAccountManager.m */; };
 		E75B0F431BA5AF52009BDDF0 /* LCUIView+ClickOnTheState.m in Sources */ = {isa = PBXBuildFile; fileRef = E75B0D091BA5AF51009BDDF0 /* LCUIView+ClickOnTheState.m */; };
@@ -301,7 +300,17 @@
 		E77221E51BA6D228006E480E /* icon_sidemenu_today.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E77221DE1BA6D228006E480E /* icon_sidemenu_today.pdf */; };
 		E791C1B11B6751270054707A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E791C1B01B6751270054707A /* AddressBook.framework */; };
 		E791C1B31B67512E0054707A /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E791C1B21B67512E0054707A /* AddressBookUI.framework */; };
-		E7966C0A1BA7C1F4002D83B4 /* UserCar.m in Sources */ = {isa = PBXBuildFile; fileRef = E7966C091BA7C1F4002D83B4 /* UserCar.m */; };
+		E7E2E7C51BAAA9500053E021 /* UserEPConnectionFuction.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E2E7C41BAAA9500053E021 /* UserEPConnectionFuction.m */; };
+		E7E2E7C81BAAAE670053E021 /* DeviceEPConnectionFuction.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E2E7C71BAAAE670053E021 /* DeviceEPConnectionFuction.m */; };
+		E7E2E7CC1BAAB3520053E021 /* RechargeEPConnectionFuction.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E2E7CB1BAAB3520053E021 /* RechargeEPConnectionFuction.m */; };
+		E7E2E7CF1BAAB5990053E021 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E2E7CE1BAAB5990053E021 /* UserInfo.m */; };
+		E7E2E7D61BAAD2610053E021 /* CarEPConnectionFuction.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E2E7D51BAAD2610053E021 /* CarEPConnectionFuction.m */; };
+		E7E2E7DB1BAAD37D0053E021 /* UserCar.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E2E7D81BAAD37D0053E021 /* UserCar.m */; };
+		E7E2E7DC1BAAD37D0053E021 /* UserCarsList.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E2E7DA1BAAD37D0053E021 /* UserCarsList.m */; };
+		E7E2E7DF1BAAD3A30053E021 /* UserGarage.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E2E7DE1BAAD3A30053E021 /* UserGarage.m */; };
+		E7E2E7E21BAAD5E20053E021 /* UserGarageList.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E2E7E11BAAD5E20053E021 /* UserGarageList.m */; };
+		E7E2E7E51BAADAFD0053E021 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E2E7E41BAADAFD0053E021 /* Device.m */; };
+		E7E2E7E81BAADDF20053E021 /* DeviceList.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E2E7E71BAADDF20053E021 /* DeviceList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -369,8 +378,6 @@
 		E72C1CB11BA93EC900B51F9B /* EPTodayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPTodayVC.m; sourceTree = "<group>"; };
 		E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_device_add.pdf; sourceTree = "<group>"; };
 		E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = btn_nav_back.pdf; sourceTree = "<group>"; };
-		E72C1CBF1BA9673B00B51F9B /* UserEPConnectionFuction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserEPConnectionFuction.h; sourceTree = "<group>"; };
-		E72C1CC01BA9673B00B51F9B /* UserEPConnectionFuction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserEPConnectionFuction.m; sourceTree = "<group>"; };
 		E72C1CC31BA975E800B51F9B /* EPAccountData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPAccountData.h; sourceTree = "<group>"; };
 		E72C1CC41BA975E800B51F9B /* EPAccountData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPAccountData.m; sourceTree = "<group>"; };
 		E72C1CC61BA976E300B51F9B /* EPAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPAccountManager.h; sourceTree = "<group>"; };
@@ -401,7 +408,6 @@
 		E75B0D231BA5AF51009BDDF0 /* LCAPIResultData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAPIResultData.m; sourceTree = "<group>"; };
 		E75B0D241BA5AF51009BDDF0 /* LCAPIResultUpData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCAPIResultUpData.h; sourceTree = "<group>"; };
 		E75B0D251BA5AF51009BDDF0 /* LCAPIResultUpData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCAPIResultUpData.m; sourceTree = "<group>"; };
-		E75B0D261BA5AF51009BDDF0 /* LCImportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCImportModel.h; sourceTree = "<group>"; };
 		E75B0D431BA5AF51009BDDF0 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		E75B0D441BA5AF51009BDDF0 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		E75B0D451BA5AF51009BDDF0 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -871,8 +877,29 @@
 		E77221DE1BA6D228006E480E /* icon_sidemenu_today.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_sidemenu_today.pdf; sourceTree = "<group>"; };
 		E791C1B01B6751270054707A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		E791C1B21B67512E0054707A /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
-		E7966C081BA7C1F4002D83B4 /* UserCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCar.h; sourceTree = "<group>"; };
-		E7966C091BA7C1F4002D83B4 /* UserCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCar.m; sourceTree = "<group>"; };
+		E7E2E7C31BAAA9500053E021 /* UserEPConnectionFuction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserEPConnectionFuction.h; sourceTree = "<group>"; };
+		E7E2E7C41BAAA9500053E021 /* UserEPConnectionFuction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserEPConnectionFuction.m; sourceTree = "<group>"; };
+		E7E2E7C61BAAAE670053E021 /* DeviceEPConnectionFuction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceEPConnectionFuction.h; sourceTree = "<group>"; };
+		E7E2E7C71BAAAE670053E021 /* DeviceEPConnectionFuction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceEPConnectionFuction.m; sourceTree = "<group>"; };
+		E7E2E7CA1BAAB3520053E021 /* RechargeEPConnectionFuction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeEPConnectionFuction.h; sourceTree = "<group>"; };
+		E7E2E7CB1BAAB3520053E021 /* RechargeEPConnectionFuction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeEPConnectionFuction.m; sourceTree = "<group>"; };
+		E7E2E7CD1BAAB5990053E021 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		E7E2E7CE1BAAB5990053E021 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		E7E2E7D01BAAB8820053E021 /* EPModelImport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EPModelImport.h; sourceTree = "<group>"; };
+		E7E2E7D41BAAD2610053E021 /* CarEPConnectionFuction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarEPConnectionFuction.h; sourceTree = "<group>"; };
+		E7E2E7D51BAAD2610053E021 /* CarEPConnectionFuction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarEPConnectionFuction.m; sourceTree = "<group>"; };
+		E7E2E7D71BAAD37D0053E021 /* UserCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCar.h; sourceTree = "<group>"; };
+		E7E2E7D81BAAD37D0053E021 /* UserCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCar.m; sourceTree = "<group>"; };
+		E7E2E7D91BAAD37D0053E021 /* UserCarsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCarsList.h; sourceTree = "<group>"; };
+		E7E2E7DA1BAAD37D0053E021 /* UserCarsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCarsList.m; sourceTree = "<group>"; };
+		E7E2E7DD1BAAD3A30053E021 /* UserGarage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserGarage.h; sourceTree = "<group>"; };
+		E7E2E7DE1BAAD3A30053E021 /* UserGarage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGarage.m; sourceTree = "<group>"; };
+		E7E2E7E01BAAD5E20053E021 /* UserGarageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserGarageList.h; sourceTree = "<group>"; };
+		E7E2E7E11BAAD5E20053E021 /* UserGarageList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGarageList.m; sourceTree = "<group>"; };
+		E7E2E7E31BAADAFD0053E021 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		E7E2E7E41BAADAFD0053E021 /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		E7E2E7E61BAADDF20053E021 /* DeviceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceList.h; sourceTree = "<group>"; };
+		E7E2E7E71BAADDF20053E021 /* DeviceList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1249,7 +1276,6 @@
 				E75B0D231BA5AF51009BDDF0 /* LCAPIResultData.m */,
 				E75B0D241BA5AF51009BDDF0 /* LCAPIResultUpData.h */,
 				E75B0D251BA5AF51009BDDF0 /* LCAPIResultUpData.m */,
-				E75B0D261BA5AF51009BDDF0 /* LCImportModel.h */,
 			);
 			path = generated;
 			sourceTree = "<group>";
@@ -2233,6 +2259,7 @@
 			children = (
 				E7966C031BA7BB73002D83B4 /* account */,
 				E7966C041BA7BB73002D83B4 /* device */,
+				E7E2E7D01BAAB8820053E021 /* EPModelImport.h */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -2240,8 +2267,16 @@
 		E7966C031BA7BB73002D83B4 /* account */ = {
 			isa = PBXGroup;
 			children = (
-				E72C1CBF1BA9673B00B51F9B /* UserEPConnectionFuction.h */,
-				E72C1CC01BA9673B00B51F9B /* UserEPConnectionFuction.m */,
+				E7E2E7D71BAAD37D0053E021 /* UserCar.h */,
+				E7E2E7D81BAAD37D0053E021 /* UserCar.m */,
+				E7E2E7D91BAAD37D0053E021 /* UserCarsList.h */,
+				E7E2E7DA1BAAD37D0053E021 /* UserCarsList.m */,
+				E7E2E7CD1BAAB5990053E021 /* UserInfo.h */,
+				E7E2E7CE1BAAB5990053E021 /* UserInfo.m */,
+				E7E2E7DD1BAAD3A30053E021 /* UserGarage.h */,
+				E7E2E7DE1BAAD3A30053E021 /* UserGarage.m */,
+				E7E2E7E01BAAD5E20053E021 /* UserGarageList.h */,
+				E7E2E7E11BAAD5E20053E021 /* UserGarageList.m */,
 			);
 			path = account;
 			sourceTree = "<group>";
@@ -2249,8 +2284,10 @@
 		E7966C041BA7BB73002D83B4 /* device */ = {
 			isa = PBXGroup;
 			children = (
-				E7966C081BA7C1F4002D83B4 /* UserCar.h */,
-				E7966C091BA7C1F4002D83B4 /* UserCar.m */,
+				E7E2E7E31BAADAFD0053E021 /* Device.h */,
+				E7E2E7E41BAADAFD0053E021 /* Device.m */,
+				E7E2E7E61BAADDF20053E021 /* DeviceList.h */,
+				E7E2E7E71BAADDF20053E021 /* DeviceList.m */,
 			);
 			path = device;
 			sourceTree = "<group>";
@@ -2258,6 +2295,7 @@
 		E7966C051BA7BB73002D83B4 /* service */ = {
 			isa = PBXGroup;
 			children = (
+				E7E2E7C91BAAB33D0053E021 /* recharge */,
 				E7966C061BA7BB73002D83B4 /* account */,
 				E7966C071BA7BB73002D83B4 /* device */,
 			);
@@ -2267,6 +2305,10 @@
 		E7966C061BA7BB73002D83B4 /* account */ = {
 			isa = PBXGroup;
 			children = (
+				E7E2E7C31BAAA9500053E021 /* UserEPConnectionFuction.h */,
+				E7E2E7C41BAAA9500053E021 /* UserEPConnectionFuction.m */,
+				E7E2E7D41BAAD2610053E021 /* CarEPConnectionFuction.h */,
+				E7E2E7D51BAAD2610053E021 /* CarEPConnectionFuction.m */,
 			);
 			path = account;
 			sourceTree = "<group>";
@@ -2274,8 +2316,19 @@
 		E7966C071BA7BB73002D83B4 /* device */ = {
 			isa = PBXGroup;
 			children = (
+				E7E2E7C61BAAAE670053E021 /* DeviceEPConnectionFuction.h */,
+				E7E2E7C71BAAAE670053E021 /* DeviceEPConnectionFuction.m */,
 			);
 			path = device;
+			sourceTree = "<group>";
+		};
+		E7E2E7C91BAAB33D0053E021 /* recharge */ = {
+			isa = PBXGroup;
+			children = (
+				E7E2E7CA1BAAB3520053E021 /* RechargeEPConnectionFuction.h */,
+				E7E2E7CB1BAAB3520053E021 /* RechargeEPConnectionFuction.m */,
+			);
+			path = recharge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2446,7 +2499,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72C1CC11BA9673B00B51F9B /* UserEPConnectionFuction.m in Sources */,
 				E75B0FF31BA5AF52009BDDF0 /* XMThreadCountDownManager.m in Sources */,
 				E75B0F981BA5AF52009BDDF0 /* Toast+UIView.m in Sources */,
 				E75B0F971BA5AF52009BDDF0 /* UIScrollView+SVPullToRefresh.m in Sources */,
@@ -2457,8 +2509,10 @@
 				E75B0FE61BA5AF52009BDDF0 /* payRequsestHandler.mm in Sources */,
 				E75B0FF21BA5AF52009BDDF0 /* XMThemeManager.m in Sources */,
 				E75B0F5A1BA5AF52009BDDF0 /* URequest.m in Sources */,
+				E7E2E7C51BAAA9500053E021 /* UserEPConnectionFuction.m in Sources */,
 				E75B100F1BA5AF52009BDDF0 /* LCCustomAnimationPointV.m in Sources */,
 				E75B10091BA5AF52009BDDF0 /* HCTapGestureRecognizer.m in Sources */,
+				E7E2E7DB1BAAD37D0053E021 /* UserCar.m in Sources */,
 				E75B0F4C1BA5AF52009BDDF0 /* MathFunction.m in Sources */,
 				E75B0F5E1BA5AF52009BDDF0 /* SBJsonParser.m in Sources */,
 				E75B10061BA5AF52009BDDF0 /* TKGlobal.m in Sources */,
@@ -2468,6 +2522,7 @@
 				E75B100B1BA5AF52009BDDF0 /* LCAdButton.m in Sources */,
 				E75B101D1BA5AF52009BDDF0 /* LCSwitch.m in Sources */,
 				E75B10021BA5AF52009BDDF0 /* NSDate+TKCategory.m in Sources */,
+				E7E2E7CC1BAAB3520053E021 /* RechargeEPConnectionFuction.m in Sources */,
 				E75B0F4A1BA5AF52009BDDF0 /* UIView+LCAddition.m in Sources */,
 				E75B0F591BA5AF52009BDDF0 /* Reachability.m in Sources */,
 				E75B0F671BA5AF52009BDDF0 /* NSObject+LCRKAddition.m in Sources */,
@@ -2475,13 +2530,16 @@
 				E77221D11BA6CFC9006E480E /* NSString+Addtion.m in Sources */,
 				E75B103D1BA5B0AB009BDDF0 /* MMProgressHUD+Class.m in Sources */,
 				E75B10131BA5AF52009BDDF0 /* LCLoadingTipView.m in Sources */,
+				E7E2E7E51BAADAFD0053E021 /* Device.m in Sources */,
 				E75B0F861BA5AF52009BDDF0 /* NSData+ImageContentType.m in Sources */,
+				E7E2E7DC1BAAD37D0053E021 /* UserCarsList.m in Sources */,
 				E75B0F831BA5AF52009BDDF0 /* MyLauncherView.m in Sources */,
 				E75B10071BA5AF52009BDDF0 /* UIImage+TKCategory.m in Sources */,
 				E75B10111BA5AF52009BDDF0 /* LCCustomSlider.m in Sources */,
 				E77221D31BA6CFC9006E480E /* UIImage+PDF.m in Sources */,
 				E75B0F941BA5AF52009BDDF0 /* UIView+WebCacheOperation.m in Sources */,
 				E75B10161BA5AF52009BDDF0 /* LCNumKeyboard.m in Sources */,
+				E7E2E7D61BAAD2610053E021 /* CarEPConnectionFuction.m in Sources */,
 				E75B0FEC1BA5AF52009BDDF0 /* LTools.m in Sources */,
 				E75B0F921BA5AF52009BDDF0 /* UIImageView+HighlightedWebCache.m in Sources */,
 				E75B10211BA5AF52009BDDF0 /* OHAttributedLabel.m in Sources */,
@@ -2495,6 +2553,7 @@
 				E75B10011BA5AF52009BDDF0 /* RSADataVerifier.m in Sources */,
 				E75B0FF41BA5AF52009BDDF0 /* EMPageView.m in Sources */,
 				E75B0F8E1BA5AF52009BDDF0 /* UIButton+WebCache.m in Sources */,
+				E7E2E7DF1BAAD3A30053E021 /* UserGarage.m in Sources */,
 				E75B10431BA5B0AB009BDDF0 /* MMVectorImage.m in Sources */,
 				E75B0F561BA5AF52009BDDF0 /* ASIHTTPRequest.m in Sources */,
 				E75B0FEB1BA5AF52009BDDF0 /* LCUncaughtExceptionHandler.mm in Sources */,
@@ -2526,7 +2585,6 @@
 				E75B0F891BA5AF52009BDDF0 /* SDWebImageDecoder.m in Sources */,
 				E75B0F461BA5AF52009BDDF0 /* UIAlertView+Block.m in Sources */,
 				E75B0F4F1BA5AF52009BDDF0 /* LCAPIResultUpData.m in Sources */,
-				E7966C0A1BA7C1F4002D83B4 /* UserCar.m in Sources */,
 				E75B0F911BA5AF52009BDDF0 /* UIImage+WebP.m in Sources */,
 				3654B8BF1AF73CC5000FEB61 /* main.m in Sources */,
 				E75B0F681BA5AF52009BDDF0 /* XMHomePageVC.m in Sources */,
@@ -2558,6 +2616,7 @@
 				E75B10411BA5B0AB009BDDF0 /* MMProgressHUDWindow.m in Sources */,
 				E75B0F881BA5AF52009BDDF0 /* SDWebImageCompat.m in Sources */,
 				E75B0F521BA5AF52009BDDF0 /* ASIDataCompressor.m in Sources */,
+				E7E2E7E21BAAD5E20053E021 /* UserGarageList.m in Sources */,
 				E75B0F841BA5AF52009BDDF0 /* MyLauncherViewController.m in Sources */,
 				E75B0F821BA5AF52009BDDF0 /* MyLauncherScrollView.m in Sources */,
 				E77221D01BA6CFC9006E480E /* NSData+MD5.m in Sources */,
@@ -2582,7 +2641,9 @@
 				E72C1CB71BA93EC900B51F9B /* EPSettingVC.m in Sources */,
 				E75B0FF91BA5AF52009BDDF0 /* XMPushLogicButton.m in Sources */,
 				E75B0F8C1BA5AF52009BDDF0 /* SDWebImageManager.m in Sources */,
+				E7E2E7E81BAADDF20053E021 /* DeviceList.m in Sources */,
 				E75B0F901BA5AF52009BDDF0 /* UIImage+MultiFormat.m in Sources */,
+				E7E2E7C81BAAAE670053E021 /* DeviceEPConnectionFuction.m in Sources */,
 				E75B0F6B1BA5AF52009BDDF0 /* XMShoppingCartVC.m in Sources */,
 				E77221D41BA6CFC9006E480E /* UIView+Image.m in Sources */,
 				E75B0F5B1BA5AF52009BDDF0 /* NSObject+SBJSON.m in Sources */,
@@ -2590,6 +2651,7 @@
 				E75B0F4E1BA5AF52009BDDF0 /* LCAPIResultData.m in Sources */,
 				E75B0F471BA5AF52009BDDF0 /* UIImage+LCAddition.m in Sources */,
 				E75B0F5F1BA5AF52009BDDF0 /* SBJsonWriter.m in Sources */,
+				E7E2E7CF1BAAB5990053E021 /* UserInfo.m in Sources */,
 				E75B0F481BA5AF52009BDDF0 /* UITextField+Addition.m in Sources */,
 				E75B0F5C1BA5AF52009BDDF0 /* NSString+SBJSON.m in Sources */,
 				E75B0F7E1BA5AF52009BDDF0 /* CustomBadge.m in Sources */,
