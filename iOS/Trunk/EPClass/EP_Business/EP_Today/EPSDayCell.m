@@ -7,15 +7,15 @@
 //
 
 
-#import "EPDayCell.h"
+#import "EPSDayCell.h"
 
 #define ICON_WH  40
 
-@interface EPDayCell ()
+@interface EPSDayCell ()
 
 @end
 
-@implementation EPDayCell
+@implementation EPSDayCell
 
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier

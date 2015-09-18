@@ -6,14 +6,12 @@
 //  Copyright (c) 2015年 Jeanne. All rights reserved.
 //
 
-#import "EPTodayVC.h"
+#import "EPMonthVC.h"
 
-#import "EPDayVC.h"
+#import "EPSDayCell.h"
+#import "EPSDayModel.h"
 
-#import "EPDayCell.h"
-#import "EPDayModel.h"
-
-@interface EPTodayVC ()<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>
+@interface EPMonthVC ()<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>
 {
     
     //TABLE HEAER TITLE
@@ -37,7 +35,7 @@
 
 @end
 
-@implementation EPTodayVC
+@implementation EPMonthVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -170,23 +168,23 @@
     
     NSString *identifier =[NSString stringWithFormat:@"EPDayCell%ld",(long)indexPath.row];
     
-    EPDayCell *_EPDayCell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    EPSDayCell *_EPSDayCell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
-    if (!_EPDayCell) {
-        _EPDayCell = [[EPDayCell alloc]initWithStyle:UITableViewCellStyleDefault
+    if (!_EPSDayCell) {
+        _EPSDayCell = [[EPSDayCell alloc]initWithStyle:UITableViewCellStyleDefault
                                                     reuseIdentifier:identifier];
-        _EPDayCell.selectionStyle = UITableViewCellSelectionStyleNone;
+        _EPSDayCell.selectionStyle = UITableViewCellSelectionStyleNone;
         
     }
     
-    [_EPDayCell setEPDayCellIcon:[UIImage imageOrPDFNamed:@"icon_parking_blue.pdf"]];
+    [_EPSDayCell setEPDayCellIcon:[UIImage imageOrPDFNamed:@"icon_parking_blue.pdf"]];
    
-    [_EPDayCell setEPDayCellTitle:@"华茂中心地下停车场"
+    [_EPSDayCell setEPDayCellTitle:@"华茂中心地下停车场"
                 setEPDayCellSTime:@"09:18"
                  setEPDayCellCost:@"计费中"];
     
     
-    return _EPDayCell;
+    return _EPSDayCell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -206,9 +204,7 @@
     }else if (button_.tag == 3) {
         
     }else if (button_.tag == 110) {
-        EPDayVC *vc = [[EPDayVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-        [self.navigationController pushViewController:vc animated:YES];
-        
+
     }else if (button_.tag == 901) {
 
         

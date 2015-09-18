@@ -83,6 +83,11 @@
 		CBABFD771BAC93460033D9F5 /* icon_parking_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD761BAC93460033D9F5 /* icon_parking_white.pdf */; settings = {ASSET_TAGS = (); }; };
 		CBABFD7C1BAC96020033D9F5 /* EPDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD781BAC96020033D9F5 /* EPDayCell.m */; settings = {ASSET_TAGS = (); }; };
 		CBABFD7D1BAC96020033D9F5 /* EPDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD7B1BAC96020033D9F5 /* EPDayModel.m */; settings = {ASSET_TAGS = (); }; };
+		CBABFD9E1BACAFAF0033D9F5 /* EPDayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD971BACAFAF0033D9F5 /* EPDayVC.m */; settings = {ASSET_TAGS = (); }; };
+		CBABFD9F1BACAFAF0033D9F5 /* EPMonthVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD991BACAFAF0033D9F5 /* EPMonthVC.m */; settings = {ASSET_TAGS = (); }; };
+		CBABFDA01BACAFAF0033D9F5 /* EPSDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD9B1BACAFAF0033D9F5 /* EPSDayCell.m */; settings = {ASSET_TAGS = (); }; };
+		CBABFDA11BACAFAF0033D9F5 /* EPSDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD9D1BACAFAF0033D9F5 /* EPSDayModel.m */; settings = {ASSET_TAGS = (); }; };
+		CBABFDA31BACB2B90033D9F5 /* icon_charge_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFDA21BACB2B90033D9F5 /* icon_charge_white.pdf */; settings = {ASSET_TAGS = (); }; };
 		E72C1CBB1BA9425A00B51F9B /* icon_device_add.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */; };
 		E72C1CBE1BA9481800B51F9B /* btn_nav_back.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */; };
 		E75F0CA31BAC08180069239E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E75F0CA21BAC08180069239E /* Info.plist */; };
@@ -437,6 +442,15 @@
 		CBABFD791BAC96020033D9F5 /* EPDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EPDayCell.h; path = EPClass/EP_Business/EP_Today/EPDayCell.h; sourceTree = SOURCE_ROOT; };
 		CBABFD7A1BAC96020033D9F5 /* EPDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EPDayModel.h; path = EPClass/EP_Business/EP_Today/EPDayModel.h; sourceTree = SOURCE_ROOT; };
 		CBABFD7B1BAC96020033D9F5 /* EPDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EPDayModel.m; path = EPClass/EP_Business/EP_Today/EPDayModel.m; sourceTree = SOURCE_ROOT; };
+		CBABFD961BACAFAF0033D9F5 /* EPDayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPDayVC.h; sourceTree = "<group>"; };
+		CBABFD971BACAFAF0033D9F5 /* EPDayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPDayVC.m; sourceTree = "<group>"; };
+		CBABFD981BACAFAF0033D9F5 /* EPMonthVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPMonthVC.h; sourceTree = "<group>"; };
+		CBABFD991BACAFAF0033D9F5 /* EPMonthVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPMonthVC.m; sourceTree = "<group>"; };
+		CBABFD9A1BACAFAF0033D9F5 /* EPSDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSDayCell.h; sourceTree = "<group>"; };
+		CBABFD9B1BACAFAF0033D9F5 /* EPSDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSDayCell.m; sourceTree = "<group>"; };
+		CBABFD9C1BACAFAF0033D9F5 /* EPSDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSDayModel.h; sourceTree = "<group>"; };
+		CBABFD9D1BACAFAF0033D9F5 /* EPSDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSDayModel.m; sourceTree = "<group>"; };
+		CBABFDA21BACB2B90033D9F5 /* icon_charge_white.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_charge_white.pdf; sourceTree = "<group>"; };
 		E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_device_add.pdf; sourceTree = "<group>"; };
 		E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = btn_nav_back.pdf; sourceTree = "<group>"; };
 		E75F0CA21BAC08180069239E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1191,6 +1205,7 @@
 		CBABFD621BAC8C270033D9F5 /* EP_Today */ = {
 			isa = PBXGroup;
 			children = (
+				CBABFDA21BACB2B90033D9F5 /* icon_charge_white.pdf */,
 				CBABFD761BAC93460033D9F5 /* icon_parking_white.pdf */,
 				CBABFD631BAC8C270033D9F5 /* icon_parking_blue.pdf */,
 				CBABFD641BAC8C270033D9F5 /* icon_station_blue.pdf */,
@@ -1337,6 +1352,14 @@
 		E75F0CFC1BAC0A3E0069239E /* EP_Today */ = {
 			isa = PBXGroup;
 			children = (
+				CBABFD961BACAFAF0033D9F5 /* EPDayVC.h */,
+				CBABFD971BACAFAF0033D9F5 /* EPDayVC.m */,
+				CBABFD981BACAFAF0033D9F5 /* EPMonthVC.h */,
+				CBABFD991BACAFAF0033D9F5 /* EPMonthVC.m */,
+				CBABFD9A1BACAFAF0033D9F5 /* EPSDayCell.h */,
+				CBABFD9B1BACAFAF0033D9F5 /* EPSDayCell.m */,
+				CBABFD9C1BACAFAF0033D9F5 /* EPSDayModel.h */,
+				CBABFD9D1BACAFAF0033D9F5 /* EPSDayModel.m */,
 				E75F0CFD1BAC0A3E0069239E /* EPTodayVC.h */,
 				E75F0CFE1BAC0A3E0069239E /* EPTodayVC.m */,
 				CBABFD791BAC96020033D9F5 /* EPDayCell.h */,
@@ -2438,6 +2461,7 @@
 				E75F0FC01BAC0A3E0069239E /* index.html in Resources */,
 				E75F0FAC1BAC0A3E0069239E /* UMSocialQQData.html in Resources */,
 				E77221E41BA6D228006E480E /* icon_sidemenu_setting.pdf in Resources */,
+				CBABFDA31BACB2B90033D9F5 /* icon_charge_white.pdf in Resources */,
 				CBABFD601BAC8C1F0033D9F5 /* btn_nav_draw.pdf in Resources */,
 				E75F0FB31BAC0A3E0069239E /* UMSocialSnsPlatform.html in Resources */,
 				CBABFD6A1BAC8C270033D9F5 /* icon_today_downarraw.pdf in Resources */,
@@ -2511,6 +2535,7 @@
 				E75F0F321BAC0A3E0069239E /* UIView+CSAddition.m in Sources */,
 				E75F100B1BAC0A3E0069239E /* XMAttributedLabel.m in Sources */,
 				E75F0F611BAC0A3E0069239E /* CCLocationManager.m in Sources */,
+				CBABFDA01BACAFAF0033D9F5 /* EPSDayCell.m in Sources */,
 				E75F0F391BAC0A3E0069239E /* UserCar.m in Sources */,
 				E75F0F761BAC0A3E0069239E /* NSData+ImageContentType.m in Sources */,
 				79B57A5C1BAC0E9F00239392 /* EPAccountVC.m in Sources */,
@@ -2526,6 +2551,7 @@
 				E75F0F341BAC0A3E0069239E /* UIWindow+LCAddition.m in Sources */,
 				E75F0FE81BAC0A3E0069239E /* DataSigner.m in Sources */,
 				E75F0F801BAC0A3E0069239E /* UIImage+MultiFormat.m in Sources */,
+				CBABFDA11BACAFAF0033D9F5 /* EPSDayModel.m in Sources */,
 				E75F0F311BAC0A3E0069239E /* UITextField+Addition.m in Sources */,
 				E75F0FF51BAC0A3E0069239E /* UIView+TKCategory.m in Sources */,
 				E75F0FF31BAC0A3E0069239E /* TKGlobal.m in Sources */,
@@ -2628,6 +2654,7 @@
 				E75F0FE61BAC0A3E0069239E /* XMPushLogicButton.m in Sources */,
 				E75F0FFE1BAC0A3E0069239E /* LCCustomSlider.m in Sources */,
 				E75F0F7A1BAC0A3E0069239E /* SDWebImageDownloader.m in Sources */,
+				CBABFD9F1BACAFAF0033D9F5 /* EPMonthVC.m in Sources */,
 				79B57A531BAC0DE300239392 /* MASViewConstraint.m in Sources */,
 				E75F0FD61BAC0A3E0069239E /* WXUtil.mm in Sources */,
 				E75F0FFB1BAC0A3E0069239E /* LCButton.m in Sources */,
@@ -2661,6 +2688,7 @@
 				E75F0F6B1BAC0A3E0069239E /* MMProgressHUDWindow.m in Sources */,
 				E75F0F7E1BAC0A3E0069239E /* UIButton+WebCache.m in Sources */,
 				E75F0F521BAC0A3E0069239E /* SBJsonWriter.m in Sources */,
+				CBABFD9E1BACAFAF0033D9F5 /* EPDayVC.m in Sources */,
 				E75F0F1F1BAC0A3E0069239E /* EPAccountData.m in Sources */,
 				E75F0F8A1BAC0A3E0069239E /* NSString+Addtion.m in Sources */,
 				CBABFD7C1BAC96020033D9F5 /* EPDayCell.m in Sources */,
