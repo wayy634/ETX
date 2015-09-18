@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"center";
+    self.title = @"个人中心";
     self.view.backgroundColor = [UIColor whiteColor];
 }
 

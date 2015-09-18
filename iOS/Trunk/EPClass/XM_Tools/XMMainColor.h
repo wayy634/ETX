@@ -19,3 +19,6 @@
 #define  K_COLOR_LIGHT_TEXT         [LTools colorWithHexString:@"a1a3a6"]
 #define  K_COLOR_ORANGE_TEXT        [LTools colorWithHexString:@"ff5621"]
 #define  K_COLOR_WHITE_TEXT         [LTools colorWithHexString:@"ffffff"]
+
+#define  K_COLOR_ORANGE_BG          [LTools colorWithHexString:@"f59248"]
+#define  K_COLOR_LIGHT_GRAY_BG      [LTools colorWithHexString:@"e5e6e7"]

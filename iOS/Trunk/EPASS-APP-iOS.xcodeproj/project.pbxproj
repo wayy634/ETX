@@ -66,6 +66,23 @@
 		79B57A6F1BAC3A7300239392 /* phoneCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B57A6E1BAC3A7300239392 /* phoneCode.m */; };
 		CB0054881BA9C189002A43B5 /* icon_charge_alipay.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB0054851BA9C189002A43B5 /* icon_charge_alipay.pdf */; };
 		CB0054891BA9C189002A43B5 /* icon_charge_upcash.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB0054861BA9C189002A43B5 /* icon_charge_upcash.pdf */; };
+		CB11DE7E1BAC68AE004C96FC /* icon_charge_wechatpay.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB11DE7D1BAC68AE004C96FC /* icon_charge_wechatpay.pdf */; settings = {ASSET_TAGS = (); }; };
+		CBABFD5A1BAC6CAE0033D9F5 /* ASDepthModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD581BAC6CAE0033D9F5 /* ASDepthModalViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CBABFD5D1BAC7BBA0033D9F5 /* EPBindCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD5B1BAC7BBA0033D9F5 /* EPBindCardVC.m */; settings = {ASSET_TAGS = (); }; };
+		CBABFD601BAC8C1F0033D9F5 /* btn_nav_draw.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD5E1BAC8C1F0033D9F5 /* btn_nav_draw.pdf */; settings = {ASSET_TAGS = (); }; };
+		CBABFD611BAC8C1F0033D9F5 /* btn_nav_history.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD5F1BAC8C1F0033D9F5 /* btn_nav_history.pdf */; settings = {ASSET_TAGS = (); }; };
+		CBABFD671BAC8C270033D9F5 /* icon_parking_blue.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD631BAC8C270033D9F5 /* icon_parking_blue.pdf */; settings = {ASSET_TAGS = (); }; };
+		CBABFD681BAC8C270033D9F5 /* icon_station_blue.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD641BAC8C270033D9F5 /* icon_station_blue.pdf */; settings = {ASSET_TAGS = (); }; };
+		CBABFD691BAC8C270033D9F5 /* icon_station_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD651BAC8C270033D9F5 /* icon_station_white.pdf */; settings = {ASSET_TAGS = (); }; };
+		CBABFD6A1BAC8C270033D9F5 /* icon_today_downarraw.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD661BAC8C270033D9F5 /* icon_today_downarraw.pdf */; settings = {ASSET_TAGS = (); }; };
+		CBABFD6C1BAC8C2F0033D9F5 /* view_creditcard.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6B1BAC8C2F0033D9F5 /* view_creditcard.pdf */; settings = {ASSET_TAGS = (); }; };
+		CBABFD721BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6E1BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf */; settings = {ASSET_TAGS = (); }; };
+		CBABFD731BAC90520033D9F5 /* Helvetica Condensed Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6F1BAC90520033D9F5 /* Helvetica Condensed Bold.ttf */; settings = {ASSET_TAGS = (); }; };
+		CBABFD741BAC90520033D9F5 /* Helvetica Condensed Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD701BAC90520033D9F5 /* Helvetica Condensed Italic.ttf */; settings = {ASSET_TAGS = (); }; };
+		CBABFD751BAC90520033D9F5 /* Helvetica Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD711BAC90520033D9F5 /* Helvetica Condensed.ttf */; settings = {ASSET_TAGS = (); }; };
+		CBABFD771BAC93460033D9F5 /* icon_parking_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD761BAC93460033D9F5 /* icon_parking_white.pdf */; settings = {ASSET_TAGS = (); }; };
+		CBABFD7C1BAC96020033D9F5 /* EPDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD781BAC96020033D9F5 /* EPDayCell.m */; settings = {ASSET_TAGS = (); }; };
+		CBABFD7D1BAC96020033D9F5 /* EPDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD7B1BAC96020033D9F5 /* EPDayModel.m */; settings = {ASSET_TAGS = (); }; };
 		E72C1CBB1BA9425A00B51F9B /* icon_device_add.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */; };
 		E72C1CBE1BA9481800B51F9B /* btn_nav_back.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */; };
 		E75F0CA31BAC08180069239E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E75F0CA21BAC08180069239E /* Info.plist */; };
@@ -399,6 +416,27 @@
 		79B57A6E1BAC3A7300239392 /* phoneCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = phoneCode.m; sourceTree = "<group>"; };
 		CB0054851BA9C189002A43B5 /* icon_charge_alipay.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = icon_charge_alipay.pdf; path = EP_Charge/icon_charge_alipay.pdf; sourceTree = "<group>"; };
 		CB0054861BA9C189002A43B5 /* icon_charge_upcash.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = icon_charge_upcash.pdf; path = EP_Charge/icon_charge_upcash.pdf; sourceTree = "<group>"; };
+		CB11DE7D1BAC68AE004C96FC /* icon_charge_wechatpay.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = icon_charge_wechatpay.pdf; path = EP_Charge/icon_charge_wechatpay.pdf; sourceTree = "<group>"; };
+		CBABFD581BAC6CAE0033D9F5 /* ASDepthModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDepthModalViewController.m; sourceTree = "<group>"; };
+		CBABFD591BAC6CAE0033D9F5 /* ASDepthModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDepthModalViewController.h; sourceTree = "<group>"; };
+		CBABFD5B1BAC7BBA0033D9F5 /* EPBindCardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPBindCardVC.m; sourceTree = "<group>"; };
+		CBABFD5C1BAC7BBA0033D9F5 /* EPBindCardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPBindCardVC.h; sourceTree = "<group>"; };
+		CBABFD5E1BAC8C1F0033D9F5 /* btn_nav_draw.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = btn_nav_draw.pdf; sourceTree = "<group>"; };
+		CBABFD5F1BAC8C1F0033D9F5 /* btn_nav_history.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = btn_nav_history.pdf; sourceTree = "<group>"; };
+		CBABFD631BAC8C270033D9F5 /* icon_parking_blue.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_parking_blue.pdf; sourceTree = "<group>"; };
+		CBABFD641BAC8C270033D9F5 /* icon_station_blue.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_station_blue.pdf; sourceTree = "<group>"; };
+		CBABFD651BAC8C270033D9F5 /* icon_station_white.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_station_white.pdf; sourceTree = "<group>"; };
+		CBABFD661BAC8C270033D9F5 /* icon_today_downarraw.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_today_downarraw.pdf; sourceTree = "<group>"; };
+		CBABFD6B1BAC8C2F0033D9F5 /* view_creditcard.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = view_creditcard.pdf; path = EP_Charge/view_creditcard.pdf; sourceTree = "<group>"; };
+		CBABFD6E1BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica Condensed Bold Italic.ttf"; sourceTree = "<group>"; };
+		CBABFD6F1BAC90520033D9F5 /* Helvetica Condensed Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica Condensed Bold.ttf"; sourceTree = "<group>"; };
+		CBABFD701BAC90520033D9F5 /* Helvetica Condensed Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica Condensed Italic.ttf"; sourceTree = "<group>"; };
+		CBABFD711BAC90520033D9F5 /* Helvetica Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica Condensed.ttf"; sourceTree = "<group>"; };
+		CBABFD761BAC93460033D9F5 /* icon_parking_white.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_parking_white.pdf; sourceTree = "<group>"; };
+		CBABFD781BAC96020033D9F5 /* EPDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EPDayCell.m; path = EPClass/EP_Business/EP_Today/EPDayCell.m; sourceTree = SOURCE_ROOT; };
+		CBABFD791BAC96020033D9F5 /* EPDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EPDayCell.h; path = EPClass/EP_Business/EP_Today/EPDayCell.h; sourceTree = SOURCE_ROOT; };
+		CBABFD7A1BAC96020033D9F5 /* EPDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EPDayModel.h; path = EPClass/EP_Business/EP_Today/EPDayModel.h; sourceTree = SOURCE_ROOT; };
+		CBABFD7B1BAC96020033D9F5 /* EPDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EPDayModel.m; path = EPClass/EP_Business/EP_Today/EPDayModel.m; sourceTree = SOURCE_ROOT; };
 		E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_device_add.pdf; sourceTree = "<group>"; };
 		E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = btn_nav_back.pdf; sourceTree = "<group>"; };
 		E75F0CA21BAC08180069239E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1077,6 +1115,7 @@
 		3654BE401AF775E2000FEB61 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CBABFD6D1BAC90520033D9F5 /* Font */,
 				E77221D61BA6D0BF006E480E /* Image */,
 				367BDB561AFB4A320026EAB1 /* Data */,
 			);
@@ -1141,10 +1180,35 @@
 		CB0054831BA9C112002A43B5 /* EP_Charge */ = {
 			isa = PBXGroup;
 			children = (
+				CBABFD6B1BAC8C2F0033D9F5 /* view_creditcard.pdf */,
+				CB11DE7D1BAC68AE004C96FC /* icon_charge_wechatpay.pdf */,
 				CB0054851BA9C189002A43B5 /* icon_charge_alipay.pdf */,
 				CB0054861BA9C189002A43B5 /* icon_charge_upcash.pdf */,
 			);
 			name = EP_Charge;
+			sourceTree = "<group>";
+		};
+		CBABFD621BAC8C270033D9F5 /* EP_Today */ = {
+			isa = PBXGroup;
+			children = (
+				CBABFD761BAC93460033D9F5 /* icon_parking_white.pdf */,
+				CBABFD631BAC8C270033D9F5 /* icon_parking_blue.pdf */,
+				CBABFD641BAC8C270033D9F5 /* icon_station_blue.pdf */,
+				CBABFD651BAC8C270033D9F5 /* icon_station_white.pdf */,
+				CBABFD661BAC8C270033D9F5 /* icon_today_downarraw.pdf */,
+			);
+			path = EP_Today;
+			sourceTree = "<group>";
+		};
+		CBABFD6D1BAC90520033D9F5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CBABFD6E1BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf */,
+				CBABFD6F1BAC90520033D9F5 /* Helvetica Condensed Bold.ttf */,
+				CBABFD701BAC90520033D9F5 /* Helvetica Condensed Italic.ttf */,
+				CBABFD711BAC90520033D9F5 /* Helvetica Condensed.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		E72C1CB91BA9425A00B51F9B /* EP_Device */ = {
@@ -1158,6 +1222,8 @@
 		E72C1CBC1BA9481800B51F9B /* EP_Common */ = {
 			isa = PBXGroup;
 			children = (
+				CBABFD5E1BAC8C1F0033D9F5 /* btn_nav_draw.pdf */,
+				CBABFD5F1BAC8C1F0033D9F5 /* btn_nav_history.pdf */,
 				E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */,
 			);
 			path = EP_Common;
@@ -1253,6 +1319,8 @@
 			children = (
 				E75F0CF71BAC0A3E0069239E /* EPRechargeVC.h */,
 				E75F0CF81BAC0A3E0069239E /* EPRechargeVC.m */,
+				CBABFD5C1BAC7BBA0033D9F5 /* EPBindCardVC.h */,
+				CBABFD5B1BAC7BBA0033D9F5 /* EPBindCardVC.m */,
 			);
 			path = EP_Recharge;
 			sourceTree = "<group>";
@@ -1271,6 +1339,10 @@
 			children = (
 				E75F0CFD1BAC0A3E0069239E /* EPTodayVC.h */,
 				E75F0CFE1BAC0A3E0069239E /* EPTodayVC.m */,
+				CBABFD791BAC96020033D9F5 /* EPDayCell.h */,
+				CBABFD781BAC96020033D9F5 /* EPDayCell.m */,
+				CBABFD7A1BAC96020033D9F5 /* EPDayModel.h */,
+				CBABFD7B1BAC96020033D9F5 /* EPDayModel.m */,
 			);
 			path = EP_Today;
 			sourceTree = "<group>";
@@ -2092,6 +2164,8 @@
 		E75F0EC31BAC0A3E0069239E /* UICommon+Application */ = {
 			isa = PBXGroup;
 			children = (
+				CBABFD581BAC6CAE0033D9F5 /* ASDepthModalViewController.m */,
+				CBABFD591BAC6CAE0033D9F5 /* ASDepthModalViewController.h */,
 				E75F0EC41BAC0A3E0069239E /* EMPageView.h */,
 				E75F0EC51BAC0A3E0069239E /* EMPageView.m */,
 				E75F0EC61BAC0A3E0069239E /* XMCustomSectionV.h */,
@@ -2224,6 +2298,7 @@
 		E77221D61BA6D0BF006E480E /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				CBABFD621BAC8C270033D9F5 /* EP_Today */,
 				79AE92CF1BAA706000B2EAA7 /* EP_Login */,
 				CB0054831BA9C112002A43B5 /* EP_Charge */,
 				E72C1CBC1BA9481800B51F9B /* EP_Common */,
@@ -2310,6 +2385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBABFD721BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf in Resources */,
 				E75F0F8F1BAC0A3E0069239E /* UMSocialLocalizable.strings in Resources */,
 				3654B8CA1AF73CC5000FEB61 /* Images.xcassets in Resources */,
 				E75F0CA31BAC08180069239E /* Info.plist in Resources */,
@@ -2318,15 +2394,19 @@
 				E75F0F9A1BAC0A3E0069239E /* UMSocialAccountEntity.html in Resources */,
 				79AE92D61BAA706000B2EAA7 /* icon_login_code.pdf in Resources */,
 				E75F0FD21BAC0A3E0069239E /* ios-social-sdk-socialBar.html in Resources */,
+				CBABFD771BAC93460033D9F5 /* icon_parking_white.pdf in Resources */,
 				E75F0FB61BAC0A3E0069239E /* UMSocialTencentData.html in Resources */,
 				E75F0FCB1BAC0A3E0069239E /* ios-social-sdk-comment-quick.html in Resources */,
 				E75F0FCC1BAC0A3E0069239E /* ios-social-sdk-like.html in Resources */,
 				E75F0F981BAC0A3E0069239E /* UMSShareListController.xib in Resources */,
+				CBABFD671BAC8C270033D9F5 /* icon_parking_blue.pdf in Resources */,
 				E75F0FA11BAC0A3E0069239E /* UMSocialCustomAccount.html in Resources */,
 				E75F0F991BAC0A3E0069239E /* UMSocialSDKResourcesNew.bundle in Resources */,
 				E75F0FB21BAC0A3E0069239E /* UMSocialSnsData.html in Resources */,
 				E75F0FBA1BAC0A3E0069239E /* UMSocialWechatTimelineData.html in Resources */,
 				79AE92D91BAA706000B2EAA7 /* view_login_background.pdf in Resources */,
+				CBABFD751BAC90520033D9F5 /* Helvetica Condensed.ttf in Resources */,
+				CB11DE7E1BAC68AE004C96FC /* icon_charge_wechatpay.pdf in Resources */,
 				E75F0F9B1BAC0A3E0069239E /* UMSocialAccountManager.html in Resources */,
 				E75F0FBE1BAC0A3E0069239E /* stylesPrint.css in Resources */,
 				E75F0FCF1BAC0A3E0069239E /* ios-social-sdk-shake.html in Resources */,
@@ -2337,6 +2417,7 @@
 				79AE92D71BAA706000B2EAA7 /* icon_login_mobile.pdf in Resources */,
 				E75F0FBC1BAC0A3E0069239E /* UMSocialYXTimelineData.html in Resources */,
 				E75F0FB81BAC0A3E0069239E /* UMSocialUrlResource.html in Resources */,
+				CBABFD741BAC90520033D9F5 /* Helvetica Condensed Italic.ttf in Resources */,
 				E77221E01BA6D228006E480E /* icon_sidemenu_bills.pdf in Resources */,
 				E75F0F931BAC0A3E0069239E /* UMSCommentInputControlleriPad.xib in Resources */,
 				E75F0F911BAC0A3E0069239E /* UMSCommentDetailController.xib in Resources */,
@@ -2352,17 +2433,21 @@
 				E75F0FA21BAC0A3E0069239E /* UMSocialData.html in Resources */,
 				E75F0F5C1BAC0A3E0069239E /* AlipaySDK.bundle in Resources */,
 				36698F9B1B1C683C0050771E /* Localizable.strings in Resources */,
+				CBABFD691BAC8C270033D9F5 /* icon_station_white.pdf in Resources */,
 				E77221E51BA6D228006E480E /* icon_sidemenu_today.pdf in Resources */,
 				E75F0FC01BAC0A3E0069239E /* index.html in Resources */,
 				E75F0FAC1BAC0A3E0069239E /* UMSocialQQData.html in Resources */,
 				E77221E41BA6D228006E480E /* icon_sidemenu_setting.pdf in Resources */,
+				CBABFD601BAC8C1F0033D9F5 /* btn_nav_draw.pdf in Resources */,
 				E75F0FB31BAC0A3E0069239E /* UMSocialSnsPlatform.html in Resources */,
+				CBABFD6A1BAC8C270033D9F5 /* icon_today_downarraw.pdf in Resources */,
 				E77221E21BA6D228006E480E /* icon_sidemenu_device.pdf in Resources */,
 				E75F0FD01BAC0A3E0069239E /* ios-social-sdk-share-detail.html in Resources */,
 				E75F0FB41BAC0A3E0069239E /* UMSocialSnsPlatformManager.html in Resources */,
 				E75F0FB51BAC0A3E0069239E /* UMSocialSnsService.html in Resources */,
 				E75F0FA81BAC0A3E0069239E /* UMSocialIconActionSheet.html in Resources */,
 				E75F0FAF1BAC0A3E0069239E /* UMSocialResponseEntity.html in Resources */,
+				CBABFD611BAC8C1F0033D9F5 /* btn_nav_history.pdf in Resources */,
 				CB0054881BA9C189002A43B5 /* icon_charge_alipay.pdf in Resources */,
 				E75F0F921BAC0A3E0069239E /* UMSCommentInputController.xib in Resources */,
 				E75F0FB91BAC0A3E0069239E /* UMSocialWechatSessionData.html in Resources */,
@@ -2378,6 +2463,7 @@
 				E75F0F9D1BAC0A3E0069239E /* UMSocialButton.html in Resources */,
 				E75F0FC91BAC0A3E0069239E /* iOS-social-releasenote.html in Resources */,
 				E75F0F9E1BAC0A3E0069239E /* UMSocialConfig.html in Resources */,
+				CBABFD6C1BAC8C2F0033D9F5 /* view_creditcard.pdf in Resources */,
 				E77221E31BA6D228006E480E /* icon_sidemenu_mydevice.pdf in Resources */,
 				E75F0FBD1BAC0A3E0069239E /* styles.css in Resources */,
 				E75F0FA71BAC0A3E0069239E /* UMSocialFacebookData.html in Resources */,
@@ -2393,7 +2479,9 @@
 				E75F0FC81BAC0A3E0069239E /* iOS-social-analytics-releasenote.html in Resources */,
 				E75F0FAD1BAC0A3E0069239E /* UMSocialQzoneData.html in Resources */,
 				E75F0FB71BAC0A3E0069239E /* UMSocialTwitterData.html in Resources */,
+				CBABFD731BAC90520033D9F5 /* Helvetica Condensed Bold.ttf in Resources */,
 				E75F0FA41BAC0A3E0069239E /* UMSocialDoubanData.html in Resources */,
+				CBABFD681BAC8C270033D9F5 /* icon_station_blue.pdf in Resources */,
 				E72C1CBE1BA9481800B51F9B /* btn_nav_back.pdf in Resources */,
 				E75F0F941BAC0A3E0069239E /* UMShareEditViewController.xib in Resources */,
 				E75F0F851BAC0A3E0069239E /* Info.plist in Resources */,
@@ -2447,6 +2535,7 @@
 				E75F0F6E1BAC0A3E0069239E /* CustomBadge.m in Sources */,
 				E75F10051BAC0A3E0069239E /* LCWebViewVC.m in Sources */,
 				E75F0FF41BAC0A3E0069239E /* UIImage+TKCategory.m in Sources */,
+				CBABFD5A1BAC6CAE0033D9F5 /* ASDepthModalViewController.m in Sources */,
 				E75F0F8E1BAC0A3E0069239E /* UIViewExt.m in Sources */,
 				E75F0F4C1BAC0A3E0069239E /* Reachability.m in Sources */,
 				E75F0FFC1BAC0A3E0069239E /* LCCustomAnimationPointV.m in Sources */,
@@ -2531,6 +2620,7 @@
 				E75F0F481BAC0A3E0069239E /* ASIFormDataRequest.m in Sources */,
 				E75F0F351BAC0A3E0069239E /* MathFunction.m in Sources */,
 				E75F0F661BAC0A3E0069239E /* MMProgressHUD+Animations.m in Sources */,
+				CBABFD7D1BAC96020033D9F5 /* EPDayModel.m in Sources */,
 				E75F0FF61BAC0A3E0069239E /* HCTapGestureRecognizer.m in Sources */,
 				E75F0FF21BAC0A3E0069239E /* TKCalendarMonthViewController.m in Sources */,
 				E75F0FD41BAC0A3E0069239E /* ApiXml.mm in Sources */,
@@ -2561,6 +2651,7 @@
 				E75F0F271BAC0A3E0069239E /* EPLeftVC.m in Sources */,
 				E75F10011BAC0A3E0069239E /* LCMenuBar.m in Sources */,
 				E75F0F511BAC0A3E0069239E /* SBJsonParser.m in Sources */,
+				CBABFD5D1BAC7BBA0033D9F5 /* EPBindCardVC.m in Sources */,
 				E75F0F531BAC0A3E0069239E /* LCRKAPITask.m in Sources */,
 				E75F0FE51BAC0A3E0069239E /* XMNavigationProcessC.m in Sources */,
 				E75F0F2C1BAC0A3E0069239E /* LCUIView+ClickOnTheState.m in Sources */,
@@ -2572,6 +2663,7 @@
 				E75F0F521BAC0A3E0069239E /* SBJsonWriter.m in Sources */,
 				E75F0F1F1BAC0A3E0069239E /* EPAccountData.m in Sources */,
 				E75F0F8A1BAC0A3E0069239E /* NSString+Addtion.m in Sources */,
+				CBABFD7C1BAC96020033D9F5 /* EPDayCell.m in Sources */,
 				E75F0F571BAC0A3E0069239E /* LCRKMappingData.m in Sources */,
 				E75F0F3B1BAC0A3E0069239E /* UserGarage.m in Sources */,
 				E75F0F2F1BAC0A3E0069239E /* UIAlertView+Block.m in Sources */,
@@ -2637,7 +2729,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
@@ -2674,7 +2766,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -2690,6 +2782,7 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lei Kong (M2TC65GZQD)";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EPClass/XM_ThirdParty/umeng_ios_social_sdk_4.2.2_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -2706,7 +2799,7 @@
 					"\"${PODS_ROOT}/Headers/Public/UMengFeedback\"",
 					"\"$(PROJECT_DIR)/EPClass/XM_ThirdParty/AliSDK\"",
 				);
-				INFOPLIST_FILE = "EPASS-APP-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/EPASS-APP-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2736,6 +2829,7 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EPClass/XM_ThirdParty/umeng_ios_social_sdk_4.2.2_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -2752,7 +2846,7 @@
 					"\"${PODS_ROOT}/Headers/Public/UMengFeedback\"",
 					"\"$(PROJECT_DIR)/EPClass/XM_ThirdParty/AliSDK\"",
 				);
-				INFOPLIST_FILE = "EPASS-APP-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/EPASS-APP-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2803,7 +2897,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -2819,6 +2913,7 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: RayShon Co., Ltd.";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EPClass/XM_ThirdParty/umeng_ios_social_sdk_4.2.2_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -2835,7 +2930,7 @@
 					"\"${PODS_ROOT}/Headers/Public/UMengFeedback\"",
 					"\"$(PROJECT_DIR)/EPClass/XM_ThirdParty/AliSDK\"",
 				);
-				INFOPLIST_FILE = "EPASS-APP-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/EPASS-APP-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

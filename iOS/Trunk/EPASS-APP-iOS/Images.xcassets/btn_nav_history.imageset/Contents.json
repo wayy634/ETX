@@ -1,13 +1,8 @@
 {
   "images" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
-      "filename" : "btn_nav_history.pdf",
-      "unassigned" : true,
-      "scale" : "1x"
+      "filename" : "btn_nav_history.pdf"
     }
   ],
   "info" : {

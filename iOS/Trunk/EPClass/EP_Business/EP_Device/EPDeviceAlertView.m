@@ -38,7 +38,7 @@
     
     
     self.mAlertView = [[UIView alloc]initWithFrame:CGRectMake(DEVICEALERT_LEFT, DEVICEALERT_TOP, DEVICEALERT_WIDTH, DEVICEALERT_HEIGHT)];
-    self.mAlertView.layer.cornerRadius = 5.0;
+    self.mAlertView.layer.cornerRadius = 10.0;
     [self.mAlertView setBackgroundColor:[UIColor whiteColor]];
     [self addSubview:self.mAlertView];
     self.mType = type_;

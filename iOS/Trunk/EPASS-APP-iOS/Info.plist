@@ -57,6 +57,13 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    <key>UIAppFonts</key>
+	<array>
+		<string>Helvetica Condensed Bold Italic.ttf</string>
+		<string>Helvetica Condensed Bold.ttf</string>
+		<string>Helvetica Condensed Italic.ttf</string>
+		<string>Helvetica Condensed.ttf</string>
+	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

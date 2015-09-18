@@ -136,6 +136,13 @@
 #define MobilePhoneKey                      @"mobilePhone"
 #define PasswordKey                         @"password"
 
+/***************************** CUSTOMED FONT ****************************/
+
+#define FONT_HCB  @"Helvetica-Condensed-Bold"
+#define FONT_HC   @"Helvetica-Condensed"
+#define FONT_HCBO @"Helvetica-Condensed-BoldObl"
+#define FONT_HCO  @"Helvetica-Condensed-Oblique"
+#define FONT_H    @"HelveticaNeue"
 
 
 

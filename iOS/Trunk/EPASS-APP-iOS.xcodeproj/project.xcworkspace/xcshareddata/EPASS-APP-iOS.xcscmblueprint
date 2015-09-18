@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C32F11CC474899EE73F6FA826D39F782B9EECAF7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "175cb7ce-f396-11e3-b192-f31c9dbecfd9++4588" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "175cb7ce-f396-11e3-b192-f31c9dbecfd9++4588" : 0,
+    "C32F11CC474899EE73F6FA826D39F782B9EECAF7" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AE6CCF22-E9F7-4900-B196-DCCA32C720EF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "175cb7ce-f396-11e3-b192-f31c9dbecfd9++4588" : "EPassAPP\/iOS\/Trunk\/EPASS-APP-iOS\/EPClass\/XM_ThirdParty\/UIImage+PDF\/",
+    "C32F11CC474899EE73F6FA826D39F782B9EECAF7" : "EPassAPP"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EPASS-APP-iOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS\/Trunk\/EPASS-APP-iOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/svn.imxiaomai.com\/xiaomai",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "175cb7ce-f396-11e3-b192-f31c9dbecfd9++4588"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/raykoon\/EPassAPP.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C32F11CC474899EE73F6FA826D39F782B9EECAF7"
+    }
+  ]
+}
