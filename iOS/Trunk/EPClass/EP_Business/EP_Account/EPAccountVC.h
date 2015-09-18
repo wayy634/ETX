@@ -7,14 +7,14 @@
 //
 
 #import "LCCustomBaseVC.h"
-
+#import "EPLoginTextField.h"
 typedef NS_ENUM(NSInteger, EPAccountType){
     EPAccountTypeLogin = 0,
     EPAccountTypeRegist = 1,
     EPAccountTypeAccount = 2
 };
 
-@interface EPAccountVC : LCCustomBaseVC{
+@interface EPAccountVC : LCCustomBaseVC<UITextFieldDelegate,EPLoginTextFieldDelegate>{
 
     EPAccountType mType;
 }

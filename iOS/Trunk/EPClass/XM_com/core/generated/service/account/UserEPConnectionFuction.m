@@ -140,6 +140,25 @@
     url = nil;
 }
 
+/*
+ *获取短信验证码
+ */
++ (void)phoneCode_mobile:(NSString *)mobile delegate:(id)delegate_ allowCancel:(BOOL)allowCancel_ finishSelector:(SEL)finishSEL_ failSelector:(SEL)failSEL_ timeOutSelector:(SEL)timeOutSEL_{
+
+    NSMutableString *url = [[[NSMutableString alloc] init] autorelease];
+    [url appendFormat:@"%@/epass/phoneCode", K_URL_HOST];
+    
+    NSMutableDictionary *params = [[[NSMutableDictionary alloc] init] autorelease];
+    [params setObject:mobile forKey:@"mobile"];
+    [params setObject:[EPAccountManager getAccountData].mUserToken forKey:@"token"];
+    [params setObject:@"" forKey:@"token"];
+    
+    [LTools startAsynchronousUrl:url parameter:params method:@"GET" delegate:delegate_ allowCancel:allowCancel_ mappingName:@"UserInfo" urlCacheMode:NO finishSelector:finishSEL_ failSelector:failSEL_ timeOutSelector:timeOutSEL_];
+    params = nil;
+    url = nil;
+
+}
+
 /************用户新增车辆的接口***********/
 
 

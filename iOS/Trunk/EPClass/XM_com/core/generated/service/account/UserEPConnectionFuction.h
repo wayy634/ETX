@@ -44,6 +44,13 @@
  */
 + (void)userProfileDelegate:(id)delegate_ allowCancel:(BOOL)allowCancel_ finishSelector:(SEL)finishSEL_ failSelector:(SEL)failSEL_ timeOutSelector:(SEL)timeOutSEL_;
 
+/*
+ *获取短信验证码
+ */
++ (void)phoneCode_mobile:(NSString *)mobile delegate:(id)delegate_ allowCancel:(BOOL)allowCancel_ finishSelector:(SEL)finishSEL_ failSelector:(SEL)failSEL_ timeOutSelector:(SEL)timeOutSEL_;
+
+
+
 /************用户车辆的接口***********/
 
 
