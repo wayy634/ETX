@@ -8,13 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#define K_CACHE_SHOPPINGCART                @"ShoppingCart"
-#define K_CACHE_ACCOUNTINFO                 @"AccountInfo"
-#define K_CACHE_CITY                        @"City"
-#define K_CACHE_INVITATION_FRIEND           @"InvitationFriend"
-#define K_CACHE_CATEGORY_ARRAY              @"CategoryArray"
-#define K_CACHE_CATEGORYLIST_DIC            @"CategoryListDataDictinary"
-#define K_CACHE_HOMEPAGE                    @"homePage"
+#define K_KEY_DEVICE_TOKEN          @"device_token"
+#define K_CACHE_ACCOUNTINFO         @"accountInfo"
 
 typedef void(^getDataByCache)(id data);
 typedef void(^refreshData)(void);

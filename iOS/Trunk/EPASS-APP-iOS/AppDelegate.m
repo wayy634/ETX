@@ -12,7 +12,6 @@
 #import "UIAlertView+Block.h"
 #import "UMSocialData.h"
 #import "XMPushManager.h"
-#import "XMHomePageVC.h"
 
 
 //

@@ -10,19 +10,9 @@
 #define K_IS_PUBLISH  0
 
 #if K_IS_PUBLISH == 1 //生产
-    #define K_URL_USER_HOST @"http://123.57.75.147:8090"
-    #define K_URL_P2P_HOST @"http://pre.p2p.v3.imEPASS-APP-iOS.com"
-    #define K_URL_MALL_HOST @"http://pre.app.imEPASS-APP-iOS.com"
-    #define K_URL_REWARD_HOST @"http://app.tmall.imEPASS-APP-iOS.com"
-    #define K_URL_TEN_HOST @"http://apis.map.qq.com"
-    #define K_URL_PUSH_HOST @"http://123.57.33.173:8092"
+    #define K_URL_HOST @"http://123.56.91.111:8080"
 #elif K_IS_PUBLISH == 0 //开发
-    #define K_URL_USER_HOST @"http://182.92.150.126:8090"
-    #define K_URL_P2P_HOST @"http://p2p.test.b2.imEPASS-APP-iOS.com"
-    #define K_URL_MALL_HOST @"http://app.tmall.imEPASS-APP-iOS.com"
-    #define K_URL_REWARD_HOST @"http://app.tmall.imEPASS-APP-iOS.com"
-    #define K_URL_TEN_HOST @"http://apis.map.qq.com"
-    #define K_URL_PUSH_HOST @"http://123.57.33.173:8092"
+    #define K_URL_HOST @"http://123.56.91.111:8080"
 #endif
 
 //#define TEST_DEBUG
@@ -45,7 +35,8 @@
 #define K_SINA_REDIRECT_URL     @"https://api.weibo.com/oauth2/default.html"
 
 //一些固定的Url地址
-#define K_WEBURL_INVATATIONFRIENDS_RULE  @"http://wap.tmall.imEPASS-APP-iOS.com/page/bonus/activityExplain.html"//邀请好友的活动规则
+#define K_WEBURL_DEVICE_EXPLAIN @"http://www.baidu.com"//邀请好友的活动规则
+
 //邀请好友的单日上限
 #define K_INVITATIONFRIENDS_EVERYDAY_MAX 30 
 //suk列表页面 分页的单页数量

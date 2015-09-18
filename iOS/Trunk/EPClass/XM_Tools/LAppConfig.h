@@ -10,7 +10,7 @@
 //网络传输和服务器缓存时间差
 #define K_TIME_DELAY 5
 //navigation参数 backgroundImageView
-#define K_NAV_BAR_BACKGROUND            @"top_bg.png"
+#define K_NAV_BAR_BACKGROUND                @"top_bg.png"
 #define K_NAVIGATION_X                      0
 #define K_NAVIGATION_Y                      46
 #define K_NAVIGATION_WIDTH                  [UIScreen mainScreen].bounds.size.width
@@ -71,7 +71,7 @@
 
 #define K_KEY_PROMPT_SECRET             @"prompt_secret"
 
-#define K_KEY_DEVICE_TOKEN              @"device_token"
+
 #define K_KEY_IDFA_UUID                 @"IDFAUUID"
 #define K_KEY_DEVICE_ID                 @"device_id"
 #define K_KEY_DEFAULT_DEVICE_TOKEN      @"   "

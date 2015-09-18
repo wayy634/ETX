@@ -43,17 +43,17 @@
     [self.view bringSubviewToFront:self.mTopView];
     
     if (self.mCustomBaseType == LCCustomBaseVCTypeRoot) {
-        [mContentView setFrame:CGRectMake(0, self.mTopView.bottom, K_SCREEN_WIDTH, self.view.height - self.mTopView.bottom - mBottomMenuV.height)];
-    } else if (self.mCustomBaseType == LCCustomBaseVCTypeNormal) {
-        mBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [mBackButton setTag:LCBOTTOMMENUV_BACKBUTTON];
-        [mBackButton setImage:[UIImage imageNamed:([XMThemeManager sharedThemeManager].mThemeManagerType == XMThemeManagerTypeNormal?@"Icon_Back_Normal.png":@"Icon_back_Fast.png")] forState:UIControlStateNormal];
-        mBackButton.adjustsImageWhenHighlighted = NO;
-        [mBackButton setFrame:CGRectMake(10, K_SYSTEM_BAR/2 + (self.mTopView.height - 30)/2, 100, 30)];
-        [mBackButton setImageEdgeInsets:UIEdgeInsetsMake(0, -70, 0, 0)];
-        [mBackButton addTarget:self action:@selector(backButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-        [self.mTopView addSubview:mBackButton];
+        [mContentView setFrame:CGRectMake(0, self.mTopView.bottom, K_SCREEN_WIDTH, self.view.height - self.mTopView.bottom)];
     }
+    mBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [mBackButton setTag:LCBOTTOMMENUV_BACKBUTTON];
+    
+    [mBackButton setImage:[UIImage imageWithPDFNamed:@"btn_nav_back.pdf" atSize:CGSizeMake(30, 30)] forState:UIControlStateNormal];
+    mBackButton.adjustsImageWhenHighlighted = NO;
+    [mBackButton setFrame:CGRectMake(10, K_SYSTEM_BAR/2 + (self.mTopView.height - 30)/2, 100, 30)];
+    [mBackButton setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, mBackButton.width-30)];
+    [mBackButton addTarget:self action:@selector(backButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [self.mTopView addSubview:mBackButton];
     
     [self.view addSubview:[LCUITools creatLineView:CGRectMake(0, topY-0.5, K_SCREEN_WIDTH, 0.5) bgColor:[LTools colorWithHexString:@"dddddd"]]];
 }
@@ -61,18 +61,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-}
-
-- (void)showButtonPressed {
-    [self animationBottomAnimation:BottomAnimationTypeShow completion:^(BOOL finished) {
-        
-    }];
-}
-
-- (void)hideButtonPressed {
-    [self animationBottomAnimation:BottomAnimationTypeDisappear completion:^(BOOL finished) {
-        
-    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -92,8 +80,13 @@
 
 - (void)backButtonPressed {
     if (self.navigationController == APP_DELEGATE.mNavigationController) {
-        [LTools cancelUnfinishedRequest];
-        [LTools popControllerAnimated:YES];
+        if (self.mCustomBaseType == LCCustomBaseVCTypeNormal) {
+            [LTools cancelUnfinishedRequest];
+            [LTools popControllerAnimated:YES];
+        }else if (self.mCustomBaseType == LCCustomBaseVCTypeRoot) {
+            [APP_DELEGATE.mDDMenu showLeftController:YES];
+        }
+        
     }
 }
 
@@ -137,32 +130,6 @@
     return self;
 }
 
-- (void)animationBottomAnimation:(BottomAnimationType)_type completion:(void (^)(BOOL finished))completion {
-//    if (_type == BottomAnimationTypeShow) {
-//        [UIView animateWithDuration:LCCUSTOMBASEVC_ANIMATION_DURATION delay:LCCUSTOMBASEVC_ANIMATION_DELAY options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
-//            [mBottomMenuV setFrame:CGRectMake(0, K_SCREEN_HEIGHT - mBottomMenuV.height, mBottomMenuV.width, mBottomMenuV.height)];
-//            if (mIsControlWithContentV) {
-//                [mContentView setFrame:CGRectMake(0, mTopView.bottom, K_SCREEN_WIDTH, self.view.height - mTopView.bottom - mBottomMenuV.height)];
-//            }
-//        } completion:^(BOOL finished) {
-//            if (completion) {
-//                completion(finished);
-//            }
-//        }];
-//    } else if (_type == BottomAnimationTypeDisappear) {
-//        [UIView animateWithDuration:LCCUSTOMBASEVC_ANIMATION_DURATION delay:LCCUSTOMBASEVC_ANIMATION_DELAY options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
-//            [mBottomMenuV setFrame:CGRectMake(0, K_SCREEN_HEIGHT , mBottomMenuV.width, mBottomMenuV.height)];
-//            if (mIsControlWithContentV) {
-//                [mContentView setFrame:CGRectMake(0, mTopView.bottom, K_SCREEN_WIDTH, self.view.height - mTopView.bottom)];
-//            }
-//        } completion:^(BOOL finished) {
-//            if (completion) {
-//                completion(finished);
-//            }
-//        }];
-//    }
-}
-
 - (void)setTitle:(NSString *)_titleText {
     mTitleStr = _titleText;
     if (mTitleLabel != nil) {
@@ -195,13 +162,6 @@
 }
 
 #pragma mark --
-#pragma mark LCBottomMenuVDelegate
-- (void)bottomVDelegateButtonPressed:(XMBottomMenuVRootType)_type controller:(id)_controller {
-    mBottomMenuV = [LTools getBottomMenuV];
-    [((LCCustomBaseVC *)_controller).view addSubview:mBottomMenuV];
-    [APP_DELEGATE.mNavigationController setViewControllers:nil];
-    [APP_DELEGATE.mNavigationController initWithRootViewController:_controller];
-}
 
 - (void)dealloc {
     [self.mTopView release] , self.mTopView = nil;

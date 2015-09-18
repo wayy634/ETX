@@ -96,7 +96,6 @@ NSString * const LCRKAPITaskException = @"LCRKAPITaskException";
 #pragma mark - private
 - (void)run
 {
-//    NSString *requestURLStr = [NSString stringWithFormat:@"%@%@", K_URL_HOST, self.apiRequestURI];
     NSString *requestURLStr = self.apiRequestURI;
     ASIFormDataRequest *dataRequest = [[ASIFormDataRequest alloc] initWithURL:[NSURL URLWithString:requestURLStr]];
     
@@ -110,21 +109,6 @@ NSString * const LCRKAPITaskException = @"LCRKAPITaskException";
         dataRequest.requestMethod = @"GET";
     }
     NSLog(@"<<<<<<<< url: %@ http method: %@", self.apiRequestURI, dataRequest.requestMethod);
-//    [dataRequest addRequestHeader:@"Accept" value:@"application/json,*/*"];
-    
-//    if ([XMAccountManager getXMMyData].mRandomId && ![[XMAccountManager getXMMyData].mRandomId isEqualToString:@""] && [XMAccountManager getXMMyData].mRandomId.length > 0) {
-//        [dataRequest addRequestHeader:@"id" value:[XMAccountManager getXMMyData].mRandomId];
-//    }
-//    
-//    if ([XMAccountManager getXMMyData].mToken && ![[XMAccountManager getXMMyData].mToken isEqualToString:@""] && [XMAccountManager getXMMyData].mToken.length > 0) {
-//        [dataRequest addRequestHeader:@"token" value:[XMAccountManager getXMMyData].mToken];
-//    }
-//    
-//    if ([XMAccountManager getXMMyData].mUserInfo.userId != 0) {
-//        [dataRequest addRequestHeader:@"userId" value:[NSString stringWithFormat:@"%ld",[XMAccountManager getXMMyData].mUserInfo.userId]];
-//    }
-//    
-//    NSLog(@"dataRequest.requestHeaders = %@",dataRequest.requestHeaders);
     
     NSMutableDictionary *allParams = [self configureParams];
     
@@ -139,15 +123,8 @@ NSString * const LCRKAPITaskException = @"LCRKAPITaskException";
         NSLog(@"<<<<<<<< url: %@ params: %@", self.apiRequestURI, allParams);
     } else if (_httpRequestMethod == LCRKHttpMethodPostBody) {
         if ([NSJSONSerialization isValidJSONObject:allParams]) {
-//            NSString *reqData = @"";
             NSData *postDatas = [NSJSONSerialization dataWithJSONObject:allParams options:NSJSONWritingPrettyPrinted error:nil];
-//            NSString *str = [[NSString alloc] initWithData:postDatas encoding:NSUTF8StringEncoding];
-//            reqData = [reqData stringByAppendingString:str];
-//            NSLog(@"reqData = %@",reqData);
-//            postDatas = [NSData dataWithBytes:[reqData UTF8String] length:[reqData length]];
-            
             [dataRequest setPostBody:(NSMutableData *)postDatas];
-//            reqData = nil;
             postDatas = nil;
             NSLog(@"<<<<<<<< url: %@ params: %@", self.apiRequestURI, dataRequest.postBody);
         }
@@ -158,10 +135,6 @@ NSString * const LCRKAPITaskException = @"LCRKAPITaskException";
         }];
         NSLog(@"<<<<<<<< url: %@ params: %@", self.apiRequestURI, allParams);
     }
-    
-    
-//    dataRequest.delegate = self;
-    
     __block LCRKAPITask *weakSelf = self;
     [dataRequest setStartedBlock:^{
         [weakSelf requestStarted:dataRequest];
@@ -192,11 +165,8 @@ NSString * const LCRKAPITaskException = @"LCRKAPITaskException";
         if (!deviceToken) {
             deviceToken = @"";
         }
-    [aDictionary setObject:deviceToken forKey:@"deviceId"];
+    [aDictionary setObject:deviceToken forKey:@"devicetoken"];
     [aDictionary setObject:@"ios" forKey:@"deviceType"];
-    [aDictionary setObject:K_CLIENT_VERSION forKey:@"version"];
-    
-    [aDictionary setObject:XM_KEY_PRODUCT_ID forKey:@"productId"];
     
     return [aDictionary autorelease];
 }
@@ -204,7 +174,6 @@ NSString * const LCRKAPITaskException = @"LCRKAPITaskException";
 - (void)failedWithError:(NSError *)aError
 {
     if (self.delegate) {
-        
         
         if (_failedSelector) {
             if ([self.delegate respondsToSelector:_failedSelector]) {
@@ -370,79 +339,13 @@ NSString * const LCRKAPITaskException = @"LCRKAPITaskException";
     id jsonObject = [NSJSONSerialization JSONObjectWithData:[request responseData] options:NSJSONReadingMutableContainers error:&aError];
     NSLog(@"****** response: %@", jsonObject);
     
-    
-    
-    LCAPIResult *apiResult = [LCAPIResult lcrkMappedObjectWithDictionary:[self.apiRequestURI rangeOfString:K_URL_TEN_HOST].location != NSNotFound ? [self allNestedFuciton:jsonObject] : [self nestedFuciton:jsonObject] extendMappingConfiguration:LCRKModuleListMappingConfigurationForKey(self.resultMappingName)];
-    
-//    LCAPIResult *apiResult = [[LCAPIResult alloc] init];
-//    [apiResult setExtendMappingConfiguration:LCRKModuleListMappingConfigurationForKey(self.resultMappingName)];
-//    [apiResult lcrkParseDatasInDictioary:jsonObject];
-    
+    LCAPIResult *apiResult = [LCAPIResult lcrkMappedObjectWithDictionary:[self nestedFuciton:jsonObject] extendMappingConfiguration:LCRKModuleListMappingConfigurationForKey(self.resultMappingName)];
+//
     RKMappingResult *mappingResult = [RKMappingResult resultWithFirstObject:apiResult];
     
-//    [apiResult release];
-    
-    [[LCRKAPITaskManager sharedAPITaskManager] removeTask:self];
-    
-    [self autorelease];
-    
-    
-    
-//    if (request.responseStatusCode == 200 || request.responseStatusCode == 302) {
-//        [LTools mathTimeDelay:apiResult.serverTimeMillis];
-//    }
-    
-    
-    
-    
-    
-//    [[LTools getWhiteList] removeAllObjects];
-//    [[LTools getWhiteList] addObjectsFromArray:apiResult.whiteList];
+//    [[LCRKAPITaskManager sharedAPITaskManager] removeTask:self];
 //    
-//    if (apiResult.code == 8000 || apiResult.code == 1001) {
-//        [LTools deletedAlert];
-//        if ([self.delegate isKindOfClass:[LCAppDelegate class]] || [[[APP_DELEGATE.mNavigationController viewControllers] lastObject] isKindOfClass:[SAPILoginViewController class]]  || [[[APP_DELEGATE.mNavigationController viewControllers] lastObject] isKindOfClass:[SAPIRegViewController class]]) {
-//            [self finishedWithResult:mappingResult];
-//            return;
-//        }
-//        [APP_DELEGATE.mAccountTools exitLogin];
-//        [APP_DELEGATE.mAccountTools accountLoginWithDelegate:nil
-//                                                        from:[LCChannelManager defaultLoginOpenAccountType]
-//                                                    animated:NO
-//                                                     success:^(id code) {
-//                                                     } fail:^(NSString *msg) {
-//                                                     }];
-//        return;
-//    }
-    
-//    if (apiResult.updateInfo.policy == 1) {
-//        __block UIAlertView *alert1 = [[UIAlertView alloc] initWithTitle:STRING(@"s_prompt")
-//                                                                 message:apiResult.updateInfo.updateLog
-//                                                                delegate:self
-//                                                       cancelButtonTitle:nil
-//                                                       otherButtonTitles:@"立即升级", nil];
-//        [alert1 showWithCompleteBlock:^(NSInteger btnIndex) {
-//            if (btnIndex == 0) {
-//                [LTools updateApp:apiResult.updateInfo.downloadUrl];
-//            }
-//        }];
-//        [LTools setHavePrompt:YES];
-//    } else if (apiResult.updateInfo.policy == 2) {
-//        if (![LTools getHavePrompt]) {
-//            __block UIAlertView *alert1 = [[UIAlertView alloc] initWithTitle:STRING(@"s_prompt")
-//                                                                     message:apiResult.updateInfo.updateLog
-//                                                                    delegate:self
-//                                                           cancelButtonTitle:@"稍后再说"
-//                                                           otherButtonTitles:@"立即升级", nil];
-//            [alert1 showWithCompleteBlock:^(NSInteger btnIndex) {
-//                if (btnIndex == 1) {
-//                    [LTools updateApp:apiResult.updateInfo.downloadUrl];
-//                }
-//            }];
-//            [LTools setHavePrompt:YES];
-//        }
-//    }
-    
+//    [self autorelease];
     [self finishedWithResult:mappingResult];
 }
 

@@ -32,7 +32,7 @@
     mIsNeedPrompt = YES;
     mUpdateURL = [[NSMutableString alloc] init];
 //    NSString *composeUrl = [NSString stringWithFormat:@"%@%@%@&version=%@&device_id=%@", K_URL_ADDRESS, address ,[LTools getObjectFromSystemKey:@"appkey"],K_CLIENT_VERSION,[LTools getObjectFromSystemKey:K_KEY_DEVICE_ID]];
-    NSString *composeUrl = [NSString stringWithFormat:@"%@%@", K_URL_REWARD_HOST, address];
+    NSString *composeUrl = [NSString stringWithFormat:@"%@%@", @"www.baidu.com", address];
     NSLog(@"url ====== %@", composeUrl);
 	mRequest = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:composeUrl]];
     [mRequest setRequestMethod:@"POST"];
