@@ -56,8 +56,13 @@
     
     self.mIconButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.mIconButton addTarget:self action:@selector(buttonPress:) forControlEvents:UIControlEventTouchUpInside];
-    [self.mIconButton setBackgroundColor:K_COLOR_MAIN_BACKGROUND];
+    [self.mIconButton setImage:[UIImage imageNamed:@"demo_avator.png"] forState:UIControlStateNormal];
     self.mIconButton.frame = CGRectMake(45, 60, 75, 75);
+    self.mIconButton.layer.cornerRadius = 37.5;
+    self.mIconButton.layer.masksToBounds= YES;
+    self.mIconButton.layer.borderWidth  = 2;
+    self.mIconButton.layer.borderColor  = K_COLOR_WHITE_TEXT.CGColor;
+    
     [self.view addSubview:self.mIconButton];
     
     UITableView *tabelView = [[UITableView alloc] initWithFrame:CGRectMake(40, 150, K_SCREEN_WIDTH, self.mContentView.height)];

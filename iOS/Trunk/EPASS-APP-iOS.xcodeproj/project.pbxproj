@@ -90,6 +90,23 @@
 		CBABFDA01BACAFAF0033D9F5 /* EPSDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD9B1BACAFAF0033D9F5 /* EPSDayCell.m */; };
 		CBABFDA11BACAFAF0033D9F5 /* EPSDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD9D1BACAFAF0033D9F5 /* EPSDayModel.m */; };
 		CBABFDA31BACB2B90033D9F5 /* icon_charge_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFDA21BACB2B90033D9F5 /* icon_charge_white.pdf */; };
+		CBEE962B1BAD79DA0081CAB9 /* EPCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50782B1BAD31B700204553 /* EPCenterVC.m */; };
+		CBEE962C1BAD7A0F0081CAB9 /* EPAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50782F1BAD32AB00204553 /* EPAccountCell.m */; };
+		CBEE962D1BAD7A0F0081CAB9 /* EPModProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5078391BAD399400204553 /* EPModProfileVC.m */; };
+		CBEE962E1BAD7A0F0081CAB9 /* EPModPwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5078411BAD3FBB00204553 /* EPModPwdVC.m */; };
+		CBEE962F1BAD7A0F0081CAB9 /* EPModGarageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5078451BAD416900204553 /* EPModGarageVC.m */; };
+		CBEE96301BAD7A0F0081CAB9 /* EPModCarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5078441BAD416900204553 /* EPModCarVC.m */; };
+		CBEE96311BAD7A0F0081CAB9 /* EPGarageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50784A1BAD465F00204553 /* EPGarageVC.m */; };
+		CBEE96321BAD7A0F0081CAB9 /* EPCarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50784B1BAD465F00204553 /* EPCarVC.m */; };
+		CBEE96331BAD7A0F0081CAB9 /* EPCarGarageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5078511BAD471F00204553 /* EPCarGarageCell.m */; };
+		CBEE96341BAD7A0F0081CAB9 /* EPCarGarageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5078531BAD471F00204553 /* EPCarGarageModel.m */; };
+		CBEE96351BAD7A660081CAB9 /* demo_avator.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5078271BAD2EDE00204553 /* demo_avator.png */; };
+		CBEE96361BAD7A660081CAB9 /* view_account_top_background.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5078281BAD2EDE00204553 /* view_account_top_background.png */; };
+		CBEE96371BAD7A790081CAB9 /* icon_account_setting.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB5078311BAD359100204553 /* icon_account_setting.pdf */; };
+		CBEE96381BAD7A790081CAB9 /* icon_account_mygarage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB5078321BAD359100204553 /* icon_account_mygarage.pdf */; };
+		CBEE96391BAD7A790081CAB9 /* icon_account_mycar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB5078331BAD359100204553 /* icon_account_mycar.pdf */; };
+		CBEE963A1BAD7A790081CAB9 /* icon_account_profile.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB5078341BAD359100204553 /* icon_account_profile.pdf */; };
+		CBEE963B1BAD7A790081CAB9 /* EPass_Icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB5078221BAD2A4900204553 /* EPass_Icon.pdf */; };
 		E72C1CBB1BA9425A00B51F9B /* icon_device_add.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */; };
 		E72C1CBE1BA9481800B51F9B /* btn_nav_back.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */; };
 		E75F0F1F1BAC0A3E0069239E /* EPAccountData.m in Sources */ = {isa = PBXBuildFile; fileRef = E75F0CDF1BAC0A3E0069239E /* EPAccountData.m */; };
@@ -2511,6 +2528,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEE96371BAD7A790081CAB9 /* icon_account_setting.pdf in Resources */,
+				CBEE96381BAD7A790081CAB9 /* icon_account_mygarage.pdf in Resources */,
+				CBEE96391BAD7A790081CAB9 /* icon_account_mycar.pdf in Resources */,
+				CBEE963A1BAD7A790081CAB9 /* icon_account_profile.pdf in Resources */,
+				CBEE963B1BAD7A790081CAB9 /* EPass_Icon.pdf in Resources */,
+				CBEE96351BAD7A660081CAB9 /* demo_avator.png in Resources */,
+				CBEE96361BAD7A660081CAB9 /* view_account_top_background.png in Resources */,
 				CBABFD721BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf in Resources */,
 				E75F0F8F1BAC0A3E0069239E /* UMSocialLocalizable.strings in Resources */,
 				3654B8CA1AF73CC5000FEB61 /* Images.xcassets in Resources */,
@@ -2529,7 +2553,6 @@
 				E75F0F991BAC0A3E0069239E /* UMSocialSDKResourcesNew.bundle in Resources */,
 				E75F0FB21BAC0A3E0069239E /* UMSocialSnsData.html in Resources */,
 				E75F0FBA1BAC0A3E0069239E /* UMSocialWechatTimelineData.html in Resources */,
-				CB5078381BAD359100204553 /* icon_account_profile.pdf in Resources */,
 				79AE92D91BAA706000B2EAA7 /* view_login_background.pdf in Resources */,
 				CBABFD751BAC90520033D9F5 /* Helvetica Condensed.ttf in Resources */,
 				CB11DE7E1BAC68AE004C96FC /* icon_charge_wechatpay.pdf in Resources */,
@@ -2538,7 +2561,6 @@
 				E75F0FCF1BAC0A3E0069239E /* ios-social-sdk-shake.html in Resources */,
 				E75F0FBB1BAC0A3E0069239E /* UMSocialYXSessionData.html in Resources */,
 				E75F0FB01BAC0A3E0069239E /* UMSocialSinaData.html in Resources */,
-				CB5078291BAD2EDE00204553 /* demo_avator.png in Resources */,
 				E75F0FA31BAC0A3E0069239E /* UMSocialDataService.html in Resources */,
 				E75F0FD11BAC0A3E0069239E /* ios-social-sdk-share-quick.html in Resources */,
 				79AE92D71BAA706000B2EAA7 /* icon_login_mobile.pdf in Resources */,
@@ -2577,13 +2599,11 @@
 				E75F0FAF1BAC0A3E0069239E /* UMSocialResponseEntity.html in Resources */,
 				CBABFD611BAC8C1F0033D9F5 /* btn_nav_history.pdf in Resources */,
 				CB0054881BA9C189002A43B5 /* icon_charge_alipay.pdf in Resources */,
-				CB5078371BAD359100204553 /* icon_account_mycar.pdf in Resources */,
 				E75F0F921BAC0A3E0069239E /* UMSCommentInputController.xib in Resources */,
 				E75F0FB91BAC0A3E0069239E /* UMSocialWechatSessionData.html in Resources */,
 				E75F0FD31BAC0A3E0069239E /* markdown.css in Resources */,
 				E75F0FCA1BAC0A3E0069239E /* ios-social-sdk-comment-detail.html in Resources */,
 				E75F0FA01BAC0A3E0069239E /* UMSocialControllerServiceComment.html in Resources */,
-				CB5078361BAD359100204553 /* icon_account_mygarage.pdf in Resources */,
 				E75F0FA61BAC0A3E0069239E /* UMSocialExtConfig.html in Resources */,
 				E75F0FA91BAC0A3E0069239E /* UMSocialInstagramData.html in Resources */,
 				E75F0F9C1BAC0A3E0069239E /* UMSocialBar.html in Resources */,
@@ -2601,13 +2621,10 @@
 				E75F0FBF1BAC0A3E0069239E /* hierarchy.html in Resources */,
 				E77221E11BA6D228006E480E /* icon_sidemenu_charge.pdf in Resources */,
 				E75F0F951BAC0A3E0069239E /* UMShareEditViewControlleriPad.xib in Resources */,
-				CB5078351BAD359100204553 /* icon_account_setting.pdf in Resources */,
-				CB50782A1BAD2EDE00204553 /* view_account_top_background.png in Resources */,
 				79B57A4D1BAC0DE300239392 /* Info.plist in Resources */,
 				E75F0FCE1BAC0A3E0069239E /* ios-social-sdk-login-quick.html in Resources */,
 				E75F0FA51BAC0A3E0069239E /* UMSocialEmailData.html in Resources */,
 				E75F0FAA1BAC0A3E0069239E /* UMSocialLWSessionData.html in Resources */,
-				CB5078231BAD2A4900204553 /* EPass_Icon.pdf in Resources */,
 				E75F0FC21BAC0A3E0069239E /* UMSocialUIDelegate.html in Resources */,
 				E75F0FC81BAC0A3E0069239E /* iOS-social-analytics-releasenote.html in Resources */,
 				E75F0FAD1BAC0A3E0069239E /* UMSocialQzoneData.html in Resources */,
@@ -2629,6 +2646,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEE962C1BAD7A0F0081CAB9 /* EPAccountCell.m in Sources */,
+				CBEE962D1BAD7A0F0081CAB9 /* EPModProfileVC.m in Sources */,
+				CBEE962E1BAD7A0F0081CAB9 /* EPModPwdVC.m in Sources */,
+				CBEE962F1BAD7A0F0081CAB9 /* EPModGarageVC.m in Sources */,
+				CBEE96301BAD7A0F0081CAB9 /* EPModCarVC.m in Sources */,
+				CBEE96311BAD7A0F0081CAB9 /* EPGarageVC.m in Sources */,
+				CBEE96321BAD7A0F0081CAB9 /* EPCarVC.m in Sources */,
+				CBEE96331BAD7A0F0081CAB9 /* EPCarGarageCell.m in Sources */,
+				CBEE96341BAD7A0F0081CAB9 /* EPCarGarageModel.m in Sources */,
+				CBEE962B1BAD79DA0081CAB9 /* EPCenterVC.m in Sources */,
 				E75F0F8C1BAC0A3E0069239E /* UIImage+PDF.m in Sources */,
 				E75F0FFD1BAC0A3E0069239E /* LCCustomBaseVC.m in Sources */,
 				E75F0F231BAC0A3E0069239E /* EPDeviceAlertView.m in Sources */,
@@ -2644,7 +2671,6 @@
 				E75F0F321BAC0A3E0069239E /* UIView+CSAddition.m in Sources */,
 				E75F100B1BAC0A3E0069239E /* XMAttributedLabel.m in Sources */,
 				E75F0F611BAC0A3E0069239E /* CCLocationManager.m in Sources */,
-				CB50783B1BAD399400204553 /* EPModProfileVC.m in Sources */,
 				CBABFDA01BACAFAF0033D9F5 /* EPSDayCell.m in Sources */,
 				E75F0F391BAC0A3E0069239E /* UserCar.m in Sources */,
 				E75F0F761BAC0A3E0069239E /* NSData+ImageContentType.m in Sources */,
@@ -2666,7 +2692,6 @@
 				E75F0F311BAC0A3E0069239E /* UITextField+Addition.m in Sources */,
 				E75F0FF51BAC0A3E0069239E /* UIView+TKCategory.m in Sources */,
 				E75F0FF31BAC0A3E0069239E /* TKGlobal.m in Sources */,
-				CB5078301BAD32AB00204553 /* EPAccountCell.m in Sources */,
 				E75F0F881BAC0A3E0069239E /* Toast+UIView.m in Sources */,
 				E75F10081BAC0A3E0069239E /* PickerAnimationVC.m in Sources */,
 				E75F0F4E1BAC0A3E0069239E /* NSObject+SBJSON.m in Sources */,
@@ -2681,7 +2706,6 @@
 				E75F0F2A1BAC0A3E0069239E /* EPSettingVC.m in Sources */,
 				79B57A501BAC0DE300239392 /* MASConstraintMaker.m in Sources */,
 				E75F10001BAC0A3E0069239E /* LCLoadingTipView.m in Sources */,
-				CB5078551BAD471F00204553 /* EPCarGarageModel.m in Sources */,
 				79B57A551BAC0DE300239392 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				E75F0F4F1BAC0A3E0069239E /* NSString+SBJSON.m in Sources */,
 				E75F0FD91BAC0A3E0069239E /* LCUncaughtExceptionHandler.mm in Sources */,
@@ -2693,7 +2717,6 @@
 				79B57A4E1BAC0DE300239392 /* MASCompositeConstraint.m in Sources */,
 				E75F0FE01BAC0A3E0069239E /* XMThemeManager.m in Sources */,
 				79B57A511BAC0DE300239392 /* MASLayoutConstraint.m in Sources */,
-				CB5078491BAD416900204553 /* EPModGarageVC.m in Sources */,
 				E75F0FD81BAC0A3E0069239E /* LCUITools.m in Sources */,
 				E75F0FFF1BAC0A3E0069239E /* LCGifView.m in Sources */,
 				E75F100A1BAC0A3E0069239E /* UIButton+FillColor.m in Sources */,
@@ -2719,7 +2742,6 @@
 				79B57A4F1BAC0DE300239392 /* MASConstraint.m in Sources */,
 				79B57A541BAC0DE300239392 /* NSArray+MASAdditions.m in Sources */,
 				E75F0F5A1BAC0A3E0069239E /* NSObject+LCRKAddition.m in Sources */,
-				CB5078541BAD471F00204553 /* EPCarGarageCell.m in Sources */,
 				E75F10061BAC0A3E0069239E /* NSAttributedString+Attributes.m in Sources */,
 				E75F0FE11BAC0A3E0069239E /* XMThreadCountDownManager.m in Sources */,
 				E75F0F781BAC0A3E0069239E /* SDWebImageCompat.m in Sources */,
@@ -2744,18 +2766,14 @@
 				E75F0F6C1BAC0A3E0069239E /* MMRadialProgressView.m in Sources */,
 				E75F0F5B1BAC0A3E0069239E /* AlipayOrder.m in Sources */,
 				E75F0F711BAC0A3E0069239E /* MyLauncherPageControl.m in Sources */,
-				CB5078431BAD3FBB00204553 /* EPModPwdVC.m in Sources */,
 				E75F0F4D1BAC0A3E0069239E /* URequest.m in Sources */,
 				79B57A6F1BAC3A7300239392 /* phoneCode.m in Sources */,
 				E75F0FDE1BAC0A3E0069239E /* XMPushManager.m in Sources */,
-				CB5078481BAD416900204553 /* EPModCarVC.m in Sources */,
 				E75F0F751BAC0A3E0069239E /* MKAnnotationView+WebCache.m in Sources */,
 				E75F0F421BAC0A3E0069239E /* DeviceEPConnectionFuction.m in Sources */,
 				E75F0FF71BAC0A3E0069239E /* LCActiveV.m in Sources */,
 				E75F0F371BAC0A3E0069239E /* LCAPIResultData.m in Sources */,
 				E75F0F681BAC0A3E0069239E /* MMProgressHUD.m in Sources */,
-				CB50784E1BAD465F00204553 /* EPGarageVC.m in Sources */,
-				CB50784F1BAD465F00204553 /* EPCarVC.m in Sources */,
 				E7C744691BAD135800C6F73D /* EPMenuManager.m in Sources */,
 				E75F0FEF1BAC0A3E0069239E /* NSDate+TKCategory.m in Sources */,
 				E75F0F3D1BAC0A3E0069239E /* UserInfo.m in Sources */,
@@ -2804,7 +2822,6 @@
 				E75F0F2C1BAC0A3E0069239E /* LCUIView+ClickOnTheState.m in Sources */,
 				E75F0F791BAC0A3E0069239E /* SDWebImageDecoder.m in Sources */,
 				E75F0FEC1BAC0A3E0069239E /* openssl_wrapper.m in Sources */,
-				CB50782D1BAD31B700204553 /* EPCenterVC.m in Sources */,
 				E75F0F291BAC0A3E0069239E /* EPRechargeVC.m in Sources */,
 				E75F0F6B1BAC0A3E0069239E /* MMProgressHUDWindow.m in Sources */,
 				E75F0F7E1BAC0A3E0069239E /* UIButton+WebCache.m in Sources */,

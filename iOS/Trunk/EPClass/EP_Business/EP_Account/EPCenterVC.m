@@ -7,6 +7,7 @@
 //
 
 #import "EPCenterVC.h"
+#import "EPAccountVC.h"
 
 #import "EPAccountCell.h"
 
@@ -164,20 +165,25 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"index : %li",(long)indexPath.row);
     if (indexPath.row == 0) {
-        EPModProfileVC *vc = [[EPModProfileVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+        EPModProfileVC *vc = [[EPModProfileVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
         [LTools pushController:vc animated:YES];
+        [vc release],vc = nil;
     }else if (indexPath.row == 1){
-        EPModPwdVC *vc = [[EPModPwdVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+        EPModPwdVC *vc = [[EPModPwdVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
         [LTools pushController:vc animated:YES];
+        [vc release],vc = nil;
     }else if (indexPath.row == 2){
-        EPCarVC *vc = [[EPCarVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+        EPCarVC *vc = [[EPCarVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
         [LTools pushController:vc animated:YES];
+        [vc release],vc = nil;
     }else if (indexPath.row == 3){
-        EPGarageVC *vc = [[EPGarageVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+        EPGarageVC *vc = [[EPGarageVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
         [LTools pushController:vc animated:YES];
+        [vc release],vc = nil;
     }else if (indexPath.row == 4){
-        EPSettingVC *vc = [[EPSettingVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+        EPSettingVC *vc = [[EPSettingVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
         [LTools pushController:vc animated:YES];
+        [vc release],vc = nil;
     }
     
 }
@@ -185,7 +191,9 @@
 
 - (void)buttonPressed:(UIButton *)button_ {
     if (button_.tag == EP_BTN_RIGTH_TAG) {
-        
+        EPAccountVC *vc = [[EPAccountVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
+        [LTools pushController:vc animated:YES];
+        [vc release],vc = nil;
     }else if (button_.tag == 901) {
         
         

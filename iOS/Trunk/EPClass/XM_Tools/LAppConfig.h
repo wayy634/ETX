@@ -147,7 +147,7 @@
 /***************************** CUSTOMED FONT ****************************/
 #define EP_BTN_CHARGE_TAG                   888
 #define EP_BTN_RIGTH_TAG                    110
-
+#define EP_BTN_SUBMIT_TAG                   100
 
 // XM_ENUM----------------------------------------------------
 //配送方式
