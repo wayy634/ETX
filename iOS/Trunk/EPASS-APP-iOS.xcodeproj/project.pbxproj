@@ -44,6 +44,11 @@
 		3654BE3B1AF75F52000FEB61 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3654BE3A1AF75F52000FEB61 /* libz.1.dylib */; };
 		36698F9B1B1C683C0050771E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36698F9A1B1C683C0050771E /* Localizable.strings */; };
 		36DD26261B8AC7BE00469CDC /* sourceid.txt in Resources */ = {isa = PBXBuildFile; fileRef = 36DD26251B8AC7BE00469CDC /* sourceid.txt */; };
+		7919861E1BAD474800CC2DAC /* icon_account_mycar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 791986191BAD474800CC2DAC /* icon_account_mycar.pdf */; };
+		7919861F1BAD474800CC2DAC /* icon_account_mygarage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7919861A1BAD474800CC2DAC /* icon_account_mygarage.pdf */; };
+		791986201BAD474800CC2DAC /* icon_account_profile.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7919861B1BAD474800CC2DAC /* icon_account_profile.pdf */; };
+		791986211BAD474800CC2DAC /* icon_account_setting.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7919861C1BAD474800CC2DAC /* icon_account_setting.pdf */; };
+		791986221BAD474800CC2DAC /* view_account_top_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7919861D1BAD474800CC2DAC /* view_account_top_background.png */; };
 		79AE92D51BAA706000B2EAA7 /* icon_account_password.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 79AE92D01BAA706000B2EAA7 /* icon_account_password.pdf */; };
 		79AE92D61BAA706000B2EAA7 /* icon_login_code.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 79AE92D11BAA706000B2EAA7 /* icon_login_code.pdf */; };
 		79AE92D71BAA706000B2EAA7 /* icon_login_mobile.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 79AE92D21BAA706000B2EAA7 /* icon_login_mobile.pdf */; };
@@ -66,30 +71,30 @@
 		79B57A6F1BAC3A7300239392 /* phoneCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B57A6E1BAC3A7300239392 /* phoneCode.m */; };
 		CB0054881BA9C189002A43B5 /* icon_charge_alipay.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB0054851BA9C189002A43B5 /* icon_charge_alipay.pdf */; };
 		CB0054891BA9C189002A43B5 /* icon_charge_upcash.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB0054861BA9C189002A43B5 /* icon_charge_upcash.pdf */; };
-		CB11DE7E1BAC68AE004C96FC /* icon_charge_wechatpay.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB11DE7D1BAC68AE004C96FC /* icon_charge_wechatpay.pdf */; settings = {ASSET_TAGS = (); }; };
-		CB5078201BAD06BB00204553 /* EPSMonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50781C1BAD06BB00204553 /* EPSMonthCell.m */; settings = {ASSET_TAGS = (); }; };
-		CB5078211BAD06BB00204553 /* EPSMonthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50781E1BAD06BB00204553 /* EPSMonthModel.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFD5A1BAC6CAE0033D9F5 /* ASDepthModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD581BAC6CAE0033D9F5 /* ASDepthModalViewController.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFD5D1BAC7BBA0033D9F5 /* EPBindCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD5B1BAC7BBA0033D9F5 /* EPBindCardVC.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFD601BAC8C1F0033D9F5 /* btn_nav_draw.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD5E1BAC8C1F0033D9F5 /* btn_nav_draw.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD611BAC8C1F0033D9F5 /* btn_nav_history.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD5F1BAC8C1F0033D9F5 /* btn_nav_history.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD671BAC8C270033D9F5 /* icon_parking_blue.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD631BAC8C270033D9F5 /* icon_parking_blue.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD681BAC8C270033D9F5 /* icon_station_blue.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD641BAC8C270033D9F5 /* icon_station_blue.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD691BAC8C270033D9F5 /* icon_station_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD651BAC8C270033D9F5 /* icon_station_white.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD6A1BAC8C270033D9F5 /* icon_today_downarraw.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD661BAC8C270033D9F5 /* icon_today_downarraw.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD6C1BAC8C2F0033D9F5 /* view_creditcard.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6B1BAC8C2F0033D9F5 /* view_creditcard.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD721BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6E1BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD731BAC90520033D9F5 /* Helvetica Condensed Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6F1BAC90520033D9F5 /* Helvetica Condensed Bold.ttf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD741BAC90520033D9F5 /* Helvetica Condensed Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD701BAC90520033D9F5 /* Helvetica Condensed Italic.ttf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD751BAC90520033D9F5 /* Helvetica Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD711BAC90520033D9F5 /* Helvetica Condensed.ttf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD771BAC93460033D9F5 /* icon_parking_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD761BAC93460033D9F5 /* icon_parking_white.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD7C1BAC96020033D9F5 /* EPDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD781BAC96020033D9F5 /* EPDayCell.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFD7D1BAC96020033D9F5 /* EPDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD7B1BAC96020033D9F5 /* EPDayModel.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFD9E1BACAFAF0033D9F5 /* EPDayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD971BACAFAF0033D9F5 /* EPDayVC.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFD9F1BACAFAF0033D9F5 /* EPMonthVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD991BACAFAF0033D9F5 /* EPMonthVC.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFDA01BACAFAF0033D9F5 /* EPSDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD9B1BACAFAF0033D9F5 /* EPSDayCell.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFDA11BACAFAF0033D9F5 /* EPSDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD9D1BACAFAF0033D9F5 /* EPSDayModel.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFDA31BACB2B90033D9F5 /* icon_charge_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFDA21BACB2B90033D9F5 /* icon_charge_white.pdf */; settings = {ASSET_TAGS = (); }; };
+		CB11DE7E1BAC68AE004C96FC /* icon_charge_wechatpay.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB11DE7D1BAC68AE004C96FC /* icon_charge_wechatpay.pdf */; };
+		CB5078201BAD06BB00204553 /* EPSMonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50781C1BAD06BB00204553 /* EPSMonthCell.m */; };
+		CB5078211BAD06BB00204553 /* EPSMonthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50781E1BAD06BB00204553 /* EPSMonthModel.m */; };
+		CBABFD5A1BAC6CAE0033D9F5 /* ASDepthModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD581BAC6CAE0033D9F5 /* ASDepthModalViewController.m */; };
+		CBABFD5D1BAC7BBA0033D9F5 /* EPBindCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD5B1BAC7BBA0033D9F5 /* EPBindCardVC.m */; };
+		CBABFD601BAC8C1F0033D9F5 /* btn_nav_draw.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD5E1BAC8C1F0033D9F5 /* btn_nav_draw.pdf */; };
+		CBABFD611BAC8C1F0033D9F5 /* btn_nav_history.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD5F1BAC8C1F0033D9F5 /* btn_nav_history.pdf */; };
+		CBABFD671BAC8C270033D9F5 /* icon_parking_blue.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD631BAC8C270033D9F5 /* icon_parking_blue.pdf */; };
+		CBABFD681BAC8C270033D9F5 /* icon_station_blue.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD641BAC8C270033D9F5 /* icon_station_blue.pdf */; };
+		CBABFD691BAC8C270033D9F5 /* icon_station_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD651BAC8C270033D9F5 /* icon_station_white.pdf */; };
+		CBABFD6A1BAC8C270033D9F5 /* icon_today_downarraw.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD661BAC8C270033D9F5 /* icon_today_downarraw.pdf */; };
+		CBABFD6C1BAC8C2F0033D9F5 /* view_creditcard.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6B1BAC8C2F0033D9F5 /* view_creditcard.pdf */; };
+		CBABFD721BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6E1BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf */; };
+		CBABFD731BAC90520033D9F5 /* Helvetica Condensed Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6F1BAC90520033D9F5 /* Helvetica Condensed Bold.ttf */; };
+		CBABFD741BAC90520033D9F5 /* Helvetica Condensed Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD701BAC90520033D9F5 /* Helvetica Condensed Italic.ttf */; };
+		CBABFD751BAC90520033D9F5 /* Helvetica Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD711BAC90520033D9F5 /* Helvetica Condensed.ttf */; };
+		CBABFD771BAC93460033D9F5 /* icon_parking_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD761BAC93460033D9F5 /* icon_parking_white.pdf */; };
+		CBABFD7C1BAC96020033D9F5 /* EPDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD781BAC96020033D9F5 /* EPDayCell.m */; };
+		CBABFD7D1BAC96020033D9F5 /* EPDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD7B1BAC96020033D9F5 /* EPDayModel.m */; };
+		CBABFD9E1BACAFAF0033D9F5 /* EPDayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD971BACAFAF0033D9F5 /* EPDayVC.m */; };
+		CBABFD9F1BACAFAF0033D9F5 /* EPMonthVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD991BACAFAF0033D9F5 /* EPMonthVC.m */; };
+		CBABFDA01BACAFAF0033D9F5 /* EPSDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD9B1BACAFAF0033D9F5 /* EPSDayCell.m */; };
+		CBABFDA11BACAFAF0033D9F5 /* EPSDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD9D1BACAFAF0033D9F5 /* EPSDayModel.m */; };
+		CBABFDA31BACB2B90033D9F5 /* icon_charge_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFDA21BACB2B90033D9F5 /* icon_charge_white.pdf */; };
 		E72C1CBB1BA9425A00B51F9B /* icon_device_add.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */; };
 		E72C1CBE1BA9481800B51F9B /* btn_nav_back.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */; };
 		E75F0CA31BAC08180069239E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E75F0CA21BAC08180069239E /* Info.plist */; };
@@ -383,6 +388,11 @@
 		3654BE3A1AF75F52000FEB61 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = usr/lib/libz.1.dylib; sourceTree = SDKROOT; };
 		36698F9A1B1C683C0050771E /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		36DD26251B8AC7BE00469CDC /* sourceid.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sourceid.txt; sourceTree = "<group>"; };
+		791986191BAD474800CC2DAC /* icon_account_mycar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_account_mycar.pdf; sourceTree = "<group>"; };
+		7919861A1BAD474800CC2DAC /* icon_account_mygarage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_account_mygarage.pdf; sourceTree = "<group>"; };
+		7919861B1BAD474800CC2DAC /* icon_account_profile.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_account_profile.pdf; sourceTree = "<group>"; };
+		7919861C1BAD474800CC2DAC /* icon_account_setting.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_account_setting.pdf; sourceTree = "<group>"; };
+		7919861D1BAD474800CC2DAC /* view_account_top_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view_account_top_background.png; sourceTree = "<group>"; };
 		79AE92D01BAA706000B2EAA7 /* icon_account_password.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_account_password.pdf; sourceTree = "<group>"; };
 		79AE92D11BAA706000B2EAA7 /* icon_login_code.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_login_code.pdf; sourceTree = "<group>"; };
 		79AE92D21BAA706000B2EAA7 /* icon_login_mobile.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_login_mobile.pdf; sourceTree = "<group>"; };
@@ -1154,6 +1164,11 @@
 		79AE92CF1BAA706000B2EAA7 /* EP_Login */ = {
 			isa = PBXGroup;
 			children = (
+				791986191BAD474800CC2DAC /* icon_account_mycar.pdf */,
+				7919861A1BAD474800CC2DAC /* icon_account_mygarage.pdf */,
+				7919861B1BAD474800CC2DAC /* icon_account_profile.pdf */,
+				7919861C1BAD474800CC2DAC /* icon_account_setting.pdf */,
+				7919861D1BAD474800CC2DAC /* view_account_top_background.png */,
 				79B57A6B1BAC2EB000239392 /* icon_login_password.pdf */,
 				79AE92D01BAA706000B2EAA7 /* icon_account_password.pdf */,
 				79AE92D11BAA706000B2EAA7 /* icon_login_code.pdf */,
@@ -2468,6 +2483,7 @@
 				E75F0FBE1BAC0A3E0069239E /* stylesPrint.css in Resources */,
 				E75F0FCF1BAC0A3E0069239E /* ios-social-sdk-shake.html in Resources */,
 				E75F0FBB1BAC0A3E0069239E /* UMSocialYXSessionData.html in Resources */,
+				7919861F1BAD474800CC2DAC /* icon_account_mygarage.pdf in Resources */,
 				E75F0FB01BAC0A3E0069239E /* UMSocialSinaData.html in Resources */,
 				E75F0FA31BAC0A3E0069239E /* UMSocialDataService.html in Resources */,
 				E75F0FD11BAC0A3E0069239E /* ios-social-sdk-share-quick.html in Resources */,
@@ -2489,6 +2505,7 @@
 				E75F10091BAC0A3E0069239E /* PickerAnimationVC.xib in Resources */,
 				E75F0FA21BAC0A3E0069239E /* UMSocialData.html in Resources */,
 				E75F0F5C1BAC0A3E0069239E /* AlipaySDK.bundle in Resources */,
+				791986221BAD474800CC2DAC /* view_account_top_background.png in Resources */,
 				36698F9B1B1C683C0050771E /* Localizable.strings in Resources */,
 				CBABFD691BAC8C270033D9F5 /* icon_station_white.pdf in Resources */,
 				E77221E51BA6D228006E480E /* icon_sidemenu_today.pdf in Resources */,
@@ -2499,8 +2516,10 @@
 				CBABFD601BAC8C1F0033D9F5 /* btn_nav_draw.pdf in Resources */,
 				E75F0FB31BAC0A3E0069239E /* UMSocialSnsPlatform.html in Resources */,
 				CBABFD6A1BAC8C270033D9F5 /* icon_today_downarraw.pdf in Resources */,
+				7919861E1BAD474800CC2DAC /* icon_account_mycar.pdf in Resources */,
 				E77221E21BA6D228006E480E /* icon_sidemenu_device.pdf in Resources */,
 				E75F0FD01BAC0A3E0069239E /* ios-social-sdk-share-detail.html in Resources */,
+				791986201BAD474800CC2DAC /* icon_account_profile.pdf in Resources */,
 				E75F0FB41BAC0A3E0069239E /* UMSocialSnsPlatformManager.html in Resources */,
 				E75F0FB51BAC0A3E0069239E /* UMSocialSnsService.html in Resources */,
 				E75F0FA81BAC0A3E0069239E /* UMSocialIconActionSheet.html in Resources */,
@@ -2527,6 +2546,7 @@
 				E75F0FA71BAC0A3E0069239E /* UMSocialFacebookData.html in Resources */,
 				E75F0F9F1BAC0A3E0069239E /* UMSocialControllerService.html in Resources */,
 				E75F0FBF1BAC0A3E0069239E /* hierarchy.html in Resources */,
+				791986211BAD474800CC2DAC /* icon_account_setting.pdf in Resources */,
 				E77221E11BA6D228006E480E /* icon_sidemenu_charge.pdf in Resources */,
 				E75F0F951BAC0A3E0069239E /* UMShareEditViewControlleriPad.xib in Resources */,
 				79B57A4D1BAC0DE300239392 /* Info.plist in Resources */,

@@ -14,7 +14,7 @@ typedef NS_ENUM(NSInteger, EPAccountType){
     EPAccountTypeAccount = 2
 };
 
-@interface EPAccountVC : LCCustomBaseVC<UITextFieldDelegate,EPLoginTextFieldDelegate>{
+@interface EPAccountVC : LCCustomBaseVC<UITextFieldDelegate,EPLoginTextFieldDelegate,UITableViewDelegate,UITableViewDataSource>{
 
     EPAccountType mType;
 }

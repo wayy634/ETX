@@ -112,7 +112,7 @@
         [_mDelegate EPLoginTextFieldSendCaptcha:sendCaptchaButton];
     }
     captchaCurrentSec = captchaSec;
-    sendCaptchaButton.enabled = NO;
+    sendCaptchaButton.enabled = YES;
     captchaCurrentSec--;
     [sendCaptchaButton setTitle:[NSString stringWithFormat:@"%d秒后重发",captchaCurrentSec] forState:UIControlStateNormal];
     timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(captchaAction:) userInfo:nil repeats:YES];

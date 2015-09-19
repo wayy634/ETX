@@ -38,10 +38,11 @@
     [url appendFormat:@"%@/epass/userRegister", K_URL_HOST];
     
     NSMutableDictionary *params = [[[NSMutableDictionary alloc] init] autorelease];
-    [params setObject:[NSNumber numberWithInt:[phone_ intValue]] forKey:@"phone"];
+//    [params setObject:[NSNumber numberWithInt:[phone_ intValue]] forKey:@"phone"];
+    [params setObject:phone_ forKey:@"mobile"];
     [params setObject:password_ forKey:@"password"];
     [params setObject:[NSNumber numberWithInt:[sendCode_ intValue]] forKey:@"checkcode"];
-    
+    [params setObject:@"" forKey:@"token"];
     [params setObject:@"" forKey:@"deviceid"];
     
     [LTools startAsynchronousUrl:url parameter:params method:@"POST" delegate:delegate_ allowCancel:allowCancel_ mappingName:nil urlCacheMode:NO finishSelector:finishSEL_ failSelector:failSEL_ timeOutSelector:timeOutSEL_];
