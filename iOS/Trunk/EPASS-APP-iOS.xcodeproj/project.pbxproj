@@ -107,6 +107,7 @@
 		CBEE96391BAD7A790081CAB9 /* icon_account_mycar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB5078331BAD359100204553 /* icon_account_mycar.pdf */; };
 		CBEE963A1BAD7A790081CAB9 /* icon_account_profile.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB5078341BAD359100204553 /* icon_account_profile.pdf */; };
 		CBEE963B1BAD7A790081CAB9 /* EPass_Icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB5078221BAD2A4900204553 /* EPass_Icon.pdf */; };
+		CBEE963D1BAD821E0081CAB9 /* view_device.png in Resources */ = {isa = PBXBuildFile; fileRef = CBEE963C1BAD821E0081CAB9 /* view_device.png */; settings = {ASSET_TAGS = (); }; };
 		E72C1CBB1BA9425A00B51F9B /* icon_device_add.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */; };
 		E72C1CBE1BA9481800B51F9B /* btn_nav_back.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */; };
 		E75F0F1F1BAC0A3E0069239E /* EPAccountData.m in Sources */ = {isa = PBXBuildFile; fileRef = E75F0CDF1BAC0A3E0069239E /* EPAccountData.m */; };
@@ -500,6 +501,7 @@
 		CBABFD9C1BACAFAF0033D9F5 /* EPSDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPSDayModel.h; sourceTree = "<group>"; };
 		CBABFD9D1BACAFAF0033D9F5 /* EPSDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPSDayModel.m; sourceTree = "<group>"; };
 		CBABFDA21BACB2B90033D9F5 /* icon_charge_white.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_charge_white.pdf; sourceTree = "<group>"; };
+		CBEE963C1BAD821E0081CAB9 /* view_device.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view_device.png; sourceTree = "<group>"; };
 		E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_device_add.pdf; sourceTree = "<group>"; };
 		E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = btn_nav_back.pdf; sourceTree = "<group>"; };
 		E75F0CA21BAC08180069239E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1330,6 +1332,7 @@
 		E72C1CB91BA9425A00B51F9B /* EP_Device */ = {
 			isa = PBXGroup;
 			children = (
+				CBEE963C1BAD821E0081CAB9 /* view_device.png */,
 				E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */,
 			);
 			path = EP_Device;
@@ -2630,6 +2633,7 @@
 				E75F0FAD1BAC0A3E0069239E /* UMSocialQzoneData.html in Resources */,
 				E75F0FB71BAC0A3E0069239E /* UMSocialTwitterData.html in Resources */,
 				CBABFD731BAC90520033D9F5 /* Helvetica Condensed Bold.ttf in Resources */,
+				CBEE963D1BAD821E0081CAB9 /* view_device.png in Resources */,
 				E75F0FA41BAC0A3E0069239E /* UMSocialDoubanData.html in Resources */,
 				CBABFD681BAC8C270033D9F5 /* icon_station_blue.pdf in Resources */,
 				E72C1CBE1BA9481800B51F9B /* btn_nav_back.pdf in Resources */,
