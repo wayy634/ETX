@@ -82,6 +82,10 @@
 		CB5078431BAD3FBB00204553 /* EPModPwdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5078411BAD3FBB00204553 /* EPModPwdVC.m */; settings = {ASSET_TAGS = (); }; };
 		CB5078481BAD416900204553 /* EPModCarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5078441BAD416900204553 /* EPModCarVC.m */; settings = {ASSET_TAGS = (); }; };
 		CB5078491BAD416900204553 /* EPModGarageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5078451BAD416900204553 /* EPModGarageVC.m */; settings = {ASSET_TAGS = (); }; };
+		CB50784E1BAD465F00204553 /* EPGarageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50784A1BAD465F00204553 /* EPGarageVC.m */; settings = {ASSET_TAGS = (); }; };
+		CB50784F1BAD465F00204553 /* EPCarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50784B1BAD465F00204553 /* EPCarVC.m */; settings = {ASSET_TAGS = (); }; };
+		CB5078541BAD471F00204553 /* EPCarGarageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5078511BAD471F00204553 /* EPCarGarageCell.m */; settings = {ASSET_TAGS = (); }; };
+		CB5078551BAD471F00204553 /* EPCarGarageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB5078531BAD471F00204553 /* EPCarGarageModel.m */; settings = {ASSET_TAGS = (); }; };
 		CBABFD5A1BAC6CAE0033D9F5 /* ASDepthModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD581BAC6CAE0033D9F5 /* ASDepthModalViewController.m */; };
 		CBABFD5D1BAC7BBA0033D9F5 /* EPBindCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD5B1BAC7BBA0033D9F5 /* EPBindCardVC.m */; };
 		CBABFD601BAC8C1F0033D9F5 /* btn_nav_draw.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD5E1BAC8C1F0033D9F5 /* btn_nav_draw.pdf */; };
@@ -460,6 +464,14 @@
 		CB5078451BAD416900204553 /* EPModGarageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPModGarageVC.m; sourceTree = "<group>"; };
 		CB5078461BAD416900204553 /* EPModCarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPModCarVC.h; sourceTree = "<group>"; };
 		CB5078471BAD416900204553 /* EPModGarageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPModGarageVC.h; sourceTree = "<group>"; };
+		CB50784A1BAD465F00204553 /* EPGarageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPGarageVC.m; sourceTree = "<group>"; };
+		CB50784B1BAD465F00204553 /* EPCarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPCarVC.m; sourceTree = "<group>"; };
+		CB50784C1BAD465F00204553 /* EPGarageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPGarageVC.h; sourceTree = "<group>"; };
+		CB50784D1BAD465F00204553 /* EPCarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPCarVC.h; sourceTree = "<group>"; };
+		CB5078501BAD471F00204553 /* EPCarGarageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPCarGarageCell.h; sourceTree = "<group>"; };
+		CB5078511BAD471F00204553 /* EPCarGarageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPCarGarageCell.m; sourceTree = "<group>"; };
+		CB5078521BAD471F00204553 /* EPCarGarageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPCarGarageModel.h; sourceTree = "<group>"; };
+		CB5078531BAD471F00204553 /* EPCarGarageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPCarGarageModel.m; sourceTree = "<group>"; };
 		CBABFD581BAC6CAE0033D9F5 /* ASDepthModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASDepthModalViewController.m; sourceTree = "<group>"; };
 		CBABFD591BAC6CAE0033D9F5 /* ASDepthModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASDepthModalViewController.h; sourceTree = "<group>"; };
 		CBABFD5B1BAC7BBA0033D9F5 /* EPBindCardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPBindCardVC.m; sourceTree = "<group>"; };
@@ -1377,6 +1389,14 @@
 				CB5078451BAD416900204553 /* EPModGarageVC.m */,
 				CB5078461BAD416900204553 /* EPModCarVC.h */,
 				CB5078441BAD416900204553 /* EPModCarVC.m */,
+				CB50784C1BAD465F00204553 /* EPGarageVC.h */,
+				CB50784A1BAD465F00204553 /* EPGarageVC.m */,
+				CB50784D1BAD465F00204553 /* EPCarVC.h */,
+				CB50784B1BAD465F00204553 /* EPCarVC.m */,
+				CB5078501BAD471F00204553 /* EPCarGarageCell.h */,
+				CB5078511BAD471F00204553 /* EPCarGarageCell.m */,
+				CB5078521BAD471F00204553 /* EPCarGarageModel.h */,
+				CB5078531BAD471F00204553 /* EPCarGarageModel.m */,
 				E75F0CDE1BAC0A3E0069239E /* EPAccountData.h */,
 				E75F0CDF1BAC0A3E0069239E /* EPAccountData.m */,
 				E75F0CE01BAC0A3E0069239E /* EPAccountManager.h */,
@@ -2680,6 +2700,7 @@
 				E75F0F2A1BAC0A3E0069239E /* EPSettingVC.m in Sources */,
 				79B57A501BAC0DE300239392 /* MASConstraintMaker.m in Sources */,
 				E75F10001BAC0A3E0069239E /* LCLoadingTipView.m in Sources */,
+				CB5078551BAD471F00204553 /* EPCarGarageModel.m in Sources */,
 				79B57A551BAC0DE300239392 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				E75F0F4F1BAC0A3E0069239E /* NSString+SBJSON.m in Sources */,
 				E75F0FD91BAC0A3E0069239E /* LCUncaughtExceptionHandler.mm in Sources */,
@@ -2717,6 +2738,7 @@
 				79B57A4F1BAC0DE300239392 /* MASConstraint.m in Sources */,
 				79B57A541BAC0DE300239392 /* NSArray+MASAdditions.m in Sources */,
 				E75F0F5A1BAC0A3E0069239E /* NSObject+LCRKAddition.m in Sources */,
+				CB5078541BAD471F00204553 /* EPCarGarageCell.m in Sources */,
 				E75F10061BAC0A3E0069239E /* NSAttributedString+Attributes.m in Sources */,
 				E75F0FE11BAC0A3E0069239E /* XMThreadCountDownManager.m in Sources */,
 				E75F0F781BAC0A3E0069239E /* SDWebImageCompat.m in Sources */,
@@ -2751,6 +2773,8 @@
 				E75F0FF71BAC0A3E0069239E /* LCActiveV.m in Sources */,
 				E75F0F371BAC0A3E0069239E /* LCAPIResultData.m in Sources */,
 				E75F0F681BAC0A3E0069239E /* MMProgressHUD.m in Sources */,
+				CB50784E1BAD465F00204553 /* EPGarageVC.m in Sources */,
+				CB50784F1BAD465F00204553 /* EPCarVC.m in Sources */,
 				E7C744691BAD135800C6F73D /* EPMenuManager.m in Sources */,
 				E75F0FEF1BAC0A3E0069239E /* NSDate+TKCategory.m in Sources */,
 				E75F0F3D1BAC0A3E0069239E /* UserInfo.m in Sources */,

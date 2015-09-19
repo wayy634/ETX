@@ -17,19 +17,15 @@
 
 #import "EPSettingVC.h"
 
+#import "EPCarVC.h"
+#import "EPGarageVC.h"
+
 @interface EPCenterVC ()<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>
 {
     
     //TABLE HEAER TITLE
-    NSMutableArray      *_arData;
-    NSArray             *_arKey;
-    NSMutableDictionary *_dicTitle;
-    NSMutableDictionary *_dicIcon;
-    
     UIView              *_currentCarView;
-    
     UIImageView         *_accountAvator;
-    
     UILabel             *_accountTitle;
     
 }
@@ -174,10 +170,10 @@
         EPModPwdVC *vc = [[EPModPwdVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
         [LTools pushController:vc animated:YES];
     }else if (indexPath.row == 2){
-        EPModCarVC *vc = [[EPModCarVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+        EPCarVC *vc = [[EPCarVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
         [LTools pushController:vc animated:YES];
     }else if (indexPath.row == 3){
-        EPModGarageVC *vc = [[EPModGarageVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+        EPGarageVC *vc = [[EPGarageVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
         [LTools pushController:vc animated:YES];
     }else if (indexPath.row == 4){
         EPSettingVC *vc = [[EPSettingVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
