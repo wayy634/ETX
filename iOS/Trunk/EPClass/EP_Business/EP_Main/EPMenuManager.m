@@ -50,9 +50,7 @@
     }
     switch (type_) {
         case EPLeftMenuType_Account:{
-//            EPAccountVC *accountVC = [[EPAccountVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-            EPCenterVC *accountVC = [[EPCenterVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-
+            EPAccountVC *accountVC = [[EPAccountVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
             [self.mRootVCDic setObject:accountVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
             object = accountVC;
             [accountVC release];

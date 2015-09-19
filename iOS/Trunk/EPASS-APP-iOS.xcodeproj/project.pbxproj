@@ -92,7 +92,6 @@
 		CBABFDA31BACB2B90033D9F5 /* icon_charge_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFDA21BACB2B90033D9F5 /* icon_charge_white.pdf */; };
 		E72C1CBB1BA9425A00B51F9B /* icon_device_add.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */; };
 		E72C1CBE1BA9481800B51F9B /* btn_nav_back.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */; };
-		E75F0CA31BAC08180069239E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E75F0CA21BAC08180069239E /* Info.plist */; };
 		E75F0F1F1BAC0A3E0069239E /* EPAccountData.m in Sources */ = {isa = PBXBuildFile; fileRef = E75F0CDF1BAC0A3E0069239E /* EPAccountData.m */; };
 		E75F0F201BAC0A3E0069239E /* EPAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E75F0CE11BAC0A3E0069239E /* EPAccountManager.m */; };
 		E75F0F221BAC0A3E0069239E /* EPBindingDeviceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E75F0CE61BAC0A3E0069239E /* EPBindingDeviceVC.m */; };
@@ -2515,7 +2514,6 @@
 				CBABFD721BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf in Resources */,
 				E75F0F8F1BAC0A3E0069239E /* UMSocialLocalizable.strings in Resources */,
 				3654B8CA1AF73CC5000FEB61 /* Images.xcassets in Resources */,
-				E75F0CA31BAC08180069239E /* Info.plist in Resources */,
 				E75F0FAE1BAC0A3E0069239E /* UMSocialRenrenData.html in Resources */,
 				E72C1CBB1BA9425A00B51F9B /* icon_device_add.pdf in Resources */,
 				E75F0F9A1BAC0A3E0069239E /* UMSocialAccountEntity.html in Resources */,
