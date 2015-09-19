@@ -49,7 +49,7 @@
     [historyBtn setAdjustsImageWhenHighlighted:NO];
     [historyBtn setImage:[UIImage imageOrPDFNamed:@"btn_nav_history.pdf"] forState:UIControlStateNormal];
     [historyBtn setFrame:CGRectMake(0, 0, 40, 40)];
-    historyBtn.tag = 110;
+    historyBtn.tag = EP_BTN_RIGTH_TAG;
     [historyBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self initTopRightV:@[historyBtn]];
     
@@ -92,7 +92,6 @@
     currentCarTips.font                  = K_FONT_SIZE(14);
     currentCarTips.text                  = [NSString stringWithFormat:@"我的爱车所在停车场"];
     currentCarTips.textAlignment         = NSTextAlignmentCenter;
-    currentCarTips.tag                   = 8003;
     [self.mTableHeaderV addSubview:currentCarTips];
     
 
@@ -158,7 +157,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 0;
+    return 0.000001;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -195,32 +194,11 @@
 #pragma mark-----buttonActoin---------
 
 - (void)buttonPressed:(UIButton *)button_ {
-    if (button_.tag == 0 ) {
-        NSLog(@"Help the GEDU!");
-
-        
-    }else if (button_.tag == 1) {
-
-    }else if (button_.tag == 2) {
-
-    }else if (button_.tag == 3) {
-        
-    }else if (button_.tag == 110) {
-        EPDayVC *vc = [[EPDayVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+    if (button_.tag == EP_BTN_RIGTH_TAG) {
+        EPDayVC *vc = [[EPDayVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
         [LTools pushController:vc animated:YES];
         [vc release],vc = nil;
-        
-    }else if (button_.tag == 901) {
-
-        
-    }else if (button_.tag == 902) {
-
-        
-    }else if (button_.tag == 903) {
-
-        
     }
-    
 }
 
 - (void)didReceiveMemoryWarning {

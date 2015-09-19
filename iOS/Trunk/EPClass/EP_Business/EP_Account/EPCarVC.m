@@ -58,7 +58,7 @@
     [addBtn.titleLabel setFont:K_FONT_SIZE(14)];
     [addBtn setTitle:@"新增" forState:UIControlStateNormal];
     [addBtn setFrame:CGRectMake(0, 0, 40, 40)];
-    addBtn.tag = 110;
+    addBtn.tag = EP_BTN_RIGTH_TAG;
     [addBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self initTopRightV:@[addBtn]];
     
@@ -147,7 +147,7 @@
 - (void)buttonPressed:(UIButton *)button_ {
     if (button_.tag == 100) {
         NSLog(@"IT'S GREAT");
-    }else if (button_.tag == 110) {
+    }else if (button_.tag == EP_BTN_RIGTH_TAG) {
         EPModCarVC *vc = [[EPModCarVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
         [LTools pushController:vc animated:YES];
         

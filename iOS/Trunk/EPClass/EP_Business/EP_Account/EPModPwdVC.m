@@ -215,7 +215,7 @@
 - (void)buttonPressed:(UIButton *)button_ {
     if (button_.tag == 100) {
         NSLog(@"IT'S GREAT");
-    }else if (button_.tag == 110) {
+    }else if (button_.tag == EP_BTN_RIGTH_TAG) {
 //        EPDayVC *vc = [[EPDayVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
 //        [self.navigationController pushViewController:vc animated:YES];
         

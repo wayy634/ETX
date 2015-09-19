@@ -57,7 +57,7 @@
     [loginBtn.titleLabel setFont:K_FONT_SIZE(14)];
     [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
     [loginBtn setFrame:CGRectMake(0, 0, 40, 40)];
-    loginBtn.tag = 110;
+    loginBtn.tag = EP_BTN_RIGTH_TAG;
     [loginBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self initTopRightV:@[loginBtn]];
     
@@ -184,7 +184,7 @@
 #pragma mark-----buttonActoin---------
 
 - (void)buttonPressed:(UIButton *)button_ {
-    if (button_.tag == 110) {
+    if (button_.tag == EP_BTN_RIGTH_TAG) {
         
     }else if (button_.tag == 901) {
         

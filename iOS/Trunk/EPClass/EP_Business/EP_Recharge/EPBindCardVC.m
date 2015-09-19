@@ -56,7 +56,7 @@
     [registerButton.titleLabel setFont:K_FONT_SIZE(14)];
     [registerButton setTitle:@"绑卡说明" forState:UIControlStateNormal];
     [registerButton setFrame:CGRectMake(0, 0, 70, 20)];
-    registerButton.tag = 110;
+    registerButton.tag = EP_BTN_RIGTH_TAG;
     [registerButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self initTopRightV:@[registerButton]];
     
@@ -349,7 +349,7 @@
         
     }else if (button_.tag == 3) {
         NSLog(@"IndexRow 3");
-    }else if (button_.tag == 110) {
+    }else if (button_.tag == EP_BTN_RIGTH_TAG) {
         _chargePopTitle.text = @"绑卡帮助";
         [ASDepthModalViewController presentView:_chargePopView withBackgroundColor:[UIColor whiteColor] popupAnimationStyle:ASDepthModalAnimationDefault];
         EPgotItBtn.alpha        = 1;

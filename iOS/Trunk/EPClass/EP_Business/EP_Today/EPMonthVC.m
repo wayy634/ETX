@@ -10,6 +10,9 @@
 
 #import "EPDayVC.h"
 
+#import "EPOrderVC.h"
+#import "EPRechargeVC.h"
+
 #import "EPSDayCell.h"
 #import "EPSDayModel.h"
 
@@ -26,7 +29,7 @@
     
     
     
-    UILabel             *_currentParkingTime, *_currentParkingTitle, *_currentParkingFee;
+    UILabel             *_monthCostSum;
     
 }
 
@@ -45,13 +48,15 @@
     [self.mContentView setBackgroundColor:K_COLOR_MAIN_BACKGROUND];
     
     // Top Navi
-    UIButton *historyBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [historyBtn setAdjustsImageWhenHighlighted:NO];
-    [historyBtn setImage:[UIImage imageOrPDFNamed:@"btn_nav_history.pdf"] forState:UIControlStateNormal];
-    [historyBtn setFrame:CGRectMake(0, 0, 40, 40)];
-    historyBtn.tag = 110;
-    [historyBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self initTopRightV:@[historyBtn]];
+    UIButton *ordersBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [ordersBtn setAdjustsImageWhenHighlighted:NO];
+    [ordersBtn setTitleColor:K_COLOR_DARK_TEXT forState:UIControlStateNormal];
+    [ordersBtn.titleLabel setFont:K_FONT_SIZE(14)];
+    [ordersBtn setTitle:@"历史账单" forState:UIControlStateNormal];
+    [ordersBtn setFrame:CGRectMake(0, 0, 60, 40)];
+    ordersBtn.tag = EP_BTN_RIGTH_TAG;
+    [ordersBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self initTopRightV:@[ordersBtn]];
     
     // Init TableView
     self.mTableHeaderV = [[UIView alloc] initWithFrame:CGRectMake(0, 0, K_SCREEN_WIDTH, K_SCREEN_WIDTH*0.6+50)];
@@ -67,61 +72,62 @@
     UILabel      *chargeTopTips         = [[UILabel alloc] initWithFrame:CGRectMake((K_SCREEN_WIDTH-200)/2, 20, 200, 30)];
     chargeTopTips.textColor             = K_COLOR_WHITE_TEXT;
     chargeTopTips.font                  = K_FONT_SIZE(16);
-    chargeTopTips.text                  = @"停车/时";
+    chargeTopTips.text                  = @"本月通行消费共计(元)";
     chargeTopTips.textAlignment         = NSTextAlignmentCenter;
     [self.mTableHeaderV addSubview:chargeTopTips];
     [chargeTopTips release];
     
     
     // Date Label Display
-    _currentParkingTime        = [[UILabel alloc] initWithFrame:CGRectMake((K_SCREEN_WIDTH-200)/2, 60, 200, 60)];
-    _currentParkingTime.textColor            = K_COLOR_WHITE_TEXT;
-    _currentParkingTime.font                 = [UIFont fontWithName:FONT_HC size:60];
-    _currentParkingTime.text                 = [NSString stringWithFormat:@"%.1fh",6.8];
-    _currentParkingTime.textAlignment        = NSTextAlignmentCenter;
-    _currentParkingTime.tag                  = 8001;
-    [self.mTableHeaderV addSubview:_currentParkingTime];
-    [_currentParkingTime release];
+    _monthCostSum        = [[UILabel alloc] initWithFrame:CGRectMake((K_SCREEN_WIDTH-300)/2, 60, 300, 60)];
+    _monthCostSum.textColor            = K_COLOR_WHITE_TEXT;
+    _monthCostSum.font                 = [UIFont fontWithName:FONT_HC size:60];
+    _monthCostSum.text                 = [NSString stringWithFormat:@"%.2f",3000.8];
+    _monthCostSum.textAlignment        = NSTextAlignmentCenter;
+    _monthCostSum.tag                  = 8001;
+    [self.mTableHeaderV addSubview:_monthCostSum];
     
-    UIImageView *parkingIcon            = [[UIImageView alloc] initWithFrame:CGRectMake((K_SCREEN_WIDTH-30)/2, self.mTableHeaderV.height-_currentCarView.height-80-50 , 30, 30)];
-    parkingIcon.image                   = [UIImage imageOrPDFNamed:@"icon_parking_white.pdf"];
-    [self.mTableHeaderV addSubview:parkingIcon];
     
-    UILabel *currentCarTips              = [[UILabel alloc] initWithFrame:CGRectMake((K_SCREEN_WIDTH-200)/2, self.mTableHeaderV.height-50-45 , 200, 40)];
-    currentCarTips.textColor             = K_COLOR_WHITE_TEXT;
-    currentCarTips.font                  = K_FONT_SIZE(14);
-    currentCarTips.text                  = [NSString stringWithFormat:@"我的爱车所在停车场"];
-    currentCarTips.textAlignment         = NSTextAlignmentCenter;
-    currentCarTips.tag                   = 8003;
-    [self.mTableHeaderV addSubview:currentCarTips];
+    UILabel *currrentBalenceTips              = [[UILabel alloc] initWithFrame:CGRectMake((K_SCREEN_WIDTH-300)/2, self.mTableHeaderV.height-80-45 , 300, 40)];
+    currrentBalenceTips.textColor             = K_COLOR_WHITE_TEXT;
+    currrentBalenceTips.font                  = K_FONT_SIZE(14);
+    currrentBalenceTips.text                  = [NSString stringWithFormat:@"账户当前余额"];
+    currrentBalenceTips.textAlignment         = NSTextAlignmentCenter;
+    currrentBalenceTips.tag                   = 8003;
+    [self.mTableHeaderV addSubview:currrentBalenceTips];
     
-
+    
+    UILabel *currrentBalence           = [[UILabel alloc] initWithFrame:CGRectMake((K_SCREEN_WIDTH-300)/2, self.mTableHeaderV.height-55-45 , 300, 40)];
+    currrentBalence.textColor          = K_COLOR_WHITE_TEXT;
+    currrentBalence.font               = [UIFont fontWithName:FONT_HC size:30];;
+    currrentBalence.text               = [NSString stringWithFormat:@"%.2f",1233.0];
+    currrentBalence.textAlignment      = NSTextAlignmentCenter;
+    currrentBalence.tag                = 8002;
+    [self.mTableHeaderV addSubview:currrentBalence];
+    
+    
     _currentCarView = [[UIView alloc] initWithFrame:CGRectMake(0, K_SCREEN_WIDTH*0.6, K_SCREEN_WIDTH, 50)];
     _currentCarView.backgroundColor = K_COLOR_ORANGE_BG;
     [self.mTableHeaderV addSubview:_currentCarView];
     
-    UIImageView *downArrow            = [[UIImageView alloc] initWithFrame:CGRectMake((K_SCREEN_WIDTH-20)/2, self.mTableHeaderV.height-50 , 20, 10)];
-    downArrow.image                   = [UIImage imageOrPDFNamed:@"icon_today_downarraw.pdf"];
-    [self.mTableHeaderV addSubview:downArrow];
+    UIImageView *chargeIcon        = [[UIImageView alloc] initWithFrame:CGRectMake(K_SCREEN_WIDTH/2 -40 , self.mTableHeaderV.height-40 , 30, 30)];
+    chargeIcon.image               = [UIImage imageOrPDFNamed:@"icon_charge_white.pdf"];
+    [self.mTableHeaderV addSubview:chargeIcon];
     
     
-    _currentParkingTitle              = [[UILabel alloc] initWithFrame:CGRectMake(10, self.mTableHeaderV.height-40 , K_SCREEN_WIDTH-20, 15)];
-    _currentParkingTitle.textColor             = K_COLOR_WHITE_TEXT;
-    _currentParkingTitle.font                  = K_FONT_SIZE(13);
-    _currentParkingTitle.text                  = [NSString stringWithFormat:@"华茂中心地下停车场"];
-    _currentParkingTitle.textAlignment         = NSTextAlignmentCenter;
-    _currentParkingTitle.tag                   = 8003;
-    [self.mTableHeaderV addSubview:_currentParkingTitle];
+    UILabel *chargeTitle           = [[UILabel alloc] initWithFrame:CGRectMake(K_SCREEN_WIDTH/2-10, self.mTableHeaderV.height-40 , 100, 30)];
+    chargeTitle.textColor          = K_COLOR_WHITE_TEXT;
+    chargeTitle.font               = K_BOLD_FONT_SIZE(24);
+    chargeTitle.text               = @"充值";
+    chargeTitle.textAlignment      = NSTextAlignmentLeft;
+    chargeTitle.tag                = 8002;
+    [self.mTableHeaderV addSubview:chargeTitle];
     
-    _currentParkingFee              = [[UILabel alloc] initWithFrame:CGRectMake(10, self.mTableHeaderV.height-20 , K_SCREEN_WIDTH-20, 15)];
-    _currentParkingFee.textColor             = K_COLOR_WHITE_TEXT;
-    _currentParkingFee.font                  = K_FONT_SIZE(13);
-    _currentParkingFee.text                  = [NSString stringWithFormat:@"车费：10元/时"];
-    _currentParkingFee.textAlignment         = NSTextAlignmentCenter;
-    _currentParkingFee.tag                   = 8003;
-    [self.mTableHeaderV addSubview:_currentParkingFee];
+    UIButton    *chargeBtn         = [[UIButton alloc] initWithFrame:CGRectMake(0, self.mTableHeaderV.height-50,K_SCREEN_WIDTH, 50)];
+    chargeBtn.tag                  = EP_BTN_CHARGE_TAG;
+    [chargeBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.mTableHeaderV addSubview:chargeBtn];
     
-
     
     // Init Table
     UITableView *tabelView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, K_SCREEN_WIDTH, K_SCREEN_HEIGHT)];
@@ -175,9 +181,7 @@
     if (!_EPSDayCell) {
         _EPSDayCell = [[EPSDayCell alloc]initWithStyle:UITableViewCellStyleDefault
                                                     reuseIdentifier:identifier];
-        _EPSDayCell.selectionStyle = UITableViewCellSelectionStyleNone;
-
-        
+        _EPSDayCell.selectionStyle = UITableViewCellSelectionStyleNone;        
     }
    
     [_EPSDayCell setEPSDayCellSum:[NSString stringWithFormat:@"停车 %.1f 小时/停车场 %d 个",8.6,3]
@@ -192,35 +196,21 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"index : %li",(long)indexPath.row);
     
-    EPDayVC *vc = [[EPDayVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+    EPDayVC *vc = [[EPDayVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
     [LTools pushController:vc animated:YES];
 }
 #pragma mark-----buttonActoin---------
 
 - (void)buttonPressed:(UIButton *)button_ {
-    if (button_.tag == 0 ) {
-        NSLog(@"Help the GEDU!");
-
-        
-    }else if (button_.tag == 1) {
-
-    }else if (button_.tag == 2) {
-
-    }else if (button_.tag == 3) {
-        
-    }else if (button_.tag == 110) {
-
-    }else if (button_.tag == 901) {
-
-        
-    }else if (button_.tag == 902) {
-
-        
-    }else if (button_.tag == 903) {
-
-        
+    if (button_.tag == EP_BTN_RIGTH_TAG) {
+        EPOrderVC *vc = [[EPOrderVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
+        [LTools pushController:vc animated:YES];
+        [vc release],vc = nil;
+    }else if (button_.tag == EP_BTN_CHARGE_TAG){
+        EPRechargeVC *vc = [[EPRechargeVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
+        [LTools pushController:vc animated:YES];
+        [vc release],vc = nil;
     }
-    
 }
 
 - (void)didReceiveMemoryWarning {
