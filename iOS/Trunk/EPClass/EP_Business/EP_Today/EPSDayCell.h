@@ -1,9 +1,9 @@
 //
-//  OralMemoListCell.h
-//  IELTSAPP-GEDU
+//  EPSDayCell.h
+//  EPASS-APP-iOS
 //
-//  Created by Ray on 25/6/15.
-//  Copyright (c) 2014 JessieRay Co., Ltd. All rights reserved.
+//  Created by Ray on 15/9/14.
+//  Copyright (c) 2015年 JessieRay Co., Ltd. All rights reserved.
 //
 
 
@@ -11,19 +11,18 @@
 
 @interface EPSDayCell : UITableViewCell
 {
-    UIImageView         *_EPDayCellBg, *_EPDayCellIcon;
-    UILabel             *_EPDayCellTitle, *_EPDayCellCost, *_EPDayCellSTime;
+    UIImageView         *_EPSDayCellBg;
+    UILabel             *_EPSDayCellDaySum, *_EPSDayCellDayTitle, *_EPSDayCellDayCost, *_EPSDayCellDayType;
 }
 
 + (CGFloat)calHeightForText:(NSString *)text;
 
 - (void)setCellBackground:(CGFloat)celHeight;
 
-- (void)setEPDayCellIcon:(UIImage *)IconImg;
-
-- (void)setEPDayCellTitle:(NSString *)ParkingTitle
-        setEPDayCellSTime:(NSString *)StartTime
-         setEPDayCellCost:(NSString *)ParkingCost;
+- (void)setEPSDayCellSum:(NSString *)DaySum
+        setEPSDayCellDay:(NSString *)DayTitle
+       setEPSDayCellCost:(NSString *)DayCost
+       setEPSDayCellType:(NSString *)DayType;
 
 
 @end

@@ -1,9 +1,9 @@
 //
-//  OralMemoListCell.h
-//  IELTSAPP-GEDU
+//  EPDayCell.h
+//  EPASS-APP-iOS
 //
-//  Created by Ray on 25/6/15.
-//  Copyright (c) 2014 JessieRay Co., Ltd. All rights reserved.
+//  Created by Ray on 15/9/14.
+//  Copyright (c) 2015年 JessieRay Co., Ltd. All rights reserved.
 //
 
 

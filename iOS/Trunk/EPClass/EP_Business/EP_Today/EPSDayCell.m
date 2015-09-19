@@ -1,9 +1,9 @@
 //
-//  OralMemoListCell.m
-//  IELTSAPP-GEDU
+//  EPSDayCell.m
+//  EPASS-APP-iOS
 //
-//  Created by Ray on 25/6/15.
-//  Copyright (c) 2014 JessieRay Co., Ltd. All rights reserved.
+//  Created by Ray on 15/9/14.
+//  Copyright (c) 2015年 JessieRay Co., Ltd. All rights reserved.
 //
 
 
@@ -24,37 +24,34 @@
     if (self) {
         self.contentView.backgroundColor = K_COLOR_WHITE_TEXT;
         
-        _EPDayCellBg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, K_SCREEN_WIDTH, 60)];
-        _EPDayCellBg.backgroundColor = [UIColor whiteColor];
-        [self.contentView addSubview:_EPDayCellBg];
-        
+        _EPSDayCellBg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, K_SCREEN_WIDTH, 60)];
+        _EPSDayCellBg.backgroundColor = [UIColor whiteColor];
+        [self.contentView addSubview:_EPSDayCellBg];
     
+        _EPSDayCellDaySum     = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, K_SCREEN_WIDTH-100, 20)];
+        _EPSDayCellDayTitle   = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, K_SCREEN_WIDTH-100, 20)];
+        _EPSDayCellDayCost    = [[UILabel alloc] initWithFrame:CGRectMake(K_SCREEN_WIDTH - 70, 10, 60, 20)];
+        _EPSDayCellDayType    = [[UILabel alloc] initWithFrame:CGRectMake(K_SCREEN_WIDTH - 70, 30, 60, 20)];
         
-        _EPDayCellIcon = [[UIImageView alloc] init];
-        [_EPDayCellIcon setFrame:CGRectMake(10, 10, ICON_WH, ICON_WH)];
+        _EPSDayCellDaySum.textColor = K_COLOR_DARK_TEXT;
+        _EPSDayCellDaySum.textAlignment = NSTextAlignmentLeft;
+        _EPSDayCellDaySum.font = [UIFont fontWithName:FONT_H size:14];
+        [self.contentView addSubview:_EPSDayCellDaySum];
         
-        _EPDayCellTitle   = [[UILabel alloc] initWithFrame:CGRectMake(60, 10, K_SCREEN_WIDTH-100, 20)];
-        _EPDayCellSTime   = [[UILabel alloc] initWithFrame:CGRectMake(60, 30, K_SCREEN_WIDTH-100, 20)];
-        _EPDayCellCost    = [[UILabel alloc] initWithFrame:CGRectMake(K_SCREEN_WIDTH - 70, 10, 60, 40)];
-        
-        [self.contentView addSubview:_EPDayCellIcon];
-        
-        
-        _EPDayCellTitle.textColor = K_COLOR_DARK_TEXT;
-        _EPDayCellTitle.textAlignment = NSTextAlignmentLeft;
-        _EPDayCellTitle.font = [UIFont fontWithName:FONT_H size:14];
-        [self.contentView addSubview:_EPDayCellTitle];
-        
-        _EPDayCellSTime.textColor = K_COLOR_GRAY_FONT;
-        _EPDayCellSTime.textAlignment = NSTextAlignmentLeft;
-        _EPDayCellSTime.font = [UIFont fontWithName:FONT_H size:13];
-        [self.contentView addSubview:_EPDayCellSTime];
+        _EPSDayCellDayTitle.textColor = K_COLOR_GRAY_FONT;
+        _EPSDayCellDayTitle.textAlignment = NSTextAlignmentLeft;
+        _EPSDayCellDayTitle.font = [UIFont fontWithName:FONT_H size:12];
+        [self.contentView addSubview:_EPSDayCellDayTitle];
  
-        _EPDayCellCost.textColor = K_COLOR_ORANGE_TEXT;
-        _EPDayCellCost.textAlignment = NSTextAlignmentRight;
-        _EPDayCellCost.font = [UIFont fontWithName:FONT_H size:14];
-        [self.contentView addSubview:_EPDayCellCost];
+        _EPSDayCellDayCost.textColor = K_COLOR_ORANGE_TEXT;
+        _EPSDayCellDayCost.textAlignment = NSTextAlignmentRight;
+        _EPSDayCellDayCost.font = [UIFont fontWithName:FONT_H size:14];
+        [self.contentView addSubview:_EPSDayCellDayCost];
     
+        _EPSDayCellDayType.textColor = K_COLOR_GRAY_FONT;
+        _EPSDayCellDayType.textAlignment = NSTextAlignmentRight;
+        _EPSDayCellDayType.font = [UIFont fontWithName:FONT_H size:12];
+        [self.contentView addSubview:_EPSDayCellDayType];
     }
     return self;
 }
@@ -74,19 +71,17 @@
                                   options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
                                attributes:fontAttr context:nil].size.height;
 
-    
 }
 
-- (void)setEPDayCellIcon:(UIImage *)IconImg{
-    _EPDayCellIcon.image = IconImg;
-}
-- (void)setEPDayCellTitle:(NSString *)ParkingTitle
-        setEPDayCellSTime:(NSString *)StartTime
-         setEPDayCellCost:(NSString *)ParkingCost
+- (void)setEPSDayCellSum:(NSString *)DaySum
+        setEPSDayCellDay:(NSString *)DayTitle
+       setEPSDayCellCost:(NSString *)DayCost
+       setEPSDayCellType:(NSString *)DayType
 {
-    _EPDayCellTitle.text  = ParkingTitle;
-    _EPDayCellSTime.text = StartTime;
-    _EPDayCellCost.text  = ParkingCost;
+    _EPSDayCellDaySum.text   = DaySum;
+    _EPSDayCellDayTitle.text = DayTitle;
+    _EPSDayCellDayCost.text  = DayCost;
+    _EPSDayCellDayType.text  = DayType;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

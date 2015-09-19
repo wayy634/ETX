@@ -1,9 +1,9 @@
 //
-//  USHSQAModel.m
-//  USHSAPP-GEDU
+//  EPSDayModel.m
+//  EPASS-APP-iOS
 //
-//  Created by Ray on 8/1/15.
-//  Copyright (c) 2014-2015 JessieRay Co., Ltd. All rights reserved.
+//  Created by Ray on 15/9/14.
+//  Copyright (c) 2015年 JessieRay Co., Ltd. All rights reserved.
 //
 
 #import "EPSDayModel.h"

@@ -1,12 +1,14 @@
 //
-//  EPRechargeVC.m
+//  EPDayVC.m
 //  EPASS-APP-iOS
 //
-//  Created by chenzb on 15/9/14.
-//  Copyright (c) 2015年 Jeanne. All rights reserved.
+//  Created by Ray on 15/9/14.
+//  Copyright (c) 2015年 JessieRay Co., Ltd. All rights reserved.
 //
 
 #import "EPDayVC.h"
+
+#import "EPMonthVC.h"
 
 #import "EPDayCell.h"
 #import "EPDayModel.h"
@@ -202,7 +204,8 @@
     }else if (button_.tag == 3) {
         
     }else if (button_.tag == 110) {
-
+        EPMonthVC *vc = [[EPMonthVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+        [self.navigationController pushViewController:vc animated:YES];
     }else if (button_.tag == 901) {
 
         
@@ -220,39 +223,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-#pragma mark-----TextFieldMethod---------
-
-- (void)textFieldEditChanged:(UITextField *)textField
-{
-    
-}
-
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    
-}
-
-- (BOOL)textFieldShouldReturn:(UITextField *)sender {
-    
-    [sender resignFirstResponder];
-    
-    return YES;
-}
-
--(IBAction)textFieldDoneEditing:(id)sender
-{
-    [sender resignFirstResponder];
-}
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 @end

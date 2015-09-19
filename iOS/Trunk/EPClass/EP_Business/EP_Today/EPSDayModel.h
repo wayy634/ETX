@@ -1,23 +1,21 @@
 //
-//  USHSQAModel.h
-//  USHSAPP-GEDU
+//  EPSDayModel.h
+//  EPASS-APP-iOS
 //
-//  Created by Ray on 8/1/15.
-//  Copyright (c) 2014-2015 JessieRay Co., Ltd. All rights reserved.
+//  Created by Ray on 15/9/14.
+//  Copyright (c) 2015年 JessieRay Co., Ltd. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 @interface EPSDayModel : NSObject
-// Memo Model
-//Top Question
-@property (nonatomic, assign)int        EPID;
-@property (nonatomic, assign)int        EPPID;
-@property (nonatomic, strong)NSString   *EPParkingTitle;
-@property (nonatomic, strong)NSString   *EPParkingFee;
-@property (nonatomic, strong)NSString   *EPParkingBeginTime;
-@property (nonatomic, strong)NSString   *EPParkingCurrentTime;
 
+@property (nonatomic, assign)int        EPSID;
+@property (nonatomic, assign)int        EPSParkingSum;
+@property (nonatomic, assign)int        EPSTimeSim;
+@property (nonatomic, strong)NSString   *EPSDayTitle;
+@property (nonatomic, strong)NSString   *EPSDayFee;
+@property (nonatomic, strong)NSString   *EPSDayType;
 
 
 @end

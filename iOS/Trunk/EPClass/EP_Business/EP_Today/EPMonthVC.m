@@ -1,9 +1,9 @@
 //
-//  EPRechargeVC.m
+//  EPMonthVC.m
 //  EPASS-APP-iOS
 //
-//  Created by chenzb on 15/9/14.
-//  Copyright (c) 2015年 Jeanne. All rights reserved.
+//  Created by Ray on 15/9/14.
+//  Copyright (c) 2015年 JessieRay Co., Ltd. All rights reserved.
 //
 
 #import "EPMonthVC.h"
@@ -176,12 +176,11 @@
         _EPSDayCell.selectionStyle = UITableViewCellSelectionStyleNone;
         
     }
-    
-    [_EPSDayCell setEPDayCellIcon:[UIImage imageOrPDFNamed:@"icon_parking_blue.pdf"]];
    
-    [_EPSDayCell setEPDayCellTitle:@"华茂中心地下停车场"
-                setEPDayCellSTime:@"09:18"
-                 setEPDayCellCost:@"计费中"];
+    [_EPSDayCell setEPSDayCellSum:[NSString stringWithFormat:@"停车 %.1f 小时/停车场 %d 个",8.6,3]
+                 setEPSDayCellDay:@"2015-08-15"
+                setEPSDayCellCost:@"112.3"
+                setEPSDayCellType:@"当日结算"];
     
     
     return _EPSDayCell;
@@ -223,38 +222,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-#pragma mark-----TextFieldMethod---------
-
-- (void)textFieldEditChanged:(UITextField *)textField
-{
-    
-}
-
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    
-}
-
-- (BOOL)textFieldShouldReturn:(UITextField *)sender {
-    
-    [sender resignFirstResponder];
-    
-    return YES;
-}
-
--(IBAction)textFieldDoneEditing:(id)sender
-{
-    [sender resignFirstResponder];
-}
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 @end
