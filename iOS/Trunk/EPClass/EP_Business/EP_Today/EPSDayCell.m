@@ -28,6 +28,11 @@
         _EPSDayCellBg.backgroundColor = [UIColor whiteColor];
         [self.contentView addSubview:_EPSDayCellBg];
     
+        UIImageView  *grayLine = [[UIImageView alloc] initWithFrame:CGRectMake(0, 60-0.5, K_SCREEN_WIDTH, 0.5)];
+        grayLine.backgroundColor           = K_COLOR_GRAY_FONT;
+        grayLine.alpha                     = 0.4;
+        [self.contentView addSubview:grayLine];
+        
         _EPSDayCellDaySum     = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, K_SCREEN_WIDTH-100, 20)];
         _EPSDayCellDayTitle   = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, K_SCREEN_WIDTH-100, 20)];
         _EPSDayCellDayCost    = [[UILabel alloc] initWithFrame:CGRectMake(K_SCREEN_WIDTH - 70, 10, 60, 20)];

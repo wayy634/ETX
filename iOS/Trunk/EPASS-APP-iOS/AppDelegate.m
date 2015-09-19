@@ -12,7 +12,7 @@
 #import "UIAlertView+Block.h"
 #import "UMSocialData.h"
 #import "XMPushManager.h"
-
+#import "EPMenuManager.h"
 
 //
 #import "DDMenuController.h"
@@ -52,9 +52,9 @@
     self.mWindow.rootViewController = self.mNavigationController;
     [self.mWindow makeKeyAndVisible];
     self.mDDMenu = [[DDMenuController alloc] init];
-    EPLeftVC *leftVC = [[EPLeftVC alloc]init];
-    EPCenterVC *centerVC = [[EPCenterVC alloc]init];
-    self.mNavigationController = [[UINavigationController alloc] initWithRootViewController:centerVC];
+    EPLeftVC *leftVC = [[EPLeftVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+    LCCustomBaseVC  *object = [[EPMenuManager sharedMenuManager] getRootVCbyType:EPLeftMenuType_Today];
+    self.mNavigationController = [[UINavigationController alloc] initWithRootViewController:object];
     [self.mNavigationController setNavigationBarHidden:YES];
     [self.mNavigationController.view setBackgroundColor:[UIColor whiteColor]];
     self.mDDMenu.leftViewController = leftVC;

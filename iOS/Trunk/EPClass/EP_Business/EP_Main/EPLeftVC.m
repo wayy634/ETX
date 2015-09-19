@@ -7,18 +7,10 @@
 //
 
 #import "EPLeftVC.h"
-//VC
-#import "EPAccountVC.h"
-#import "EPTodayVC.h"
-#import "EPRechargeVC.h"
-#import "EPBindingDeviceVC.h"
-#import "EPOrderVC.h"
-#import "EPDeviceVC.h"
-#import "EPSettingVC.h"
-#import "EPAccountManager.h"
-
+//cell
 #import "EPLeftMnuCell.h"
-
+//
+#import "EPMenuManager.h"
 
 @interface EPLeftVC ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -45,7 +37,6 @@
     [super viewDidLoad];
     //创建用户信息
     [EPAccountManager saveAccountData:[EPAccountManager getAccountData]];
-    self.mRootVCDic = [[NSMutableDictionary alloc] init];
     self.view.backgroundColor = [UIColor blueColor];
     
     
@@ -84,11 +75,9 @@
 #pragma mark-----buttonActoin---------
 
 - (void)buttonPress:(UIButton *)button_ {
-    id object = [self getRootVCbyType:EPLeftMenuType_Account];
     [APP_DELEGATE.mNavigationController setViewControllers:nil];
-    [APP_DELEGATE.mNavigationController initWithRootViewController:object];
+    [APP_DELEGATE.mNavigationController initWithRootViewController:[[EPMenuManager sharedMenuManager] getRootVCbyType:EPLeftMenuType_Account]];
     [APP_DELEGATE.mDDMenu showRootController:YES];
-    object = nil;
 }
 #pragma mark --
 #pragma mark - UITableViewDataSource & UITableViewDelegate
@@ -112,76 +101,11 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    id object = [self getRootVCbyType:indexPath.row];
     [APP_DELEGATE.mNavigationController setViewControllers:nil];
-    [APP_DELEGATE.mNavigationController initWithRootViewController:object];
+    [APP_DELEGATE.mNavigationController initWithRootViewController:[[EPMenuManager sharedMenuManager] getRootVCbyType:indexPath.row]];
     [APP_DELEGATE.mDDMenu showRootController:YES];
-    object = nil;
 }
 
-//获取对应的跟页面
-
--(id)getRootVCbyType:(EPLeftMenuType)type_ {
-    
-    id object = nil;
-    object = [self.mRootVCDic objectForKey:[NSString stringWithFormat:@"%li",(long)type_]];
-    if (object != nil) {
-        return object;
-    }
-    switch (type_) {
-        case EPLeftMenuType_Account:{
-            EPAccountVC *accountVC = [[EPAccountVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-            [self.mRootVCDic setObject:accountVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
-            object = accountVC;
-            [accountVC release];
-            break;
-        }
-        case EPLeftMenuType_Today:{
-            EPTodayVC *todayVC = [[EPTodayVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-            [self.mRootVCDic setObject:todayVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
-            object = todayVC;
-            [todayVC release];
-            break;
-        }
-        case EPLeftMenuType_Recharge:{
-            EPRechargeVC *rechargeVC = [[EPRechargeVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-            [self.mRootVCDic setObject:rechargeVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
-            object = rechargeVC;
-            [rechargeVC release];
-            break;
-        }
-        case EPLeftMenuType_BindingDevice:{
-            EPBindingDeviceVC *bindingDeviceVC = [[EPBindingDeviceVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-            [self.mRootVCDic setObject:bindingDeviceVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
-            object = bindingDeviceVC;
-            [bindingDeviceVC release];
-            break;
-        }
-        case EPLeftMenuType_Order:{
-            EPOrderVC *orderVC = [[EPOrderVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-            [self.mRootVCDic setObject:orderVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
-            object = orderVC;
-            [orderVC release];
-            break;
-        }
-        case EPLeftMenuType_MyDevice:{
-            
-            EPDeviceVC *deviceVC = [[EPDeviceVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-            [self.mRootVCDic setObject:deviceVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
-            object = deviceVC;
-            [deviceVC release];
-            break;
-        }
-//        case EPLeftMenuType_Set:{
-//            EPSettingVC *settingVC = [[EPSettingVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-//            [self.mRootVCDic setObject:settingVC forKey:[NSString stringWithFormat:@"%i",(int)type_]];
-//            object = settingVC;
-//            [settingVC release];
-//            break;
-//        }
-    }
-    return object;
-}
 
 
 

@@ -48,7 +48,7 @@
     mBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [mBackButton setTag:LCBOTTOMMENUV_BACKBUTTON];
     
-    [mBackButton setImage:[UIImage imageWithPDFNamed:@"btn_nav_back.pdf" atSize:CGSizeMake(30, 30)] forState:UIControlStateNormal];
+    [mBackButton setImage:[UIImage imageWithPDFNamed:@"btn_nav_draw.pdf" atSize:CGSizeMake(30, 30)] forState:UIControlStateNormal];
     mBackButton.adjustsImageWhenHighlighted = NO;
     [mBackButton setFrame:CGRectMake(10, K_SYSTEM_BAR/2 + (self.mTopView.height - 30)/2, 100, 30)];
     [mBackButton setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, mBackButton.width-30)];

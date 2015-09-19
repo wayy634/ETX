@@ -69,6 +69,11 @@
 //    [self.mContentView addSubview:backButton];
     [backButton addTarget:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
     
+    
+    UIImageView *appIconV = [[UIImageView alloc] initWithFrame:CGRectMake((K_SCREEN_WIDTH-80)/2, 120, 80, 80)];
+    appIconV.image = [UIImage imageOrPDFNamed:@"EPass_Icon.pdf"];
+    [self.mContentView addSubview:appIconV];
+    
     mInputV = [[UIView alloc] initWithFrame:CGRectMake(AUTOSIZE(37), 309, K_SCREEN_WIDTH - AUTOSIZE(37 * 2), 40 * 3 + 7 * 2)];
     mInputV.backgroundColor = [UIColor clearColor];
     [self.mContentView addSubview:mInputV];

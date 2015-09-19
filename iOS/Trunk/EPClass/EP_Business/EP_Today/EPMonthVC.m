@@ -8,6 +8,8 @@
 
 #import "EPMonthVC.h"
 
+#import "EPDayVC.h"
+
 #import "EPSDayCell.h"
 #import "EPSDayModel.h"
 
@@ -39,7 +41,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"今日";
+    self.title = @"2015年8月";
     [self.mContentView setBackgroundColor:K_COLOR_MAIN_BACKGROUND];
     
     // Top Navi
@@ -123,7 +125,7 @@
     
     // Init Table
     UITableView *tabelView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, K_SCREEN_WIDTH, K_SCREEN_HEIGHT)];
-    [tabelView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    [tabelView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [tabelView setBackgroundColor:K_COLOR_LIGHT_GRAY_BG];
     tabelView.delegate = self;
     tabelView.dataSource = self;
@@ -174,6 +176,7 @@
         _EPSDayCell = [[EPSDayCell alloc]initWithStyle:UITableViewCellStyleDefault
                                                     reuseIdentifier:identifier];
         _EPSDayCell.selectionStyle = UITableViewCellSelectionStyleNone;
+
         
     }
    
@@ -188,6 +191,9 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"index : %li",(long)indexPath.row);
+    
+    EPDayVC *vc = [[EPDayVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+    [LTools pushController:vc animated:YES];
 }
 #pragma mark-----buttonActoin---------
 

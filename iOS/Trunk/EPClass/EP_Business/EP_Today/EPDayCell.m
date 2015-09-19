@@ -28,7 +28,10 @@
         _EPDayCellBg.backgroundColor = [UIColor whiteColor];
         [self.contentView addSubview:_EPDayCellBg];
         
-    
+        UIImageView  *grayLine = [[UIImageView alloc] initWithFrame:CGRectMake(0, 60-0.5, K_SCREEN_WIDTH, 0.5)];
+        grayLine.backgroundColor           = K_COLOR_GRAY_FONT;
+        grayLine.alpha                     = 0.4;
+        [self.contentView addSubview:grayLine];
         
         _EPDayCellIcon = [[UIImageView alloc] init];
         [_EPDayCellIcon setFrame:CGRectMake(10, 10, ICON_WH, ICON_WH)];
