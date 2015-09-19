@@ -8,7 +8,7 @@
 
 #import "EPOrderVC.h"
 
-#import "EPDayVC.h"
+#import "EPMonthVC.h"
 
 #import "EPSMonthCell.h"
 #import "EPSMonthModel.h"
@@ -48,7 +48,7 @@
     
     // Init Table
     UITableView *tabelView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, K_SCREEN_WIDTH, K_SCREEN_HEIGHT)];
-    [tabelView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    [tabelView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [tabelView setBackgroundColor:K_COLOR_LIGHT_GRAY_BG];
     tabelView.delegate = self;
     tabelView.dataSource = self;
@@ -96,7 +96,7 @@
         _EPSMonthCell = [[EPSMonthCell alloc]initWithStyle:UITableViewCellStyleDefault
                                      reuseIdentifier:identifier];
         _EPSMonthCell.selectionStyle = UITableViewCellSelectionStyleNone;
-        
+        _EPSMonthCell.accessoryType  = UITableViewCellAccessoryDisclosureIndicator;
     }
     
     [_EPSMonthCell setEPSMonthCellTitle:@"2015年8月"
@@ -108,22 +108,14 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"index : %li",(long)indexPath.row);
+    
+    EPMonthVC *vc = [[EPMonthVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+    [LTools pushController:vc animated:YES];
 }
 #pragma mark-----buttonActoin---------
 
 - (void)buttonPressed:(UIButton *)button_ {
-    if (button_.tag == 0 ) {
-        NSLog(@"Help the GEDU!");
-        EPDayVC *vc = [[EPDayVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-        [self.navigationController pushViewController:vc animated:YES];
-        
-    }else if (button_.tag == 1) {
-        
-    }else if (button_.tag == 2) {
-        
-    }else if (button_.tag == 3) {
-        
-    }else if (button_.tag == 110) {
+    if (button_.tag == 110) {
 
     }else if (button_.tag == 901) {
         

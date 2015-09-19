@@ -149,7 +149,7 @@
     // Charge back
     UIImageView  *grayLine = [[UIImageView alloc] initWithFrame:CGRectMake(_chargePopView.width/2-0.25, _chargePopView.height-50, 0.5, 40)];
     grayLine.backgroundColor           = K_COLOR_GRAY_FONT;
-    grayLine.alpha                     = 0.7;
+    grayLine.alpha                     = 0.4;
     [_chargePopView addSubview:grayLine];
     [grayLine release];
     

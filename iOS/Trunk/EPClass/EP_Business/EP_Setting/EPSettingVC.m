@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"setting";
+    self.title = @"账户设置";
     // Do any additional setup after loading the view.
 }
 

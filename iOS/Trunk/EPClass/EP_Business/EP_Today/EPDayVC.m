@@ -123,7 +123,7 @@
     
     // Init Table
     UITableView *tabelView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, K_SCREEN_WIDTH, K_SCREEN_HEIGHT)];
-    [tabelView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    [tabelView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [tabelView setBackgroundColor:K_COLOR_LIGHT_GRAY_BG];
     tabelView.delegate = self;
     tabelView.dataSource = self;
@@ -205,7 +205,7 @@
         
     }else if (button_.tag == 110) {
         EPMonthVC *vc = [[EPMonthVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-        [self.navigationController pushViewController:vc animated:YES];
+        [LTools pushController:vc animated:YES];
     }else if (button_.tag == 901) {
 
         
