@@ -45,9 +45,9 @@
 #define COLOR(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
 
 //font
-#define K_FONT_SIZE(size)          [UIFont systemFontOfSize:iPhone6Plus ? (size+1):size]
-#define K_BOLD_FONT_SIZE(size)     [UIFont boldSystemFontOfSize:iPhone6Plus ? (size+1):size]
-
+#define K_FONT_SIZE(size)               [UIFont systemFontOfSize:iPhone6Plus ? (size+1):size]
+#define K_BOLD_FONT_SIZE(size)          [UIFont boldSystemFontOfSize:iPhone6Plus ? (size+1):size]
+#define K_BOLD_FONT_NAME_SIZE(name,size)     [UIFont fontWithName:(name?name:FONT_H) size:iPhone6Plus ? (size+1):size]
 // float
 #define K_EPSINON                       (1e-127)
 #define IS_ZERO_FLOAT(X)                (X < K_EPSINON && X > -K_EPSINON)

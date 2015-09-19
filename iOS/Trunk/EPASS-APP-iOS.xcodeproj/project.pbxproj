@@ -66,30 +66,30 @@
 		79B57A6F1BAC3A7300239392 /* phoneCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B57A6E1BAC3A7300239392 /* phoneCode.m */; };
 		CB0054881BA9C189002A43B5 /* icon_charge_alipay.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB0054851BA9C189002A43B5 /* icon_charge_alipay.pdf */; };
 		CB0054891BA9C189002A43B5 /* icon_charge_upcash.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB0054861BA9C189002A43B5 /* icon_charge_upcash.pdf */; };
-		CB11DE7E1BAC68AE004C96FC /* icon_charge_wechatpay.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB11DE7D1BAC68AE004C96FC /* icon_charge_wechatpay.pdf */; settings = {ASSET_TAGS = (); }; };
-		CB5078201BAD06BB00204553 /* EPSMonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50781C1BAD06BB00204553 /* EPSMonthCell.m */; settings = {ASSET_TAGS = (); }; };
-		CB5078211BAD06BB00204553 /* EPSMonthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50781E1BAD06BB00204553 /* EPSMonthModel.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFD5A1BAC6CAE0033D9F5 /* ASDepthModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD581BAC6CAE0033D9F5 /* ASDepthModalViewController.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFD5D1BAC7BBA0033D9F5 /* EPBindCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD5B1BAC7BBA0033D9F5 /* EPBindCardVC.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFD601BAC8C1F0033D9F5 /* btn_nav_draw.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD5E1BAC8C1F0033D9F5 /* btn_nav_draw.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD611BAC8C1F0033D9F5 /* btn_nav_history.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD5F1BAC8C1F0033D9F5 /* btn_nav_history.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD671BAC8C270033D9F5 /* icon_parking_blue.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD631BAC8C270033D9F5 /* icon_parking_blue.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD681BAC8C270033D9F5 /* icon_station_blue.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD641BAC8C270033D9F5 /* icon_station_blue.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD691BAC8C270033D9F5 /* icon_station_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD651BAC8C270033D9F5 /* icon_station_white.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD6A1BAC8C270033D9F5 /* icon_today_downarraw.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD661BAC8C270033D9F5 /* icon_today_downarraw.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD6C1BAC8C2F0033D9F5 /* view_creditcard.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6B1BAC8C2F0033D9F5 /* view_creditcard.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD721BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6E1BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD731BAC90520033D9F5 /* Helvetica Condensed Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6F1BAC90520033D9F5 /* Helvetica Condensed Bold.ttf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD741BAC90520033D9F5 /* Helvetica Condensed Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD701BAC90520033D9F5 /* Helvetica Condensed Italic.ttf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD751BAC90520033D9F5 /* Helvetica Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD711BAC90520033D9F5 /* Helvetica Condensed.ttf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD771BAC93460033D9F5 /* icon_parking_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD761BAC93460033D9F5 /* icon_parking_white.pdf */; settings = {ASSET_TAGS = (); }; };
-		CBABFD7C1BAC96020033D9F5 /* EPDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD781BAC96020033D9F5 /* EPDayCell.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFD7D1BAC96020033D9F5 /* EPDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD7B1BAC96020033D9F5 /* EPDayModel.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFD9E1BACAFAF0033D9F5 /* EPDayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD971BACAFAF0033D9F5 /* EPDayVC.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFD9F1BACAFAF0033D9F5 /* EPMonthVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD991BACAFAF0033D9F5 /* EPMonthVC.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFDA01BACAFAF0033D9F5 /* EPSDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD9B1BACAFAF0033D9F5 /* EPSDayCell.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFDA11BACAFAF0033D9F5 /* EPSDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD9D1BACAFAF0033D9F5 /* EPSDayModel.m */; settings = {ASSET_TAGS = (); }; };
-		CBABFDA31BACB2B90033D9F5 /* icon_charge_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFDA21BACB2B90033D9F5 /* icon_charge_white.pdf */; settings = {ASSET_TAGS = (); }; };
+		CB11DE7E1BAC68AE004C96FC /* icon_charge_wechatpay.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CB11DE7D1BAC68AE004C96FC /* icon_charge_wechatpay.pdf */; };
+		CB5078201BAD06BB00204553 /* EPSMonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50781C1BAD06BB00204553 /* EPSMonthCell.m */; };
+		CB5078211BAD06BB00204553 /* EPSMonthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50781E1BAD06BB00204553 /* EPSMonthModel.m */; };
+		CBABFD5A1BAC6CAE0033D9F5 /* ASDepthModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD581BAC6CAE0033D9F5 /* ASDepthModalViewController.m */; };
+		CBABFD5D1BAC7BBA0033D9F5 /* EPBindCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD5B1BAC7BBA0033D9F5 /* EPBindCardVC.m */; };
+		CBABFD601BAC8C1F0033D9F5 /* btn_nav_draw.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD5E1BAC8C1F0033D9F5 /* btn_nav_draw.pdf */; };
+		CBABFD611BAC8C1F0033D9F5 /* btn_nav_history.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD5F1BAC8C1F0033D9F5 /* btn_nav_history.pdf */; };
+		CBABFD671BAC8C270033D9F5 /* icon_parking_blue.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD631BAC8C270033D9F5 /* icon_parking_blue.pdf */; };
+		CBABFD681BAC8C270033D9F5 /* icon_station_blue.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD641BAC8C270033D9F5 /* icon_station_blue.pdf */; };
+		CBABFD691BAC8C270033D9F5 /* icon_station_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD651BAC8C270033D9F5 /* icon_station_white.pdf */; };
+		CBABFD6A1BAC8C270033D9F5 /* icon_today_downarraw.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD661BAC8C270033D9F5 /* icon_today_downarraw.pdf */; };
+		CBABFD6C1BAC8C2F0033D9F5 /* view_creditcard.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6B1BAC8C2F0033D9F5 /* view_creditcard.pdf */; };
+		CBABFD721BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6E1BAC90520033D9F5 /* Helvetica Condensed Bold Italic.ttf */; };
+		CBABFD731BAC90520033D9F5 /* Helvetica Condensed Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD6F1BAC90520033D9F5 /* Helvetica Condensed Bold.ttf */; };
+		CBABFD741BAC90520033D9F5 /* Helvetica Condensed Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD701BAC90520033D9F5 /* Helvetica Condensed Italic.ttf */; };
+		CBABFD751BAC90520033D9F5 /* Helvetica Condensed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD711BAC90520033D9F5 /* Helvetica Condensed.ttf */; };
+		CBABFD771BAC93460033D9F5 /* icon_parking_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFD761BAC93460033D9F5 /* icon_parking_white.pdf */; };
+		CBABFD7C1BAC96020033D9F5 /* EPDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD781BAC96020033D9F5 /* EPDayCell.m */; };
+		CBABFD7D1BAC96020033D9F5 /* EPDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD7B1BAC96020033D9F5 /* EPDayModel.m */; };
+		CBABFD9E1BACAFAF0033D9F5 /* EPDayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD971BACAFAF0033D9F5 /* EPDayVC.m */; };
+		CBABFD9F1BACAFAF0033D9F5 /* EPMonthVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD991BACAFAF0033D9F5 /* EPMonthVC.m */; };
+		CBABFDA01BACAFAF0033D9F5 /* EPSDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD9B1BACAFAF0033D9F5 /* EPSDayCell.m */; };
+		CBABFDA11BACAFAF0033D9F5 /* EPSDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBABFD9D1BACAFAF0033D9F5 /* EPSDayModel.m */; };
+		CBABFDA31BACB2B90033D9F5 /* icon_charge_white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CBABFDA21BACB2B90033D9F5 /* icon_charge_white.pdf */; };
 		E72C1CBB1BA9425A00B51F9B /* icon_device_add.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBA1BA9425A00B51F9B /* icon_device_add.pdf */; };
 		E72C1CBE1BA9481800B51F9B /* btn_nav_back.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E72C1CBD1BA9481800B51F9B /* btn_nav_back.pdf */; };
 		E75F0CA31BAC08180069239E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E75F0CA21BAC08180069239E /* Info.plist */; };
@@ -338,6 +338,7 @@
 		E77221E51BA6D228006E480E /* icon_sidemenu_today.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E77221DE1BA6D228006E480E /* icon_sidemenu_today.pdf */; };
 		E791C1B11B6751270054707A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E791C1B01B6751270054707A /* AddressBook.framework */; };
 		E791C1B31B67512E0054707A /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E791C1B21B67512E0054707A /* AddressBookUI.framework */; };
+		E7C744691BAD135800C6F73D /* EPMenuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C744681BAD135800C6F73D /* EPMenuManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -977,6 +978,8 @@
 		E77221DE1BA6D228006E480E /* icon_sidemenu_today.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_sidemenu_today.pdf; sourceTree = "<group>"; };
 		E791C1B01B6751270054707A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		E791C1B21B67512E0054707A /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		E7C744671BAD135800C6F73D /* EPMenuManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPMenuManager.h; sourceTree = "<group>"; };
+		E7C744681BAD135800C6F73D /* EPMenuManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPMenuManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1351,6 +1354,8 @@
 				E75F0CF01BAC0A3E0069239E /* EPLeftMnuCell.m */,
 				E75F0CF11BAC0A3E0069239E /* EPLeftVC.h */,
 				E75F0CF21BAC0A3E0069239E /* EPLeftVC.m */,
+				E7C744671BAD135800C6F73D /* EPMenuManager.h */,
+				E7C744681BAD135800C6F73D /* EPMenuManager.m */,
 			);
 			path = EP_Main;
 			sourceTree = "<group>";
@@ -2673,6 +2678,7 @@
 				E75F0FF71BAC0A3E0069239E /* LCActiveV.m in Sources */,
 				E75F0F371BAC0A3E0069239E /* LCAPIResultData.m in Sources */,
 				E75F0F681BAC0A3E0069239E /* MMProgressHUD.m in Sources */,
+				E7C744691BAD135800C6F73D /* EPMenuManager.m in Sources */,
 				E75F0FEF1BAC0A3E0069239E /* NSDate+TKCategory.m in Sources */,
 				E75F0F3D1BAC0A3E0069239E /* UserInfo.m in Sources */,
 				E75F0F301BAC0A3E0069239E /* UIImage+LCAddition.m in Sources */,

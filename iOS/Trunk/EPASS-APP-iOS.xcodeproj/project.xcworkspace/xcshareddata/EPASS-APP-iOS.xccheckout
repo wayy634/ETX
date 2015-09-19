@@ -10,6 +10,8 @@
 	<string>EPASS-APP-iOS</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>175cb7ce-f396-11e3-b192-f31c9dbecfd9++4588</key>
+		<string>svn://svn.imxiaomai.com/xiaomai/trunk/Mobile/Ios/Trunk/XMClass/XM_Addition/UIImage+PDF</string>
 		<key>C32F11CC474899EE73F6FA826D39F782B9EECAF7</key>
 		<string>https://github.com/raykoon/EPassAPP.git</string>
 	</dict>
@@ -17,8 +19,15 @@
 	<string>iOS/Trunk/EPASS-APP-iOS.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>175cb7ce-f396-11e3-b192-f31c9dbecfd9++4588</key>
+		<string>../../../../iOS/Trunk/EPASS-APP-iOS/EPClass/XM_ThirdParty/UIImage+PDF/</string>
 		<key>C32F11CC474899EE73F6FA826D39F782B9EECAF7</key>
 		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>175cb7ce-f396-11e3-b192-f31c9dbecfd9++4588</key>
+		<string>svn://svn.imxiaomai.com/xiaomai</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/raykoon/EPassAPP.git</string>
@@ -35,6 +44,14 @@
 			<string>C32F11CC474899EE73F6FA826D39F782B9EECAF7</string>
 			<key>IDESourceControlWCCName</key>
 			<string>EPassAPP</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>175cb7ce-f396-11e3-b192-f31c9dbecfd9++4588</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UIImage+PDF</string>
 		</dict>
 	</array>
 </dict>
