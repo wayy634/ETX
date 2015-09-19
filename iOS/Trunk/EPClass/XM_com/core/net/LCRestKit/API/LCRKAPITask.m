@@ -314,13 +314,14 @@ NSString * const LCRKAPITaskException = @"LCRKAPITaskException";
     NSMutableDictionary *markDictionary = [NSMutableDictionary dictionary];
     
     for (NSString *key in [data_ allKeys]) {
-        if ([key isEqualToString:@"data"]) {
-            NSMutableDictionary *markDic = [NSMutableDictionary dictionary];
-            [markDic setObject:[NSArray arrayWithObject:[data_ objectForKey:@"data"]] forKey:@"modelList"];
-            [markDictionary setObject:markDic forKey:key];
-        } else {
-            [markDictionary setObject:[data_ objectForKey:key] forKey:key];
-        }
+//        if ([key isEqualToString:@"data"]) {
+//            NSMutableDictionary *markDic = [NSMutableDictionary dictionary];
+//            [markDic setObject:[NSArray arrayWithObject:[data_ objectForKey:@"data"]] forKey:@"modelList"];
+//            [markDictionary setObject:markDic forKey:key];
+//        } else {
+//            [markDictionary setObject:[data_ objectForKey:key] forKey:key];
+//        }
+         [markDictionary setObject:[data_ objectForKey:key] forKey:key];
     }
     return markDictionary;
 }

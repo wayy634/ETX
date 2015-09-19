@@ -956,7 +956,7 @@ setCancelAllOnFail:(BOOL)isUse {
     if (_object == nil || [_object isEqual:[NSNull null]]) {
         isError = YES;
     } else {
-        isError = (_object.code == 0) ? NO : YES;
+        isError = (_object.success == 0) ? NO : YES;
     }
     return isError;
 }

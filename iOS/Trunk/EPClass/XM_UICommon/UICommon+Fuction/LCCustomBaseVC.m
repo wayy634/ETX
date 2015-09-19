@@ -42,13 +42,15 @@
     [self.view addSubview:mContentView];
     [self.view bringSubviewToFront:self.mTopView];
     
+    NSString *backBtonName = @"btn_nav_back.pdf";
     if (self.mCustomBaseType == LCCustomBaseVCTypeRoot) {
         [mContentView setFrame:CGRectMake(0, self.mTopView.bottom, K_SCREEN_WIDTH, self.view.height - self.mTopView.bottom)];
+        backBtonName = @"btn_nav_draw.pdf";
     }
     mBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [mBackButton setTag:LCBOTTOMMENUV_BACKBUTTON];
     
-    [mBackButton setImage:[UIImage imageWithPDFNamed:@"btn_nav_draw.pdf" atSize:CGSizeMake(30, 30)] forState:UIControlStateNormal];
+    [mBackButton setImage:[UIImage imageWithPDFNamed:backBtonName atSize:CGSizeMake(30, 30)] forState:UIControlStateNormal];
     mBackButton.adjustsImageWhenHighlighted = NO;
     [mBackButton setFrame:CGRectMake(10, K_SYSTEM_BAR/2 + (self.mTopView.height - 30)/2, 100, 30)];
     [mBackButton setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, mBackButton.width-30)];
@@ -56,6 +58,8 @@
     [self.mTopView addSubview:mBackButton];
     
     [self.view addSubview:[LCUITools creatLineView:CGRectMake(0, topY-0.5, K_SCREEN_WIDTH, 0.5) bgColor:[LTools colorWithHexString:@"dddddd"]]];
+    
+    backBtonName = nil;
 }
 
 - (void)viewDidAppear:(BOOL)animated

@@ -14,8 +14,9 @@
 @property(nonatomic,strong)NSMutableString     *serverTime;
 @property(nonatomic,strong)NSMutableString     *msg;
 @property(nonatomic,assign)long                code;
-@property(nonatomic,strong)LCAPIResultData     *data;
+//@property(nonatomic,strong)LCAPIResultData     *data;
 @property(nonatomic,assign)BOOL                success;
 @property(nonatomic,strong)NSMutableString     *token;
+@property(nonatomic,strong)NSMutableArray     *data;
 
 @end

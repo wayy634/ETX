@@ -116,7 +116,8 @@
     
     NSMutableDictionary *params = [[[NSMutableDictionary alloc] init] autorelease];
     
-    [params setObject:[EPAccountManager getAccountData].mUserToken forKey:@"token"];
+//    [params setObject:[EPAccountManager getAccountData].mUserToken forKey:@"token"];
+    [params setObject:@"id-1@n-150911092732@u-c2c3530b1b944a9d93a971f4452073a9" forKey:@"token"];
     [params setObject:@"" forKey:@"deviceId"];
     
     [LTools startAsynchronousUrl:url parameter:params method:@"GET" delegate:delegate_ allowCancel:allowCancel_ mappingName:@"UserCarsList" urlCacheMode:NO finishSelector:finishSEL_ failSelector:failSEL_ timeOutSelector:timeOutSEL_];
