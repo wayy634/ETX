@@ -83,7 +83,7 @@
     [self.mTableHeaderV addSubview:_currentParkingTime];
     [_currentParkingTime release];
     
-    UIImageView *parkingIcon            = [[UIImageView alloc] initWithFrame:CGRectMake((K_SCREEN_WIDTH-30)/2, self.mTableHeaderV.height-_currentCarView.height-80-50 , 30, 30)];
+    UIImageView *parkingIcon            = [[UIImageView alloc] initWithFrame:CGRectMake((K_SCREEN_WIDTH-30)/2, self.mTableHeaderV.height-_currentCarView.height-70-50 , 30, 30)];
     parkingIcon.image                   = [UIImage imageOrPDFNamed:@"icon_parking_white.pdf"];
     [self.mTableHeaderV addSubview:parkingIcon];
     

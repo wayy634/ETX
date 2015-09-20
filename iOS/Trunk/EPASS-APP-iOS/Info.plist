@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>3.0.0</string>
+	<string>0.8.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -49,7 +49,9 @@
 			</array>
 		</dict>
 	</array>
-    <key>LSApplicationQueriesSchemes</key>
+	<key>CFBundleVersion</key>
+	<string>0.8.0</string>
+	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>baidumap</string>
 		<string>weixin</string>
@@ -57,24 +59,20 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-    <key>UIAppFonts</key>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>请点击"允许"以便易通行帮您定位</string>
+	<key>UIAppFonts</key>
 	<array>
 		<string>Helvetica Condensed Bold Italic.ttf</string>
 		<string>Helvetica Condensed Bold.ttf</string>
 		<string>Helvetica Condensed Italic.ttf</string>
 		<string>Helvetica Condensed.ttf</string>
 	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
-	<key>CFBundleVersion</key>
-	<string>3.0.0</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>请点击"允许"以便易通行帮您定位</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
