@@ -206,7 +206,7 @@
     }else if (button_.tag == 3) {
         
     }else if (button_.tag == 110) {
-        EPDayVC *vc = [[EPDayVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+        EPDayVC *vc = [[EPDayVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
         [LTools pushController:vc animated:YES];
         [vc release],vc = nil;
         

@@ -91,7 +91,7 @@
 //    [CarEPConnectionFuction userCarDelegate:self allowCancel:YES finishSelector:@selector(requestInfoFinsh:) failSelector:@selector(requestFailed:) timeOutSelector:@selector(requestTimeOut:)];
     
     if (button_.tag == 0 ) {
-        LCWebViewVC *webVC = [[LCWebViewVC alloc] init];
+        LCWebViewVC *webVC = [[LCWebViewVC alloc] initCustomVCType:LCCustomBaseVCTypeNormal];
         webVC.webTitle = @"设备说明";
         webVC.requestURL = K_WEBURL_DEVICE_EXPLAIN;
         [LTools pushController:webVC animated:YES];
