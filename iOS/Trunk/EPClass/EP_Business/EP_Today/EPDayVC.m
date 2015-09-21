@@ -10,6 +10,8 @@
 
 #import "EPMonthVC.h"
 
+#import "EPRechargeVC.h"
+
 #import "EPDayCell.h"
 #import "EPDayModel.h"
 
@@ -46,10 +48,11 @@
     
     // Top Navi
     UIButton *historyBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [historyBtn setAdjustsImageWhenHighlighted:NO];
-    [historyBtn setImage:[UIImage imageOrPDFNamed:@"btn_nav_history.pdf"] forState:UIControlStateNormal];
-    [historyBtn setFrame:CGRectMake(0, 0, 40, 40)];
-    historyBtn.tag = 110;
+    [historyBtn setTitleColor:K_COLOR_DARK_TEXT forState:UIControlStateNormal];
+    [historyBtn.titleLabel setFont:K_FONT_SIZE(14)];
+    [historyBtn setTitle:@"月账单" forState:UIControlStateNormal];
+    [historyBtn setFrame:CGRectMake(0, 0, 60, 40)];
+    historyBtn.tag = EP_BTN_RIGTH_TAG;
     [historyBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self initTopRightV:@[historyBtn]];
     
@@ -118,7 +121,10 @@
     chargeTitle.tag                = 8002;
     [self.mTableHeaderV addSubview:chargeTitle];
     
-    
+    UIButton    *chargeBtn         = [[UIButton alloc] initWithFrame:CGRectMake(0, self.mTableHeaderV.height-50,K_SCREEN_WIDTH, 50)];
+    chargeBtn.tag                  = EP_BTN_CHARGE_TAG;
+    [chargeBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.mTableHeaderV addSubview:chargeBtn];
 
     
     // Init Table
@@ -193,30 +199,15 @@
 #pragma mark-----buttonActoin---------
 
 - (void)buttonPressed:(UIButton *)button_ {
-    if (button_.tag == 0 ) {
-        NSLog(@"Help the GEDU!");
-
-        
-    }else if (button_.tag == 1) {
-
-    }else if (button_.tag == 2) {
-
-    }else if (button_.tag == 3) {
-        
-    }else if (button_.tag == 110) {
-        EPMonthVC *vc = [[EPMonthVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+    if (button_.tag == EP_BTN_RIGTH_TAG) {
+        EPMonthVC *vc = [[EPMonthVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
         [LTools pushController:vc animated:YES];
-    }else if (button_.tag == 901) {
-
-        
-    }else if (button_.tag == 902) {
-
-        
-    }else if (button_.tag == 903) {
-
-        
+        [vc release],vc = nil;
+    }else if (button_.tag == EP_BTN_CHARGE_TAG){
+        EPRechargeVC *vc = [[EPRechargeVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
+        [LTools pushController:vc animated:YES];
+        [vc release],vc = nil;
     }
-    
 }
 
 - (void)didReceiveMemoryWarning {

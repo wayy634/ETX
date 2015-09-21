@@ -373,10 +373,11 @@
         _chargePopText.alpha    = 0;
     }else if (button_.tag == 3) {
         NSLog(@"IndexRow 3");
-        EPBindCardVC *vc = [[EPBindCardVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-        [self.navigationController pushViewController:vc animated:YES];
+        EPBindCardVC *vc = [[EPBindCardVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
+        [LTools pushController:vc animated:YES];
+        [vc release],vc = nil;
         
-    }else if (button_.tag == 110) {
+    }else if (button_.tag == EP_BTN_RIGTH_TAG) {
         _chargePopTitle.text = @"充值帮助";
         [ASDepthModalViewController presentView:_chargePopView withBackgroundColor:[UIColor whiteColor] popupAnimationStyle:ASDepthModalAnimationDefault];
         EPgotItBtn.alpha        = 1;

@@ -144,7 +144,10 @@
 #define FONT_HCO  @"Helvetica-Condensed-Oblique"
 #define FONT_H    @"HelveticaNeue"
 
-
+/***************************** CUSTOMED FONT ****************************/
+#define EP_BTN_CHARGE_TAG                   888
+#define EP_BTN_RIGTH_TAG                    110
+#define EP_BTN_SUBMIT_TAG                   100
 
 // XM_ENUM----------------------------------------------------
 //配送方式

@@ -42,7 +42,7 @@
     [registerButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self initTopRightV:@[registerButton]];
     
-    UITableView *tabelView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, K_SCREEN_WIDTH, 300)];
+    UITableView *tabelView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, K_SCREEN_WIDTH, K_SCREEN_WIDTH*0.578)];
     [tabelView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [tabelView setBackgroundColor:[UIColor whiteColor]];
     tabelView.delegate = self;
@@ -51,6 +51,15 @@
     self.mTableView = tabelView;
     [self.mContentView addSubview:tabelView];
     [tabelView release];
+    
+    //ADD Device
+    UIImageView *deviceImgV            = [[UIImageView alloc] initWithFrame:CGRectMake(20 , 10 , K_SCREEN_WIDTH-40, K_SCREEN_WIDTH*0.578-20)];
+    deviceImgV.image                   = [UIImage imageOrPDFNamed:@"view_device.png"];
+    deviceImgV.layer.cornerRadius      = 15;
+    deviceImgV.layer.masksToBounds     = YES;
+    [self.mTableView addSubview:deviceImgV];
+    
+    
     
     self.mAddButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.mAddButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];

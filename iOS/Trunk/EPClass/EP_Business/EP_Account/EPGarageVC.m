@@ -58,7 +58,7 @@
     [addBtn.titleLabel setFont:K_FONT_SIZE(14)];
     [addBtn setTitle:@"新增" forState:UIControlStateNormal];
     [addBtn setFrame:CGRectMake(0, 0, 40, 40)];
-    addBtn.tag = 110;
+    addBtn.tag = EP_BTN_RIGTH_TAG;
     [addBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self initTopRightV:@[addBtn]];
     
@@ -73,20 +73,6 @@
     self.mTableView = tabelView;
     [self.mContentView addSubview:tabelView];
     [tabelView release];
-    
-    
-    actionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [actionBtn setFrame:CGRectMake((K_SCREEN_WIDTH-300)/2, K_SCREEN_HEIGHT-120, 300, 40)];
-    [actionBtn setTitle:@"保  存" forState:UIControlStateNormal];
-    [actionBtn setTitleColor:K_COLOR_WHITE_TEXT forState:UIControlStateNormal];
-    [actionBtn setTitleColor:K_COLOR_WHITE_TEXT forState:UIControlStateHighlighted];
-    actionBtn.titleLabel.font = K_BOLD_FONT_SIZE(16);
-    [actionBtn setBackgroundColor:K_COLOR_ORANGE_BG];
-    [actionBtn.layer setMasksToBounds:YES];
-    actionBtn.layer.cornerRadius = 5.0;
-    actionBtn.tag       = 100;
-    [actionBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.mContentView addSubview:actionBtn];
     
 }
 
@@ -145,23 +131,12 @@
 #pragma mark-----buttonActoin---------
 
 - (void)buttonPressed:(UIButton *)button_ {
-    if (button_.tag == 100) {
-        NSLog(@"IT'S GREAT");
-    }else if (button_.tag == 110) {
-        EPModGarageVC *vc = [[EPModGarageVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+    if (button_.tag == EP_BTN_RIGTH_TAG) {
+        EPModGarageVC *vc = [[EPModGarageVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
         [LTools pushController:vc animated:YES];
-        
-    }else if (button_.tag == 901) {
-        
-        
-    }else if (button_.tag == 902) {
-        
-        
-    }else if (button_.tag == 903) {
-        
+        [vc release],vc = nil;
         
     }
-    
 }
 
 - (void)didReceiveMemoryWarning {

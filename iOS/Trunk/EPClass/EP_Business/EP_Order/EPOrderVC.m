@@ -31,21 +31,9 @@
     [super viewDidLoad];
     self.title = @"我的账单";
     [self.mContentView setBackgroundColor:K_COLOR_MAIN_BACKGROUND];
-    
-    // Top Navi
-//    UIButton *historyBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [historyBtn setAdjustsImageWhenHighlighted:NO];
-//    [historyBtn setImage:[UIImage imageOrPDFNamed:@"btn_nav_history.pdf"] forState:UIControlStateNormal];
-//    [historyBtn setFrame:CGRectMake(0, 0, 40, 40)];
-//    historyBtn.tag = 110;
-//    [historyBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
-//    [self initTopRightV:@[historyBtn]];
-    
 
     
-    
-    
-    
+
     // Init Table
     UITableView *tabelView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, K_SCREEN_WIDTH, K_SCREEN_HEIGHT)];
     [tabelView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
@@ -109,13 +97,14 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"index : %li",(long)indexPath.row);
     
-    EPMonthVC *vc = [[EPMonthVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
+    EPMonthVC *vc = [[EPMonthVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
     [LTools pushController:vc animated:YES];
+    [vc release],vc = nil;
 }
 #pragma mark-----buttonActoin---------
 
 - (void)buttonPressed:(UIButton *)button_ {
-    if (button_.tag == 110) {
+    if (button_.tag == EP_BTN_RIGTH_TAG) {
 
     }else if (button_.tag == 901) {
         

@@ -72,7 +72,7 @@
     [actionBtn setBackgroundColor:K_COLOR_ORANGE_BG];
     [actionBtn.layer setMasksToBounds:YES];
     actionBtn.layer.cornerRadius = 5.0;
-    actionBtn.tag       = 100;
+    actionBtn.tag       = EP_BTN_SUBMIT_TAG;
     [actionBtn addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.mContentView addSubview:actionBtn];
     
@@ -213,23 +213,9 @@
 #pragma mark-----buttonActoin---------
 
 - (void)buttonPressed:(UIButton *)button_ {
-    if (button_.tag == 100) {
-        NSLog(@"IT'S GREAT");
-    }else if (button_.tag == 110) {
-//        EPDayVC *vc = [[EPDayVC alloc]initCustomVCType:LCCustomBaseVCTypeRoot];
-//        [self.navigationController pushViewController:vc animated:YES];
-        
-    }else if (button_.tag == 901) {
-        
-        
-    }else if (button_.tag == 902) {
-        
-        
-    }else if (button_.tag == 903) {
-        
-        
+    if (button_.tag == EP_BTN_SUBMIT_TAG) {
+        [APP_DELEGATE.mWindow makeToast:@"保存成功" duration:2.0 position:@"custom"];
     }
-    
 }
 
 - (void)didReceiveMemoryWarning {

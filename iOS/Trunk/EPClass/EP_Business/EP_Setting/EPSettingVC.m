@@ -99,6 +99,7 @@
     if (!cell)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         
         if (indexPath.section == 0) {
             if (indexPath.row == 0) {
@@ -172,7 +173,7 @@
     if (indexPath.section == 0) {
         if (indexPath.row == 1) {
             NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-            NSString *audioFolderPath = [path stringByAppendingPathComponent:@"Audio"];
+
             // Cal Documents/Audio files sizes
             ((UILabel *)[cell.contentView viewWithTag:1003]).text = [NSString stringWithFormat:@"%.2f M",13.5] ;
         }else if (indexPath.row == 2){
@@ -204,7 +205,7 @@
 - (void)buttonPressed:(UIButton *)button_ {
     if (button_.tag == 100) {
         NSLog(@"IT'S GREAT");
-    }else if (button_.tag == 110) {
+    }else if (button_.tag == EP_BTN_RIGTH_TAG) {
 
     }else if (button_.tag == 901) {
         
