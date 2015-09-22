@@ -10,7 +10,7 @@ NSDictionary *LCRKModuleListMappingConfigurationForKey(NSString *mappingKey)
     }
     
     if (aClass) {
-        return @{@"data":aClass};
+        return @{@"data.modelList":aClass};
     }
     
     return nil;

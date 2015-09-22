@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface phoneCode : NSObject
+@interface PhoneCode : NSObject
 
 /*
  *验证码
  */
-@property(nonatomic,strong)NSMutableString    *verifyCode;
+@property(nonatomic,strong)NSMutableString    *checkcode;
 
 
 @end

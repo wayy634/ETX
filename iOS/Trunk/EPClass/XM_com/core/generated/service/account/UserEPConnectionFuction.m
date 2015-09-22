@@ -151,10 +151,10 @@
     
     NSMutableDictionary *params = [[[NSMutableDictionary alloc] init] autorelease];
     [params setObject:mobile forKey:@"mobile"];
-    [params setObject:[EPAccountManager getAccountData].mUserToken forKey:@"token"];
+//    [params setObject:[EPAccountManager getAccountData].mUserToken forKey:@"token"];
     [params setObject:@"" forKey:@"token"];
     
-    [LTools startAsynchronousUrl:url parameter:params method:@"GET" delegate:delegate_ allowCancel:allowCancel_ mappingName:@"UserInfo" urlCacheMode:NO finishSelector:finishSEL_ failSelector:failSEL_ timeOutSelector:timeOutSEL_];
+    [LTools startAsynchronousUrl:url parameter:params method:@"GET" delegate:delegate_ allowCancel:allowCancel_ mappingName:@"PhoneCode" urlCacheMode:NO finishSelector:finishSEL_ failSelector:failSEL_ timeOutSelector:timeOutSEL_];
     params = nil;
     url = nil;
 

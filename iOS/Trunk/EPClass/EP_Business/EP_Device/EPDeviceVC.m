@@ -10,6 +10,7 @@
 #import "LCWebViewVC.h"
 #import "EPDeviceAlertView.h"
 #import "CarEPConnectionFuction.h"
+#import "UserEPConnectionFuction.h"
 #import "EPBuletoochManager.h"
 
 @interface EPDeviceVC ()<UITableViewDataSource,UITableViewDelegate,EPDeviceAlertViewDelegate>
@@ -144,8 +145,29 @@
 
 - (void)startSearch:(EPDeviceAlertView *)view_ {
     NSLog(@"startSearch");
-    [[EPBuletoochManager sharedBluetoochManager] openScan];
+    [UserEPConnectionFuction phoneCode_mobile:@"17710171716" delegate:self allowCancel:YES finishSelector:@selector(phoneCodeFinsh:) failSelector:@selector(phoneCodeFailed:) timeOutSelector:@selector(phoneCodeTimeOut:)];
+//    [[EPBuletoochManager sharedBluetoochManager] openScan];
 }
+
+- (void)phoneCodeFinsh:(RKMappingResult *)data_ {
+    [LTools hideLoadingVOnTargetView:APP_DELEGATE.mWindow animation:YES];
+    LCAPIResult *result = data_.firstObject;
+    if ([LTools isAPIJsonError:result]) {
+        [APP_DELEGATE.mWindow makeToast:result.msg duration:2.0 position:@"custom"];
+        return;
+    }
+}
+- (void)phoneCodeFailed:(NSError *)error_ {
+    [LTools hideLoadingVOnTargetView:APP_DELEGATE.mWindow animation:YES];
+    [APP_DELEGATE.mWindow makeToast:@"网络连接失败" duration:2.0 position:@"custom"];
+}
+
+- (void)phoneCodeTimeOut:(NSError *)error_ {
+    [LTools hideLoadingVOnTargetView:APP_DELEGATE.mWindow animation:YES];
+    [APP_DELEGATE.mWindow makeToast:@"网络连接超时" duration:2.0 position:@"custom"];
+}
+
+
 
 - (void)bindingDevice:(EPDeviceAlertView *)view_ device:(id)device_ {
     NSLog(@"binding");

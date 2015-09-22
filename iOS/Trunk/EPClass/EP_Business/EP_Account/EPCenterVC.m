@@ -44,7 +44,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"个人中心";
+//    self.title = @"个人中心";
     [self setTopViewHidden:YES];
     
     UIImageView *accountTopBG = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, K_SCREEN_WIDTH, K_SCREEN_WIDTH*0.533)];
