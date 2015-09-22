@@ -194,21 +194,15 @@
 #pragma mark-----buttonActoin---------
 
 - (void)buttonPressed:(UIButton *)button_ {
-<<<<<<< HEAD
     if (button_.tag == 0 ) {
         NSLog(@"Help the GEDU!");
-
-        
     }else if (button_.tag == 1) {
 
     }else if (button_.tag == 2) {
 
     }else if (button_.tag == 3) {
         
-    }else if (button_.tag == 110) {
-=======
-    if (button_.tag == EP_BTN_RIGTH_TAG) {
->>>>>>> origin/master
+    }else if(button_.tag == EP_BTN_RIGTH_TAG) {
         EPDayVC *vc = [[EPDayVC alloc]initCustomVCType:LCCustomBaseVCTypeNormal];
         [LTools pushController:vc animated:YES];
         [vc release],vc = nil;

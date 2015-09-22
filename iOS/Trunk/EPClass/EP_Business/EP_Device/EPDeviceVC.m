@@ -10,6 +10,7 @@
 #import "LCWebViewVC.h"
 #import "EPDeviceAlertView.h"
 #import "CarEPConnectionFuction.h"
+#import "EPBuletoochManager.h"
 
 @interface EPDeviceVC ()<UITableViewDataSource,UITableViewDelegate,EPDeviceAlertViewDelegate>
 
@@ -143,18 +144,21 @@
 
 - (void)startSearch:(EPDeviceAlertView *)view_ {
     NSLog(@"startSearch");
-    self.mType = EPDeviceAlertType_Searched;
-    [self.mAlertView setMType:self.mType];
-    [self.mAlertView showAlertView];
+    [[EPBuletoochManager sharedBluetoochManager] openScan];
 }
 
 - (void)bindingDevice:(EPDeviceAlertView *)view_ device:(id)device_ {
     NSLog(@"binding");
     self.mType = EPDeviceAlertType_WaitSearch;
+    [[EPBuletoochManager sharedBluetoochManager] createLink];
 }
 
 - (void)cannelSearch:(EPDeviceAlertView *)view_ {
+    if(view_.mType == EPDeviceAlertType_Searched) {
+        [[EPBuletoochManager sharedBluetoochManager] closeScan];
+    }
     self.mType = EPDeviceAlertType_WaitSearch;
+    
 }
 
 @end

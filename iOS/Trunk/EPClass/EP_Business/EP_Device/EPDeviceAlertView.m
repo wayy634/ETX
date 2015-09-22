@@ -122,14 +122,15 @@
 }
 
 - (void)buttonPress:(UIButton *)button_ {
-    [self hiddenAreaSelectView];
     if (button_.tag == 1) {
         if(self.mType == EPDeviceAlertType_WaitSearch) {
             [self.mDelegate startSearch:self];
         }else if (self.mType == EPDeviceAlertType_Searched) {
+            [self hiddenAreaSelectView];
             [self.mDelegate bindingDevice:self device:nil];
         }
     }else if (button_.tag == 0){
+        [self hiddenAreaSelectView];
         [self.mDelegate cannelSearch:self];
     }
 }

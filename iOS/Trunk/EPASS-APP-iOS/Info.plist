@@ -65,7 +65,7 @@
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>请点击"允许"以便易通行帮您定位</string>
+	<string>请点击&quot;允许&quot;以便易通行帮您定位</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Helvetica Condensed Bold Italic.ttf</string>
