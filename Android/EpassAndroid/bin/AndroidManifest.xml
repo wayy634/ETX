@@ -4,6 +4,8 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+    <!-- 更新 -->
+    
     <uses-sdk
         android:minSdkVersion="17"
         android:targetSdkVersion="22" />
