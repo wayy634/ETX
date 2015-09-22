@@ -145,7 +145,7 @@
 
 - (void)startSearch:(EPDeviceAlertView *)view_ {
     NSLog(@"startSearch");
-    [UserEPConnectionFuction phoneCode_mobile:@"17710171716" delegate:self allowCancel:YES finishSelector:@selector(phoneCodeFinsh:) failSelector:@selector(phoneCodeFailed:) timeOutSelector:@selector(phoneCodeTimeOut:)];
+    [UserEPConnectionFuction userProfileDelegate:self allowCancel:YES finishSelector:@selector(phoneCodeFinsh:) failSelector:@selector(phoneCodeFailed:) timeOutSelector:@selector(phoneCodeTimeOut:)];
 //    [[EPBuletoochManager sharedBluetoochManager] openScan];
 }
 
