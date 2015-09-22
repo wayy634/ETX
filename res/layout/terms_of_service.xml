@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+       <com.jessieray.epass.core.module.HeadRef
+        xmlns:head="http://schemas.android.com/apk/res/com.jessieray.epass"
+        android:id="@+id/head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        head:leftBtnShow="show"
+        head:rightButton="img"
+        head:rightImg="@drawable/ic_launcher"
+        head:titleShow="show"
+        head:titleText="服务协议" >
+    </com.jessieray.epass.core.module.HeadRef>
+
+       <WebView
+           android:id="@+id/terms_of_service_webview"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+ 
+</LinearLayout>
